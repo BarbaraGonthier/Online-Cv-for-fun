@@ -17,3 +17,12 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
 }
     
+footer{
+    background-color: var(--secondary-background-color);
+}
+
+.social-media{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
