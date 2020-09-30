@@ -122,4 +122,34 @@ nav a {
         align-self:center;
         text-align:center;    
     }
+}
+
+.education > h2 {
+    color: var(--title-color);
+    text-decoration: underline;
+}
+.skills {
+    display: flex;
+    flex-direction: column;
+}    
+.skills > h2 {
+    color: var(--title-color);
+    text-decoration: underline;
+
+}
+.skills .element {
+    display: flex;
+}
+.skills .profesionnal {
+    margin-left:calc(var(--spacing)*20) ;
+}
+@media screen and (max-width: 768px){
+    .skills .element{
+        display: flex;
+        flex-direction: column;
+    }
+    .skills .profesionnal{
+        margin: 0;
+    }
+}
 
