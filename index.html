@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <nav>
             <div class="menu-items">
@@ -27,15 +28,15 @@
                 </a>
             </div>
             <div class="download-cv">
-                <a href="CV_Gonthier Barbara.pdf"
+                <a href="CV-Bob-Roborovski.pdf"
                 target="_blank"
-                download="CV.pdf"
+                download="CV-Bob-Roborovski.pdf"
                 title="Télécharger le CV en pdf">Télécharger le CV en pdf</a>
             </div>
             <div class="download-cv-mobile">
-                <a href="CV_Gonthier Barbara.pdf"
+                <a href="CV-Bob-Roborovski.pdf"
                 target="_blank"
-                download="CV.pdf"
+                download="CV-Bob-Roborovski.pdf"
                 title="Télécharger le CV en pdf">Pdf</a>
             </div>
 
@@ -54,9 +55,32 @@
             <div class="ball" id="ball4"></div>
         </div>
     </section>
-    <section id="experience"></section>
+    <section id="experience" class="experience">
+        <h2> Experiences professionnelles</h2>
+
+        <h3> Cariste en Intérim | <a href="">Sunflower's & Co</a> | 2008</h3>
+        <ul>
+            <li> Gestion de stocks de marchandises, spécialisation en matières premières (graines de tournesol).</li>
+            <li> Reception, stockages et décharges de marchandises à l'aide d'engins de levage (CACES).</li>
+            <li class="mind"> "La clé c'est de savoir résister à la gourmandise !" </li>
+        </ul>
+
+        <h3> Technicien de maintenance de réseaux câblés de communication  | <a href="">La passion du câble</a> | 2009-2012</h3>
+        <ul>
+            <li> Mettre en service et maintenir les réseaux d'opérateurs de télécommunications. </li>
+            <li> Gestion et suivi depuis la partie transport et distribution jusqu'à l'installation terminale chez le client.</li>
+            <li class ="mind"> "Mon titre professionnel grignoteur option câble a été un vrai plus !</li>
+        </ul>
+
+        <h3>Chef de projet BTP | <a href="">Hamster Home Corporation</a> | 2012-2020 </h3>
+        <ul>
+            <li> En charge de la supervision et de la réalisation des études liées à la construction d’une maison réalisé par l'entreprise Hamster Home Corporation.</li>
+            <li> Organiser et manager une équipe.</li>
+            <li class="mind"> "Nos maisons sont adaptées à tout rongeur !"</li>
+        </ul>
+    </section>
     <section id="education" class="education">
-        <h2>Diplomes:</h2>
+        <h2>Diplomes</h2>
         <ul>
             <li>CPP niveau IV technicien de réseaux cablages et optiques (Année 2009).</li>
             <li>Caces R489 catégorie 1, 2, 3. (Année 2008).</li>
@@ -64,7 +88,7 @@
         </ul>
     </section>
     <section id="skills" class="skills">
-        <h2>Mes compétences:</h2>
+        <h2>Mes compétences</h2>
         <div class="element">
             <div class="personnal">
                 <h3>Personnelle :</h3>
@@ -86,8 +110,52 @@
             </div>
         </div>
     </section>
-    <section id="interests"></section>
-    <section id="contact"></section>
+    <section id="interests" class="interests">
+        <h2> Centres d'intéret </h2>
+        <ul>
+            <li> Sport (faire de la roue).</li>
+            <li> Jardinage (creuser des tunnels et des galeries).</li>
+            <li> L'univers culinaire (grignoter quelques friandises). </li>
+            <li> Marche et Randonnées (avec des petits recoins pour se cacher c'est encore mieux).</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contactMe" >
+            <h2> Contactez Moi !</h2>
+            <img src="https://i.pinimg.com/originals/f4/40/d1/f440d13b570123f9bb9aa3d0051fcb6f.jpg" alt="Photo de contact" class="pictureContact">
+        
+            <p> Telephone : 00 11 22 33 44 </p>
+            <p> Email : bob@hamster.com</p>
+        
+        </div>
+        <div class="contactForm">
+            
+            <form class="form">
+                <h3> Ou laisser moi un message !</h3>
+                <div>
+                    <label for="votreNom"> Votre nom</label>
+                    <input type="text" name="votreNom" id="votreNom" placeholder="Roger Rabbit" required>
+                </div>
+                <div>
+                    <label for="email"> Votre Email</label>
+                    <input type="email" name="email" id="email" placeholder="hamster@suricate.com" required>
+                </div>
+                <div>
+                    <label for="telephone"> Votre Téléphone</label>
+                    <input type="tel" name="telephone" id="telephone" placeholder="06********" required>
+                </div>
+                <div>
+                    <label for="message">Votre Message</label>
+                    <input type="text" name="message" id="message" placeholder="Tapez votre texte ici">
+                </div>
+                <div>
+                    <button class=" formButton"> Envoyer</button>
+                </div>
+            </form>
+        </div>
+      
+    </section>
     <footer>
         <div class="social-media">
             <a href="https://fr.wikipedia.org/wiki/Hamster_de_Roborovski" 
@@ -106,6 +174,7 @@
             Suivez-moi sur twitter
             </a>
         </div>
-    </footer>
+    </footer>            
+ 
 </body>
 </html>

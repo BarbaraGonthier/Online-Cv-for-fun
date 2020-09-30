@@ -18,7 +18,22 @@ body {
     background-color: var(--background-color);
     font-family: 'Noto Sans JP', sans-serif;
 }
-  
+
+
+.experience > h2 {
+    color: var(--title-color);
+    text-decoration: underline;
+}
+
+.interests > h2 {
+    color: var(--title-color);
+    text-decoration: underline;
+}
+
+.mind {
+
+}
+
 nav {
     display:flex;
     justify-content:space-between;
@@ -285,3 +300,99 @@ footer{
     text-decoration: none;
     color: var(--dark);
 }
+
+
+/*--       Contact       --*/                        
+.contact{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.contactMe{
+    padding: 16px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #b9b7bd;
+    border-radius: 15px;
+    box-shadow: 2px;
+}
+
+.pictureContact{
+    width: 50%;
+    border-radius: 20px;
+}
+.pictureContact:hover{
+    transform: scale(1.1);
+}
+
+.contact .contactForm{
+    background-color: #b9b7bd;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;   
+}
+
+form{
+    width: 100%;
+    height: 95%;
+}
+
+form div{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 16px;
+}
+
+div input{
+    width: 90%;
+    margin: 8px 32px 0px 24px;;
+}
+
+form h3{
+    text-align: center;
+    top: 5px;
+    
+}
+
+button{
+margin-left: 37%;
+margin-top: 56px;
+width: 25%;
+height: 40px;
+
+
+}
+
+@media screen and (max-width :768px){
+
+    .contact{
+        flex-direction: column;
+        
+    }    
+    .pictureContact{
+        border-radius: 20%;
+    }
+    .contactMe{
+        width: 100vw;
+    }
+
+    .contact .contactForm{
+        width: 100vw;
+    }
+
+    button{
+        border-radius: 50%;
+        height: 20vw;
+        border-color: var(--dark);
+    }
+}
+
