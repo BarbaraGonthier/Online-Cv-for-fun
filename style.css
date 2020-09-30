@@ -33,14 +33,14 @@ nav {
 
 }
 
-#menu{
+.desktop-menu{
     border: solid;
     display: flex;
     justify-content:space-evenly;
     margin: var(--spacing-2);
 }
 
-.download {
+.download-cv {
     border: solid;
     background-color: var(--secondary-background-color);
     padding:var(--spacing-2);
@@ -67,13 +67,24 @@ nav a {
 }
 
 
-.burger div{
+.burger div {
     height: 2px;
     background-color: var(--dark);
 }
 
-@media screen and (max-width:600px) {
-    #menu {
+.download-cv-mobile {
+    display:none;
+    background-color: var(--secondary-background-color);
+    padding:var(--spacing-2);
+    border-radius:10px;
+    font-size:12px;
+    margin: var(--spacing-2);
+    align-self:center;
+    text-align:center;
+}
+
+@media screen and (max-width:768px) {
+    .desktop-menu {
         display: none;
     }
 
@@ -81,11 +92,11 @@ nav a {
         display:flex;
     }
 
-    .download{
+    .download-cv{
         display:none;
     }
 
-    .desktop:target {
+    .desktop-menu:target {
         display:flex;
         flex-direction: column;
         justify-content:center;
@@ -93,3 +104,6 @@ nav a {
         height: 100%;
     }
 
+    .download-cv-mobile {
+        display:flex;
+    }
