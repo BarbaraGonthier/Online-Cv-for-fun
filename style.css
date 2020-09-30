@@ -16,4 +16,80 @@ body {
     background-color: var(--background-color);
     font-family: 'Noto Sans JP', sans-serif;
 }
-    
+
+#home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ball {
+    border-radius: 50%;
+    background-color: var(--secondary-background-color);
+    width: 16vmin;
+    height: 16vmin;
+    position: fixed;
+    text-align: center;
+    line-height: 16vmin;
+}
+
+@media screen and (max-width:767px) {
+    #ball1 {
+        left: 28%;
+        top: 38%;
+    }
+
+    #ball2 {
+        left: 28%;
+        top: 48%;
+    }
+
+    #ball3 {
+        left: 60%;
+        top: 38%;
+    }
+
+    #ball4 {
+        left: 60%;
+        top: 48%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    #ball1 {
+        left: 30%;
+        top: 2%;
+    }
+
+    #ball2 {
+        left: 30%;
+        top: 54%;
+    }
+
+    #ball3 {
+        left: 66%;
+        top: 2%;
+    }
+
+    #ball4 {
+        left: 66%;
+        top: 54%;
+    }
+}
+
+.profile {
+    margin-top: calc(var(--spacing) *5);
+}
+
+.profile-picture {
+    width: 32%;
+}
+
+.presentation h1 {
+    margin-bottom: 0;
+}
+
+.presentation h3 {
+    margin-top: 0.5vh;
+}
