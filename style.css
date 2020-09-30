@@ -6,6 +6,7 @@
     --dark:rgb(14, 0, 15);
 
     --spacing:8px;
+    --spacing-2:calc(var(--spacing) * 2);
 }
 
 * {
@@ -17,3 +18,33 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
 }
     
+nav {
+    display:flex;
+    justify-content:space-between;
+    border:solid;
+    width:100%;
+}
+
+#menu{
+    background-color: var(--secondary-background-color);
+    border:solid;
+    padding:var(--spacing-2);
+    width:80%;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.download {
+    border:solid;
+    background-color: var(--secondary-background-color);
+    padding:var(--spacing-2);
+    border-radius:10px;
+    font-size:12px;
+}
+
+
+nav a {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: bold;
+}
