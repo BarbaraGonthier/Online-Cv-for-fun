@@ -198,7 +198,8 @@ nav a {
     width: 16vmin;
     height: 16vmin;
     text-align: center;
-    line-height: 16vmin;
+    line-height: 15px;
+    padding-top: 6.5vmin;
 }
 
 @media screen and (max-width:767px) {
