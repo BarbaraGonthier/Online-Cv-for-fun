@@ -152,3 +152,18 @@ nav a {
     }
 }
 
+footer{
+    background-color: var(--secondary-background-color);
+}
+
+.social-media{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    padding: var(--spacing-2);
+}
+
+.social-media a{
+    text-decoration: none;
+    color: var(--dark);
+}
