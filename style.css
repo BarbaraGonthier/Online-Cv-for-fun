@@ -6,6 +6,7 @@
     --dark:rgb(14, 0, 15);
 
     --spacing:8px;
+    --spacing-2:calc(var(--spacing) * 2);
 }
 
 * {
@@ -27,3 +28,137 @@ body {
 
 }
     
+nav {
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+}
+
+.menu-items {
+    width:80%;
+    padding:var(--spacing-2);
+}
+
+.desktop-menu{
+    display: flex;
+    justify-content:space-evenly;
+    margin: var(--spacing-2);
+}
+
+.download-cv {
+    background-color: var(--secondary-background-color);
+    padding:var(--spacing-2);
+    border-radius:10px;
+    font-size:12px;
+    margin: var(--spacing-2);
+    align-self:center;
+    text-align:center;
+}
+
+
+nav a {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.burger{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width:50px;
+    height:50px;
+}
+
+
+.burger div {
+    height: 2px;
+    background-color: var(--dark);
+}
+
+.download-cv-mobile {
+    display:none;
+}
+
+.close-burger{
+    display:none;
+}
+
+@media screen and (max-width:768px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .burger {
+        display:flex;
+    }
+
+    .download-cv{
+        display:none;
+    }
+
+    .desktop-menu:target {
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        background-color: var(--secondary-background-color);
+        width:100vw;
+        height: 100vh;
+        position: fixed;
+        top:0;
+        left:0;
+    }
+
+    .desktop-menu a{
+        padding: var(--spacing-2);
+    }
+
+    .desktop-menu:target .close-burger{
+        display:block;
+        position:fixed;
+        top: var(--spacing-2);
+        right: var(--spacing-2);
+    }
+
+    .download-cv-mobile{
+        display:flex;
+        background-color: var(--secondary-background-color);
+        padding:var(--spacing-2);
+        border-radius:10px;
+        font-size:12px;
+        margin: var(--spacing-2);
+        align-self:center;
+        text-align:center;    
+    }
+}
+
+.education > h2 {
+    color: var(--title-color);
+    text-decoration: underline;
+}
+.skills {
+    display: flex;
+    flex-direction: column;
+}    
+.skills > h2 {
+    color: var(--title-color);
+    text-decoration: underline;
+
+}
+.skills .element {
+    display: flex;
+}
+.skills .profesionnal {
+    margin-left:calc(var(--spacing)*20) ;
+}
+@media screen and (max-width: 768px){
+    .skills .element{
+        display: flex;
+        flex-direction: column;
+    }
+    .skills .profesionnal{
+        margin: 0;
+    }
+}
+

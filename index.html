@@ -8,7 +8,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <div class="menu-items">
+                <div class="desktop-menu" id="menu">
+                    <a href="#home" title="Accueil">Accueil</a>
+                    <a href="#experience" title="Expérience">Expérience</a>
+                    <a href="#education" title="Formation">Formation</a>
+                    <a href="#skills" title="Compétences">Compétences</a>
+                    <a href="#interests" title="Centres d'intérêts">Centres d'intérêts</a>
+                    <a href="#contact" title="Contact">Contact</a>
+                    <a href="#home" class="close-burger" title="Fermer le menu">X</a> 
+                </div>
+                <a href="#menu" class="burger" title="Ouvrir le menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>   
+                </a>
+            </div>
+            <div class="download-cv">
+                <a href="CV_Gonthier Barbara.pdf"
+                target="_blank"
+                download="CV.pdf"
+                title="Télécharger le CV en pdf">Télécharger le CV en pdf</a>
+            </div>
+            <div class="download-cv-mobile">
+                <a href="CV_Gonthier Barbara.pdf"
+                target="_blank"
+                download="CV.pdf"
+                title="Télécharger le CV en pdf">Pdf</a>
+            </div>
+
+        </nav>
+    </header>
     <section id="home"></section>
     <section id="experience" class="experience">
         <h2> Experiences professionnelles</h2>
@@ -33,10 +65,38 @@
             <li> Organiser et manager une équipe.</li>
             <li class="mind"> "Nos maisons sont adaptées à tout rongeur !"</li>
         </ul>
-
     </section>
-    <section id="education"></section>
-    <section id="skills"></section>
+    <section id="education" class="education">
+        <h2>Diplomes</h2>
+        <ul>
+            <li>CPP niveau IV technicien de réseaux cablages et optiques (Année 2009).</li>
+            <li>Caces R489 catégorie 1, 2, 3. (Année 2008).</li>
+            <li>Titre professionnel grignoteur option cable.(Année 2005).</li>
+        </ul>
+    </section>
+    <section id="skills" class="skills">
+        <h2>Mes compétences</h2>
+        <div class="element">
+            <div class="personnal">
+                <h3>Personnelle :</h3>
+                <ul >
+                    <li>Astucieux</li>
+                    <li>Autonome</li>
+                    <li>Sociable</li>
+                    <li>Calme</li>
+                </ul>
+            </div>
+            <div class="profesionnal">
+                <h3>Professionnelle :</h3>
+                <ul>
+                    <li>Dynamique</li>
+                    <li>Réactif</li>
+                    <li>Créatif</li>
+                    <li>Force de proposition</li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <section id="interests" class="interests">
         <h2> Centres d'intéret </h2>
         <ul>
