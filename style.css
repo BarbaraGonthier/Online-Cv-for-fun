@@ -7,6 +7,7 @@
 
     --spacing:8px;
     --spacing-2:calc(var(--spacing) * 2);
+    --spacing-6:calc(var(--spacing) * 6);
 }
 
 * {
@@ -157,10 +158,11 @@ nav a {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    margin-bottom: var(--spacing-6);
 }
 
 .profile {
-    margin-top: calc(var(--spacing) *6);
+    margin-top: var(--spacing-6);
 }
 
 .profile-picture {
@@ -216,7 +218,33 @@ nav a {
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .ball{
+        position: absolute;
+    }
+
+    #ball1 {
+        left: 20%;
+        top: 12%;
+    }
+
+    #ball2 {
+        left: 20%;
+        top: 36%;
+    }
+
+    #ball3 {
+        left: 66%;
+        top: 12%;
+    }
+
+    #ball4 {
+        left: 66%;
+        top: 36%;
+    }
+}
+
+@media screen and (min-width:1025px) {
     .ball{
         position: absolute;
     }
@@ -241,6 +269,7 @@ nav a {
         top: 54%;
     }
 }
+
 footer{
     background-color: var(--secondary-background-color);
 }
