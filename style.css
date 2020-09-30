@@ -19,7 +19,6 @@ body {
 }
     
 nav {
-    border: solid;
     display:flex;
     justify-content:space-between;
     width:100%;
@@ -27,21 +26,17 @@ nav {
 }
 
 .menu-items {
-    border: solid;
     width:80%;
     padding:var(--spacing-2);
-
 }
 
 .desktop-menu{
-    border: solid;
     display: flex;
     justify-content:space-evenly;
     margin: var(--spacing-2);
 }
 
 .download-cv {
-    border: solid;
     background-color: var(--secondary-background-color);
     padding:var(--spacing-2);
     border-radius:10px;
@@ -62,8 +57,8 @@ nav a {
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width:30px;
-    height:30px;
+    width:50px;
+    height:50px;
 }
 
 
@@ -74,13 +69,10 @@ nav a {
 
 .download-cv-mobile {
     display:none;
-    background-color: var(--secondary-background-color);
-    padding:var(--spacing-2);
-    border-radius:10px;
-    font-size:12px;
-    margin: var(--spacing-2);
-    align-self:center;
-    text-align:center;
+}
+
+.close-burger{
+    display:none;
 }
 
 @media screen and (max-width:768px) {
@@ -100,10 +92,34 @@ nav a {
         display:flex;
         flex-direction: column;
         justify-content:center;
-        width: 100%;
-        height: 100%;
+        align-items: center;
+        background-color: var(--secondary-background-color);
+        width:100vw;
+        height: 100vh;
+        position: fixed;
+        top:0;
+        left:0;
     }
 
-    .download-cv-mobile {
-        display:flex;
+    .desktop-menu a{
+        padding: var(--spacing-2);
     }
+
+    .desktop-menu:target .close-burger{
+        display:block;
+        position:fixed;
+        top: var(--spacing-2);
+        right: var(--spacing-2);
+    }
+
+    .download-cv-mobile{
+        display:flex;
+        background-color: var(--secondary-background-color);
+        padding:var(--spacing-2);
+        border-radius:10px;
+        font-size:12px;
+        margin: var(--spacing-2);
+        align-self:center;
+        text-align:center;    
+    }
+
