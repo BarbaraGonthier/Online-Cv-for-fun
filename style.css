@@ -9,9 +9,6 @@
     --spacing-2:calc(var(--spacing) * 2);
 }
 
-* {
-    box-sizing: border-box;
-}
 
 body {
     background-color: var(--background-color);
@@ -21,25 +18,24 @@ body {
 nav {
     display:flex;
     justify-content:space-between;
-    border:solid;
     width:100%;
+    position: fixed;
 }
 
 #menu{
-    background-color: var(--secondary-background-color);
-    border:solid;
     padding:var(--spacing-2);
     width:80%;
     display: flex;
     justify-content:space-evenly;
+    margin: var(--spacing-2);
 }
 
 .download {
-    border:solid;
     background-color: var(--secondary-background-color);
     padding:var(--spacing-2);
     border-radius:10px;
     font-size:12px;
+    margin: var(--spacing-2);
 }
 
 
