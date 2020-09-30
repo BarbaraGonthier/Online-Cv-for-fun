@@ -18,10 +18,14 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-@media screen and ( max-width: 768px) {
-    .experience , .interests {
+.experience > h2 {
+    color: var(--title-color);
+    text-decoration: underline;
+}
 
-    }
+.interests > h2 {
+    color: var(--title-color);
+    text-decoration: underline;
 }
 
 .mind {
