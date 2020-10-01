@@ -28,6 +28,7 @@ body {
 .interests > h2 {
     color: var(--title-color);
     text-decoration: underline;
+    text-align: center;
 }
 
 .mind {
@@ -161,6 +162,28 @@ nav a {
 .img-diploma {
     display: flex;
     align-self: flex-end;
+}
+
+.interestsRow{
+    display: flex;
+    justify-content: center;
+}
+
+.interestsFigures{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align:center;
+    width: 25%;
+    align-items: center;
+}
+
+.interestsFigcaptionTitle{
+    font-weight: bold;
+}
+
+.interestsFigcaptionDescription{
+    font-style: italic;
 }
 @media screen and (max-width: 768px){
     .skills .element{
