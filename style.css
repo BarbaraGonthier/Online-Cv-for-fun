@@ -165,16 +165,34 @@ nav a {
     display: flex;
     flex-direction: column;
 }    
+
+/*--       Skills       --*/    
 .skills > h2 {
     color: var(--title-color);
     text-decoration: underline;
+    text-align: center;
+    margin-top: var(--spacing-6);
+    margin-bottom: calc(var(--spacing) * 4);
+}
 
-}
 .skills .element {
+    width: 95%;
+    text-align: center;
     display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
-.skills .profesionnal {
-    margin-left:calc(var(--spacing)*20) ;
+
+.skills .element-skills {
+    width: 20%;
+}
+
+.skills .element-skills > img {
+    width: 100px;
+}
+
+.skills .element-skills > figcaption {
+    padding-top: var(--spacing-2);
 }
 
 .interestsRow{
@@ -208,17 +226,26 @@ nav a {
 
 @media screen and (max-width: 768px){
     .skills .element{
+        width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-    .skills .profesionnal{
-        margin: 0;
+
+    .skills .element-skills > img {
+        width: 70px;
+    }
+
+    .skills .element-skills > figcaption {
+        padding-top: var(--spacing);
     }
     .img-diploma {
         display: none;
     }
 }
 
+/*--       Home       --*/    
 #home {
     display: flex;
     justify-content: center;
@@ -246,11 +273,11 @@ nav a {
 .ball {
     border-radius: 50%;
     background-color: var(--secondary-background-color);
-    width: 16vmin;
-    height: 16vmin;
+    width: 135px;
+    height: 135px;
     text-align: center;
-    line-height: 15px;
-    padding-top: 6.5vmin;
+    line-height: 16px;
+    padding-top: 54px;
 }
 
 @media screen and (max-width:767px) {
@@ -280,7 +307,7 @@ nav a {
         line-height: 15px;
         width: 20vmin;
         height: 20vmin;
-        padding-top: 5vmin;
+        padding-top: 5.4vmin;
         font-size: 3vmin;
     }
 }
@@ -288,6 +315,10 @@ nav a {
 @media screen and (min-width:768px) and (max-width:1024px) {
     .ball{
         position: absolute;
+        width: 120px;
+        height: 120px;
+        line-height: 15px;
+        padding-top: 50px;
     }
 
     #ball1 {
