@@ -183,6 +183,14 @@ nav a {
 }
 
 @media screen and (max-width: 768px){
+        .interestsRow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px){
     .skills .element{
         display: flex;
         flex-direction: column;
