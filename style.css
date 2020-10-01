@@ -158,6 +158,10 @@ nav a {
 .skills .profesionnal {
     margin-left:calc(var(--spacing)*20) ;
 }
+.img-diploma {
+    display: flex;
+    align-self: flex-end;
+}
 @media screen and (max-width: 768px){
     .skills .element{
         display: flex;
