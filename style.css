@@ -35,6 +35,8 @@ body {
 
 }
 
+/*--        Header      --*/
+
 nav {
     display:flex;
     justify-content:space-between;
@@ -79,7 +81,7 @@ nav a {
 
 
 .burger div {
-    height: 2px;
+    height: 4px;
     background-color: var(--dark);
 }
 
@@ -98,6 +100,8 @@ nav a {
 
     .burger {
         display:flex;
+        padding: var(--spacing);
+        width: 60px;
     }
 
     .download-cv{
@@ -110,8 +114,8 @@ nav a {
         justify-content:center;
         align-items: center;
         background-color: var(--secondary-background-color);
-        width:100vw;
-        height: 100vh;
+        width: 95vw;
+        height: 95vh;
         position: fixed;
         top:0;
         left:0;
@@ -140,6 +144,8 @@ nav a {
     }
 }
 
+
+/*--      Education      --*/
 .education > h2 {
     color: var(--title-color);
     text-decoration: underline;
