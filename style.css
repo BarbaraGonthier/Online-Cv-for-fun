@@ -193,6 +193,9 @@ nav a {
     .skills .profesionnal{
         margin: 0;
     }
+    .img-diploma {
+        display: none;
+    }
 }
 
 #home {
