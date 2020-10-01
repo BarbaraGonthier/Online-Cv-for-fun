@@ -150,6 +150,16 @@ nav a {
     color: var(--title-color);
     text-decoration: underline;
 }
+.education .formations {
+    display: flex;
+    align-items: center;
+
+}
+.img-diploma {
+    margin-left: 100px;
+    display: flex;
+    align-self: flex-end;
+}
 .skills {
     display: flex;
     flex-direction: column;
@@ -164,10 +174,6 @@ nav a {
 }
 .skills .profesionnal {
     margin-left:calc(var(--spacing)*20) ;
-}
-.img-diploma {
-    display: flex;
-    align-self: flex-end;
 }
 
 .interestsRow{
