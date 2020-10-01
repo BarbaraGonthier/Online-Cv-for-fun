@@ -159,6 +159,10 @@ nav a {
 .skills .profesionnal {
     margin-left:calc(var(--spacing)*20) ;
 }
+.img-diploma {
+    display: flex;
+    align-self: flex-end;
+}
 
 .interestsRow{
     display: flex;
@@ -181,7 +185,6 @@ nav a {
 .interestsFigcaptionDescription{
     font-style: italic;
 }
-
 @media screen and (max-width: 768px){
         .interestsRow {
         display: flex;
@@ -197,6 +200,9 @@ nav a {
     }
     .skills .profesionnal{
         margin: 0;
+    }
+    .img-diploma {
+        display: none;
     }
 }
 
