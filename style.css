@@ -18,22 +18,35 @@ body {
     background-color: var(--background-color);
     font-family: 'Noto Sans JP', sans-serif;
 }
-
-
-.experience > h2 {
-    color: var(--title-color);
-    text-decoration: underline;
-}
-
 .interests > h2 {
     color: var(--title-color);
     text-decoration: underline;
 }
 
-.mind {
-
+.experience > h2 {
+    color: var(--title-color);
+    text-decoration: underline;
+}
+.experience{
+    display:flex;
+    justify-content: space-around;
+}
+.text {
+    margin: auto;
+}
+.cable {
+    margin: auto;
+}
+.imageCable {
+    border-radius: 30px;
 }
 
+@media screen and (max-width: 768px) {
+    .experience {
+        display: flex;
+        flex-direction: column;
+    }
+}
 nav {
     display:flex;
     justify-content:space-between;
