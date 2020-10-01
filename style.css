@@ -149,6 +149,7 @@ nav a {
 .education > h2 {
     color: var(--title-color);
     text-decoration: underline;
+    text-align: center;
 }
 .education .formations {
     display: flex;
@@ -156,7 +157,7 @@ nav a {
 
 }
 .img-diploma {
-    margin-left: 100px;
+    margin-left: 30%;
     display: flex;
     align-self: flex-end;
 }
