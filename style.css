@@ -199,7 +199,6 @@ h3 >a {
 
 }
 .img-diploma {
-    margin-left: 30%;
     display: flex;
     align-self: flex-end;
 }
@@ -225,6 +224,17 @@ h3 >a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.education .formations ul li {
+    margin: 15px;
+}
+.education > .formations {
+    display: flex;
+    justify-content: space-around;
+
+}
+.education ul li {
+    list-style-type: none;
 }
 
 .skills .element-skills {
