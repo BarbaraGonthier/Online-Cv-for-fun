@@ -36,6 +36,7 @@ body {
     opacity: 0.80;
     font-size: 30px;
     text-align: center;
+    color: var(--third-color);
 }
 
 @media screen and (max-width:768px) {
@@ -49,6 +50,8 @@ nav {
     display:flex;
     justify-content:space-between;
     width:100%;
+    background-color: var(--third-color);
+
 }
 
 .menu-items {
@@ -62,8 +65,12 @@ nav {
     margin: var(--spacing-2);
 }
 
+.desktop-menu a {
+    color: var(--light);
+}
+
 .download-cv {
-    background-color: var(--secondary-background-color);
+    background-color: var(--light);
     padding:var(--spacing-2);
     border-radius:10px;
     font-size:12px;
@@ -72,9 +79,12 @@ nav {
     text-align:center;
 }
 
+.download-cv a {
+    color: var(--dark);
+}
+
 
 nav a {
-    color: var(--dark);
     text-decoration: none;
     font-weight: bold;
 }
@@ -90,7 +100,7 @@ nav a {
 
 .burger div {
     height: 4px;
-    background-color: var(--dark);
+    background-color: var(--light);
 }
 
 .download-cv-mobile {
@@ -121,14 +131,15 @@ nav a {
         flex-direction: column;
         justify-content:center;
         align-items: center;
-        background-color: var(--secondary-background-color);
+        background-color: var(--third-color);
+        font-size: 20px;
         width: 100vw;
         height: 100vh;
         position: fixed;
         top: 0;
         left: 0;
         margin: 0;
-        opacity: 0.92;
+        opacity: 0.95;
     }
 
     .desktop-menu a{
@@ -144,13 +155,17 @@ nav a {
 
     .download-cv-mobile{
         display:flex;
-        background-color: var(--secondary-background-color);
+        background-color: var(--light);
         padding:var(--spacing-2);
         border-radius:10px;
         font-size:12px;
         margin: var(--spacing-2);
         align-self:center;
         text-align:center;    
+    }
+
+    .download-cv-mobile a {
+        color: var(--dark);
     }
 }
 /*--        Experience      --*/
