@@ -459,7 +459,7 @@ h3 >a {
 
 /*--                      Footer                         --*/
 footer{
-    background-color: var(--secondary-background-color);
+    background-color: var(--third-color);
 }
 
 .social-media{
@@ -471,7 +471,7 @@ footer{
 
 .social-media a{
     text-decoration: none;
-    color: var(--dark);
+    color: var(--light);
 }
 
 @media screen and (max-width:767px) {
