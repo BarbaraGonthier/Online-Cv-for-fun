@@ -7,6 +7,7 @@
 
     --spacing:8px;
     --spacing-2:calc(var(--spacing) * 2);
+    --spacing-4:calc(var(--spacing) * 4);
     --spacing-6:calc(var(--spacing) * 6);
 }
 
@@ -98,15 +99,17 @@ nav a {
         justify-content:center;
         align-items: center;
         background-color: var(--secondary-background-color);
-        width: 95vw;
-        height: 95vh;
+        width: 100vw;
+        height: 100vh;
         position: fixed;
-        top:0;
-        left:0;
+        top: 0;
+        left: 0;
+        margin: 0;
+        opacity: 0.92;
     }
 
     .desktop-menu a{
-        padding: var(--spacing-2);
+        padding: var(--spacing-4);
     }
 
     .desktop-menu:target .close-burger{
