@@ -157,7 +157,7 @@ nav a {
 
 }
 .img-diploma {
-    margin-left: 30%;
+    margin-left: 20%;
     display: flex;
     align-self: flex-end;
 }
@@ -181,6 +181,17 @@ nav a {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+}
+.education .formations ul li {
+    margin: 15px;
+}
+.education > .formations {
+    display: flex;
+    justify-content: space-around;
+
+}
+.education ul li {
+    list-style-type: none;
 }
 
 .skills .element-skills {
