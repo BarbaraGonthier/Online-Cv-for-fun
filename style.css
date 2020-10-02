@@ -7,6 +7,7 @@
 
     --spacing:8px;
     --spacing-2:calc(var(--spacing) * 2);
+    --spacing-4:calc(var(--spacing) * 4);
     --spacing-6:calc(var(--spacing) * 6);
 }
 
@@ -19,24 +20,28 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+/*--   ToTop button --*/
 
-.experience > h2 {
-    color: var(--title-color);
-    text-decoration: underline;
-}
-
-.interests > h2 {
-    color: var(--title-color);
-    text-decoration: underline;
+.toTopButton{
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.80;
+    font-size: 30px;
     text-align: center;
 }
 
-.mind {
-
+@media screen and (max-width:768px) {
+    .toTopButton{
+        display:none;
+    }
 }
 
 /*--        Header      --*/
-
 nav {
     display:flex;
     justify-content:space-between;
@@ -114,15 +119,17 @@ nav a {
         justify-content:center;
         align-items: center;
         background-color: var(--secondary-background-color);
-        width: 95vw;
-        height: 95vh;
+        width: 100vw;
+        height: 100vh;
         position: fixed;
-        top:0;
-        left:0;
+        top: 0;
+        left: 0;
+        margin: 0;
+        opacity: 0.92;
     }
 
     .desktop-menu a{
-        padding: var(--spacing-2);
+        padding: var(--spacing-4);
     }
 
     .desktop-menu:target .close-burger{
@@ -143,7 +150,42 @@ nav a {
         text-align:center;    
     }
 }
+/*--        Experience      --*/
+.experiences > h2 {
+    color: var(--title-color);
+    text-decoration: underline;
+    text-align: center;
+}
+h3 >a {
+    background-color: var(--secondary-background-color);
+    text-decoration: none;
+    color: var(--dark);
+}
 
+.experiencesBloc{
+    display:flex;
+    justify-content: space-between;
+}
+.text , .cable {
+    margin: auto;
+}
+.text >ul {
+    list-style-type: none;
+}
+.mind {
+    color: var(--title-color);
+    font-size: 1.2em;
+    font-style: italic;
+}
+@media screen and (max-width: 768px) {
+    .experiencesBloc {
+        display: flex;
+        flex-direction: column;
+    }
+    .cable{
+        display: none;
+    }
+}
 
 /*--      Education      --*/
 .education > h2 {
@@ -161,12 +203,14 @@ nav a {
     display: flex;
     align-self: flex-end;
 }
+
+/*--       Skills       --*/
+
 .skills {
     display: flex;
     flex-direction: column;
-}    
+}
 
-/*--       Skills       --*/    
 .skills > h2 {
     color: var(--title-color);
     text-decoration: underline;
@@ -179,7 +223,7 @@ nav a {
     width: 95%;
     text-align: center;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .education .formations ul li {
@@ -195,7 +239,7 @@ nav a {
 }
 
 .skills .element-skills {
-    width: 20%;
+    width: 19%;
 }
 
 .skills .element-skills > img {
@@ -204,6 +248,13 @@ nav a {
 
 .skills .element-skills > figcaption {
     padding-top: var(--spacing-2);
+}
+
+/*--       Interests       --*/
+.interests > h2 {
+    color: var(--title-color);
+    text-decoration: underline;
+    text-align: center;
 }
 
 .interestsRow{
@@ -226,6 +277,7 @@ nav a {
 
 .interestsFigcaptionDescription{
     font-style: italic;
+    font-size: 14px;
 }
 @media screen and (max-width: 768px){
         .interestsRow {
@@ -396,6 +448,11 @@ footer{
     color: var(--dark);
 }
 
+@media screen and (max-width:767px) {
+    .social-media a{
+        font-size: 12px;
+    }
+}
 
 /*--                      Contact       --*/                        
 .contact{

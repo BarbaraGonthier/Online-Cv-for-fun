@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <form action="#navBar">
+        <button class="toTopButton" title="Retour à l'accueil">⬆</button>
+    </form>
     <header>
-        <nav>
+        <nav id="navBar">
             <div class="menu-items">
                 <div class="desktop-menu" id="menu">
                     <a href="#home" title="Accueil">Accueil</a>
@@ -55,38 +57,43 @@
             <div class="ball" id="ball4">Réactif</div>
         </div>
     </section>
-    <section id="experience" class="experience">
-        <h2> Experiences professionnelles</h2>
+    <section id="experience" class ="experiences">
+        <h2> EXPERIENCES PROFESSIONNELLES</h2>
+        <div class="experiencesBloc">
+            <div class = cable> <img src="https://cdn.pixabay.com/photo/2017/09/01/23/35/usb-2705872_960_720.png" alt="image cable" width=" 500"/> </div>
+            <div class = text>
+                <h3> Cariste en Intérim | <a href="">Sunflower's & Co</a> | 2008</h3>
+                    <ul>
+                        <li>&raquo;  Gestion de stocks de marchandises, spécialisation en matières premières (graines de tournesol).</li>
+                        <li>&raquo;  Stockages et décharges de marchandises à l'aide d'engins de levage (CACES).</li>
+                        <p class="mind"> "La clé c'est de savoir résister à la gourmandise !"</p>
+                    </ul>
 
-        <h3> Cariste en Intérim | <a href="">Sunflower's & Co</a> | 2008</h3>
-        <ul>
-            <li> Gestion de stocks de marchandises, spécialisation en matières premières (graines de tournesol).</li>
-            <li> Reception, stockages et décharges de marchandises à l'aide d'engins de levage (CACES).</li>
-            <li class="mind"> "La clé c'est de savoir résister à la gourmandise !" </li>
-        </ul>
+                <h3> Technicien des réseaux câblés | <a href="">La passion du câble</a> | 2009-2012</h3>
+                    <ul>
+                        <li>&raquo;  Mettre en service et maintenir les réseaux de télécommunications. </li>
+                        <li>&raquo;  Installation du matériel chez le client.</li>
+                        <p class ="mind"> "Mon titre professionnel grignoteur option câble a été un vrai plus !</p>
+                    </ul>
 
-        <h3> Technicien de maintenance de réseaux câblés de communication  | <a href="">La passion du câble</a> | 2009-2012</h3>
-        <ul>
-            <li> Mettre en service et maintenir les réseaux d'opérateurs de télécommunications. </li>
-            <li> Gestion et suivi depuis la partie transport et distribution jusqu'à l'installation terminale chez le client.</li>
-            <li class ="mind"> "Mon titre professionnel grignoteur option câble a été un vrai plus !</li>
-        </ul>
+                <h3>Chef de projet | <a href="">Hamster Home Corporation</a> | 2012-2020 </h3>
+                    <ul>
+                        <li>&raquo;  Supervision de la construction d’une maison réalisée par l'entreprise.</li>
+                        <li>&raquo;  Organiser et manager une équipe.</li>
+                        <p class="mind"> "Hamster Home Corporation, des maisons qu'on oublie pas !"</p>
+                    </ul>
 
-        <h3>Chef de projet BTP | <a href="">Hamster Home Corporation</a> | 2012-2020 </h3>
-        <ul>
-            <li> En charge de la supervision et de la réalisation des études liées à la construction d’une maison réalisé par l'entreprise Hamster Home Corporation.</li>
-            <li> Organiser et manager une équipe.</li>
-            <li class="mind"> "Nos maisons sont adaptées à tout rongeur !"</li>
-        </ul>
+                <h3> Rongeur de câbles | <a href="https://www.wildcodeschool.com/fr-FR"> Wild Code School</a> | Depuis 2020</h3>
+                    <ul>
+                        <li>&raquo;  Installation et supervision des câbles de la Wild Code School </li>
+                        <li>&raquo;  Compétence d'assistant déméleur </li>
+                        <p class ="mind"> "Le meilleur job de ma vie !"</p>
+                    </ul>
+            </div>
+        </div>
     </section>
-
-
-
-
-
-
     <section id="education" class="education">
-        <h2>Formation</h2>
+        <h2>FORMATION</h2>
             <div class="formations">
                     <ul class="formation">
                         <li>&raquo; CPP niveau IV technicien de réseaux cablages et optiques | Année 2009.</li>
@@ -98,16 +105,8 @@
                 </div>
             </div>
     </section>
-
-
-
-
-
-
-
-
     <section id="skills" class="skills">
-        <h2>Compétences</h2>
+        <h2>COMPETENCES</h2>
         <div class="element">
             <figure class="element-skills">
                 <img src="skills-icons/astucieux.png" alt="Astucieux" title="Astucieux">
@@ -144,7 +143,7 @@
         </div>
     </section>
     <section id="interests" class="interests">
-        <h2> Centres d'intérêts </h2>
+        <h2> CENTRES D'INTERET </h2>
         <div class="interestsRow">
             <figure class="interestsFigures">
                 <img src="sport.png"
