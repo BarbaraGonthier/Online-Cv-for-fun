@@ -20,23 +20,7 @@ body {
 }
 
 
-.experience > h2 {
-    color: var(--title-color);
-    text-decoration: underline;
-}
-
-.interests > h2 {
-    color: var(--title-color);
-    text-decoration: underline;
-    text-align: center;
-}
-
-.mind {
-
-}
-
 /*--        Header      --*/
-
 nav {
     display:flex;
     justify-content:space-between;
@@ -143,12 +127,48 @@ nav a {
         text-align:center;    
     }
 }
+/*--        Experience      --*/
+.experiences > h2 {
+    color: var(--title-color);
+    text-decoration: underline;
+    text-align: center;
+}
+h3 >a {
+    background-color: var(--secondary-background-color);
+    text-decoration: none;
+    color: var(--dark);
+}
 
+.experiencesBloc{
+    display:flex;
+    justify-content: space-between;
+}
+.text , .cable {
+    margin: auto;
+}
+.text >ul {
+    list-style-type: none;
+}
+.mind {
+    color: var(--title-color);
+    font-size: 1.2em;
+    font-style: italic;
+}
+@media screen and (max-width: 768px) {
+    .experiencesBloc {
+        display: flex;
+        flex-direction: column;
+    }
+    .cable{
+        display: none;
+    }
+}
 
 /*--      Education      --*/
 .education > h2 {
     color: var(--title-color);
     text-decoration: underline;
+    text-align: center;
 }
 .education .formations {
     display: flex;
@@ -156,7 +176,7 @@ nav a {
 
 }
 .img-diploma {
-    margin-left: 100px;
+    margin-left: 30%;
     display: flex;
     align-self: flex-end;
 }
@@ -178,12 +198,12 @@ nav a {
     width: 95%;
     text-align: center;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .skills .element-skills {
-    width: 20%;
+    width: 19%;
 }
 
 .skills .element-skills > img {
@@ -192,6 +212,13 @@ nav a {
 
 .skills .element-skills > figcaption {
     padding-top: var(--spacing-2);
+}
+
+/*--       Interests       --*/
+.interests > h2 {
+    color: var(--title-color);
+    text-decoration: underline;
+    text-align: center;
 }
 
 .interestsRow{
