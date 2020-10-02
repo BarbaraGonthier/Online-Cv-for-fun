@@ -21,37 +21,22 @@
 body {
     background-color: var(--background-color);
     font-family: 'Noto Sans JP', sans-serif;
-}
-
-/*--   ToTop button --*/
-
-.toTopButton{
-    display: block;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    opacity: 0.80;
-    font-size: 30px;
-    text-align: center;
-    color: var(--third-color);
-}
-
-@media screen and (max-width:768px) {
-    .toTopButton{
-        display:none;
-    }
+    margin:0px;
 }
 
 /*--        Header      --*/
+header {
+    margin-bottom: 150px;
+}
+
 nav {
     display:flex;
     justify-content:space-between;
+    position: fixed;
     width:100%;
     background-color: var(--third-color);
-
+    top: 0;
+    box-shadow: 0px 1px 10px #999;
 }
 
 .menu-items {
