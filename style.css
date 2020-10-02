@@ -1,9 +1,12 @@
 :root {
     --background-color: #F3EEEC ;
     --secondary-background-color: #b9b7bd;
+    --third-color: #ee5c38;
     --title-color: #868b8e;
     --light:rgb(253, 250, 253);
     --dark:rgb(14, 0, 15);
+
+    --title-font-family: 'Fredericka the Great', cursive;
 
     --spacing:8px;
     --spacing-2:calc(var(--spacing) * 2);
@@ -251,9 +254,9 @@ h3 >a {
 
 /*--       Interests       --*/
 .interests > h2 {
-    color: var(--title-color);
-    text-decoration: underline;
+    color: var(--third-color);
     text-align: center;
+    font-family: var(--title-font-family);
 }
 
 .interestsRow{
