@@ -411,6 +411,11 @@ footer{
     color: var(--dark);
 }
 
+@media screen and (max-width:767px) {
+    .social-media a{
+        font-size: 12px;
+    }
+}
 
 /*--                      Contact       --*/                        
 .contact{
