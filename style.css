@@ -6,7 +6,7 @@
     --light:rgb(253, 250, 253);
     --dark:rgb(14, 0, 15);
 
-    --title-font-family: 'Fredericka the Great', cursive;
+    --title-font-family: 'Akronim', cursive;
 
     --spacing:8px;
     --spacing-2:calc(var(--spacing) * 2);
@@ -22,6 +22,13 @@ body {
     background-color: var(--background-color);
     font-family: 'Noto Sans JP', sans-serif;
     margin:0px;
+}
+
+h2 {
+    color: var(--third-color);
+    text-align: center;
+    font-family: var(--title-font-family);
+    font-size: 42px;
 }
 
 /*--        Header      --*/
@@ -154,11 +161,6 @@ nav a {
     }
 }
 /*--        Experience      --*/
-.experiences > h2 {
-    color: var(--third-color);
-    text-align: center;
-    font-family: var(--title-font-family);
-}
 h3 >a {
     background-color: var(--secondary-background-color);
     text-decoration: none;
@@ -191,40 +193,10 @@ h3 >a {
 }
 
 /*--      Education      --*/
-.education > h2 {
-    color: var(--third-color);
-    text-align: center;
-    font-family: var(--title-font-family);
-}
 .education .formations {
     display: flex;
     align-items: center;
 
-}
-.img-diploma {
-    display: flex;
-    align-self: flex-end;
-}
-
-/*--       Skills       --*/
-
-.skills {
-    display: flex;
-    flex-direction: column;
-}
-
-.skills > h2 {
-    color: var(--third-color);
-    text-align: center;
-    font-family: var(--title-font-family);
-}
-
-.skills .element {
-    width: 95%;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 .education .formations ul li {
     margin: 15px;
@@ -238,8 +210,39 @@ h3 >a {
     list-style-type: none;
 }
 
+.img-diploma {
+    display: flex;
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 768px){
+    .img-diploma {
+        display: none;
+    }
+}
+
+/*--       Skills       --*/
+.skills > h2 {
+    margin: 80px;
+}
+
+.skills .element-perso {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+
+.skills .element-pro {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
 .skills .element-skills {
-    width: 19%;
+    width: 350px;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .skills .element-skills > img {
@@ -250,12 +253,35 @@ h3 >a {
     padding-top: var(--spacing-2);
 }
 
+@media screen and (max-width: 768px){
+    .skills .element-perso{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .skills .element-pro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .skills .element-skills > img {
+        width: 70px;
+    }
+
+    .skills .element-skills > figcaption {
+        padding-top: var(--spacing);
+    }
+}
+
 /*--       Interests       --*/
 .interests{
     margin-top: 200px;
     margin-bottom: 200px;
 }
-
 
 .interests > h2 {
     color: var(--third-color);
@@ -274,7 +300,7 @@ h3 >a {
     flex-direction: column;
     justify-content: flex-end;
     text-align:center;
-    width: 300px;
+    width: 350px;
     align-items: center;
     margin:0;
 }
@@ -289,69 +315,76 @@ h3 >a {
     font-size: 14px;
 }
 @media screen and (max-width: 768px){
-        .interestsRow {
+    .interestsRow {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-}
-
-@media screen and (max-width: 768px){
-    .skills .element{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .skills .element-skills > img {
-        width: 70px;
-    }
-
-    .skills .element-skills > figcaption {
-        padding-top: var(--spacing);
-    }
-    .img-diploma {
-        display: none;
     }
 }
 
 /*--       Home       --*/    
 #home {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
     text-align: center;
     margin-bottom: var(--spacing-6);
-}
-
-.profile {
-    margin-top: var(--spacing-6);
+    padding: var(--spacing);
 }
 
 .profile-picture {
-    width: 32%;
+    width: 630px;
+}
+
+.ball-left {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 28%;
+    height: 600px;
+    padding-top: 20px;
+}
+
+.ball-left > img {
+    width: 150px;
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 44%
 }
 
 .presentation h1 {
     margin-bottom: 0;
+    font-size: 60px;
+    font-family: var(--title-font-family);
+    font-weight: lighter;
 }
 
 .presentation h3 {
     margin-top: 0.5vh;
+    font-size: 28px;
 }
 
-.ball {
-    border-radius: 50%;
-    background-color: var(--secondary-background-color);
-    width: 135px;
-    height: 135px;
-    text-align: center;
-    line-height: 16px;
-    padding-top: 54px;
+.ball-right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 28%;
+    height: 600px;
+    padding-top: 20px;
+    padding-left: 15px;
 }
 
+.ball-right > img {
+    width: 150px;
+}
+
+/* TODO */
 @media screen and (max-width:767px) {
     #home {
         align-items: center;
