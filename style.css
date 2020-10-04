@@ -6,7 +6,7 @@
     --ligb(253, 250, 253)ht:rg;
     --dark:rgb(14, 0, 15);
 
-    --title-font-family: 'Fredericka the Great', cursive;
+    --title-font-family: 'Akronim', cursive;
 
     --spacing:8px;
     --spacing-2:calc(var(--spacing) * 2);
@@ -21,34 +21,29 @@
 body {
     background-color: var(--background-color);
     font-family: 'Noto Sans JP', sans-serif;
+    margin:0px;
 }
 
-/*--   ToTop button --*/
-
-.toTopButton{
-    display: block;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    opacity: 0.80;
-    font-size: 30px;
+h2 {
+    color: var(--third-color);
     text-align: center;
-}
-
-@media screen and (max-width:768px) {
-    .toTopButton{
-        display:none;
-    }
+    font-family: var(--title-font-family);
+    font-size: 42px;
 }
 
 /*--        Header      --*/
+header {
+    margin-bottom: 150px;
+}
+
 nav {
     display:flex;
     justify-content:space-between;
+    position: fixed;
     width:100%;
+    background-color: var(--third-color);
+    top: 0;
+    box-shadow: 0px 1px 10px #999;
 }
 
 .menu-items {
@@ -62,8 +57,12 @@ nav {
     margin: var(--spacing-2);
 }
 
+.desktop-menu a {
+    color: var(--light);
+}
+
 .download-cv {
-    background-color: var(--secondary-background-color);
+    background-color: var(--light);
     padding:var(--spacing-2);
     border-radius:10px;
     font-size:12px;
@@ -72,9 +71,12 @@ nav {
     text-align:center;
 }
 
+.download-cv a {
+    color: var(--dark);
+}
+
 
 nav a {
-    color: var(--dark);
     text-decoration: none;
     font-weight: bold;
 }
@@ -90,7 +92,7 @@ nav a {
 
 .burger div {
     height: 4px;
-    background-color: var(--dark);
+    background-color: var(--light);
 }
 
 .download-cv-mobile {
@@ -121,14 +123,15 @@ nav a {
         flex-direction: column;
         justify-content:center;
         align-items: center;
-        background-color: var(--secondary-background-color);
+        background-color: var(--third-color);
+        font-size: 20px;
         width: 100vw;
         height: 100vh;
         position: fixed;
         top: 0;
         left: 0;
         margin: 0;
-        opacity: 0.92;
+        opacity: 0.95;
     }
 
     .desktop-menu a{
@@ -144,13 +147,17 @@ nav a {
 
     .download-cv-mobile{
         display:flex;
-        background-color: var(--secondary-background-color);
+        background-color: var(--light);
         padding:var(--spacing-2);
         border-radius:10px;
         font-size:12px;
         margin: var(--spacing-2);
         align-self:center;
         text-align:center;    
+    }
+
+    .download-cv-mobile a {
+        color: var(--dark);
     }
 }
 /*--        Experience      --*/
@@ -159,7 +166,6 @@ nav a {
     margin-bottom: calc(var(--spacing) * 15);
 
 }
-
 h3 >a {
     text-decoration: none;
     color: var(--dark);
@@ -189,42 +195,10 @@ h3 >a {
 }
 
 /*--      Education      --*/
-.education > h2 {
-    color: var(--title-color);
-    text-decoration: underline;
-    text-align: center;
-}
 .education .formations {
     display: flex;
     align-items: center;
 
-}
-.img-diploma {
-    display: flex;
-    align-self: flex-end;
-}
-
-/*--       Skills       --*/
-
-.skills {
-    display: flex;
-    flex-direction: column;
-}
-
-.skills > h2 {
-    color: var(--title-color);
-    text-decoration: underline;
-    text-align: center;
-    margin-top: var(--spacing-6);
-    margin-bottom: calc(var(--spacing) * 4);
-}
-
-.skills .element {
-    width: 95%;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 .education .formations ul li {
     margin: 15px;
@@ -238,8 +212,39 @@ h3 >a {
     list-style-type: none;
 }
 
+.img-diploma {
+    display: flex;
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 768px){
+    .img-diploma {
+        display: none;
+    }
+}
+
+/*--       Skills       --*/
+.skills > h2 {
+    margin: 80px;
+}
+
+.skills .element-perso {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+
+.skills .element-pro {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
 .skills .element-skills {
-    width: 19%;
+    width: 350px;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .skills .element-skills > img {
@@ -250,46 +255,15 @@ h3 >a {
     padding-top: var(--spacing-2);
 }
 
-/*--       Interests       --*/
-.interests > h2 {
-    color: var(--third-color);
-    text-align: center;
-    font-family: var(--title-font-family);
-}
-
-.interestsRow{
-    display: flex;
-    justify-content: center;
-}
-
-.interestsFigures{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    text-align:center;
-    width: 25%;
-    align-items: center;
-}
-
-.interestsFigcaptionTitle{
-    font-weight: bold;
-}
-
-.interestsFigcaptionDescription{
-    font-style: italic;
-    font-size: 14px;
-}
 @media screen and (max-width: 768px){
-        .interestsRow {
+    .skills .element-perso{
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
-}
 
-@media screen and (max-width: 768px){
-    .skills .element{
-        width: 100%;
+    .skills .element-pro{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -303,46 +277,116 @@ h3 >a {
     .skills .element-skills > figcaption {
         padding-top: var(--spacing);
     }
-    .img-diploma {
-        display: none;
+}
+
+/*--       Interests       --*/
+.interests{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.interests > h2 {
+    color: var(--third-color);
+    text-align: center;
+    font-family: var(--title-font-family);
+    margin: 80px;
+}
+
+.interestsRow{
+    display: flex;
+    justify-content: center;
+}
+
+.interestsFigures{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align:center;
+    width: 350px;
+    align-items: center;
+    margin:0;
+}
+
+.interestsFigcaptionTitle{
+    font-weight: bold;
+    margin-top: var(--spacing-2);
+}
+
+.interestsFigcaptionDescription{
+    font-style: italic;
+    font-size: 14px;
+}
+@media screen and (max-width: 768px){
+    .interestsRow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 /*--       Home       --*/    
 #home {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
     text-align: center;
     margin-bottom: var(--spacing-6);
-}
-
-.profile {
-    margin-top: var(--spacing-6);
+    padding: var(--spacing);
 }
 
 .profile-picture {
-    width: 32%;
+    width: 630px;
+}
+
+.ball-left {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 28%;
+    height: 600px;
+    padding-top: 20px;
+}
+
+.ball-left > img {
+    width: 150px;
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 44%
 }
 
 .presentation h1 {
     margin-bottom: 0;
+    font-size: 60px;
+    font-family: var(--title-font-family);
+    font-weight: lighter;
 }
 
 .presentation h3 {
     margin-top: 0.5vh;
+    font-size: 28px;
 }
 
-.ball {
-    border-radius: 50%;
-    background-color: var(--secondary-background-color);
-    width: 135px;
-    height: 135px;
-    text-align: center;
-    line-height: 16px;
-    padding-top: 54px;
+.ball-right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 28%;
+    height: 600px;
+    padding-top: 20px;
+    padding-left: 15px;
 }
 
+.ball-right > img {
+    width: 150px;
+}
+
+/* TODO */
 @media screen and (max-width:767px) {
     #home {
         align-items: center;
@@ -433,7 +477,7 @@ h3 >a {
 
 /*--                      Footer                         --*/
 footer{
-    background-color: var(--secondary-background-color);
+    background-color: var(--third-color);
 }
 
 .social-media{
@@ -445,7 +489,7 @@ footer{
 
 .social-media a{
     text-decoration: none;
-    color: var(--dark);
+    color: var(--light);
 }
 
 @media screen and (max-width:767px) {
