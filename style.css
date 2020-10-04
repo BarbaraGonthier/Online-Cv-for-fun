@@ -3,7 +3,7 @@
     --secondary-background-color: #b9b7bd;
     --third-color: #ee5c38;
     --title-color: #868b8e;
-    --light:rgb(253, 250, 253);
+    --ligb(253, 250, 253)ht:rg;
     --dark:rgb(14, 0, 15);
 
     --title-font-family: 'Fredericka the Great', cursive;
@@ -155,28 +155,29 @@ nav a {
 }
 /*--        Experience      --*/
 .experiences > h2 {
-    color: var(--title-color);
-    text-decoration: underline;
     text-align: center;
+    margin-bottom: calc(var(--spacing) * 15);
+
 }
+
 h3 >a {
-    background-color: var(--secondary-background-color);
     text-decoration: none;
     color: var(--dark);
 }
 
 .experiencesBloc{
     display:flex;
-    justify-content: space-between;
-}
-.text , .cable {
-    margin: auto;
+    justify-content: space-around;
+    margin-bottom: calc(var(--spacing) * 20);
 }
 .text >ul {
     list-style-type: none;
 }
+.text2 >ul {
+    list-style-type: none;
+}
+
 .mind {
-    color: var(--title-color);
     font-size: 1.2em;
     font-style: italic;
 }
@@ -184,9 +185,6 @@ h3 >a {
     .experiencesBloc {
         display: flex;
         flex-direction: column;
-    }
-    .cable{
-        display: none;
     }
 }
 
