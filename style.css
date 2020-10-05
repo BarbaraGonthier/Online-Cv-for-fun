@@ -530,12 +530,12 @@ footer{
 
 .contactMe{
     padding: 16px;
-    width: 45%;
+    width: 48%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;  
-    border-right: solid;
+    border-right: solid 5px var(--third-color);
 }
 .pictureContact{
     width: 40%;
