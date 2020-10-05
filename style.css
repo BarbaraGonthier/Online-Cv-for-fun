@@ -16,6 +16,7 @@
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -65,20 +66,22 @@ nav {
     background-color: var(--light);
     padding:var(--spacing-2);
     border-radius:10px;
-    font-size:12px;
     margin: var(--spacing-2);
     align-self:center;
     text-align:center;
 }
 
 .download-cv a {
-    color: var(--dark);
+    color: var(--third-color);
 }
 
 
 nav a {
     text-decoration: none;
     font-weight: bold;
+    font-family: var(--title-font-family);
+    font-size: 30px;
+
 }
 
 .burger{
