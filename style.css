@@ -236,7 +236,9 @@ h3 >a {
     justify-content: center;
     height: 250px;
 }
-
+.skills .element-perso, .element-pro {
+    border-right: solid 5px var(--third-color);
+}
 .skills .element-pro {
     text-align: center;
     display: flex;
