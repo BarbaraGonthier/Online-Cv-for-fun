@@ -383,7 +383,7 @@ h3 >a {
 
 .presentation h1 {
     margin-bottom: 0;
-    font-size: 60px;
+    font-size: 100px;
     font-family: var(--title-font-family);
     font-weight: lighter;
 }
