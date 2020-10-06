@@ -39,9 +39,9 @@ header {
 
 nav {
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
     position: fixed;
-    width:100%;
+    width:100vw;
     background-color: var(--third-color);
     top: 0;
     box-shadow: 0 1px 10px #999;
@@ -145,7 +145,7 @@ nav a {
         position:fixed;
         color : var(--light);
         top: var(--spacing-2);
-        right: var(--spacing-2);
+        right: 80px;
     }
 
     .download-cv-mobile{
