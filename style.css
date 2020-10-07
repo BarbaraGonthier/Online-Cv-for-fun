@@ -22,7 +22,7 @@
 body {
     background-color: var(--background-color);
     font-family: 'Noto Sans JP', sans-serif;
-    margin:0px;
+    margin:0;
 }
 
 h2 {
@@ -51,12 +51,12 @@ header {
 
 nav {
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
     position: fixed;
-    width:100%;
+    width:100vw;
     background-color: var(--third-color);
     top: 0;
-    box-shadow: 0px 1px 10px #999;
+    box-shadow: 0 1px 10px #999;
 }
 
 .menu-items {
@@ -93,7 +93,6 @@ nav a {
     font-weight: bold;
     font-family: var(--title-font-family);
     font-size: 30px;
-
 }
 
 .burger{
@@ -156,8 +155,9 @@ nav a {
     .desktop-menu:target .close-burger{
         display:block;
         position:fixed;
+        color : var(--light);
         top: var(--spacing-2);
-        right: var(--spacing-2);
+        right: 80px;
     }
 
     .download-cv-mobile{
@@ -172,7 +172,7 @@ nav a {
     }
 
     .download-cv-mobile a {
-        color: var(--dark);
+        color: var(--third-color);
     }
 }
 /*--        Experience      --*/
@@ -209,34 +209,69 @@ h3 >a {
 
 /*--      Education      --*/
 .education {
-    margin-bottom: calc(var(--spacing-2)*10);
+    padding-bottom: calc(var(--spacing-6)*5);
 }
-.education .formations {
-    display: flex;
-    align-items: center;
 
-}
-.education .formations ul li {
-    margin: 15px;
-}
-.education > .formations {
+.global {
     display: flex;
     justify-content: space-around;
-
-}
-.education ul li {
-    list-style-type: none;
+    font-weight: 900;
 }
 
-.img-diploma {
+.formations-Année {
     display: flex;
-    align-self: flex-end;
+    flex-direction: column;
+    border: solid var(--third-color);
+}
+.Année {
+    display: flex;
+
+}
+.diploma {
+    display: flex;
+    align-items: center;
+}
+.school {
+    display: flex;
+    align-items: center;
+}
+.year {
+    display: flex;
+    align-items: center;
+}
+.yearmiddle {
+    display: flex;
+
+}
+
+.certificate {
+    display: flex;
+    align-items: center;
+}
+.certificates {
+    background-color: rgba(238,92,56,0.8);
+    color: #F3EEEC;
+}
+.diplome-school {
+    border: solid var(--third-color);
+}
+
+.premierDip {
+    display: flex;
+    align-items: center;
+}
+.premierdiplome {
+    display: flex;
+}
+.education figure > figcaption {
+    padding-left: var(--spacing-2);
+}
+.education{
+    padding-bottom: calc(var(--spacing-6)*5);
 }
 
 @media screen and (max-width: 768px){
-    .img-diploma {
-        display: none;
-    }
+
 }
 
 /*--       Skills       --*/
@@ -380,7 +415,7 @@ h3 >a {
 
 .presentation h1 {
     margin-bottom: 0;
-    font-size: 66px;
+    font-size: 78px;
     font-family: var(--title-font-family);
     font-weight: lighter;
 }
@@ -567,13 +602,13 @@ form div{
 div input{
     width: 90%;
     height: 30px;
-    margin: 8px 32px 0px 24px;
+    margin: 8px 32px 0 24px;
     border-radius: 10px;
 }
 div textarea{
     width: 90%;
     border-radius: 10px;
-    margin: 8px 32px 0px 24px;
+    margin: 8px 32px 0 24px;
     
 }
 form h3{
