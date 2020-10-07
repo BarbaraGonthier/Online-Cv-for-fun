@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV de Bob O'ski</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="#navBar">
-        <button class="toTopButton" title="Retour à l'accueil">⬆</button>
-    </form>
     <header>
-        <nav id="navBar">
+        <nav>
             <div class="menu-items">
                 <div class="desktop-menu" id="menu">
                     <a href="#home" title="Accueil">Accueil</a>
@@ -41,24 +40,25 @@
                 download="CV-Bob-Roborovski.pdf"
                 title="Télécharger le CV en pdf">Pdf</a>
             </div>
-
         </nav>
     </header>
     <section id="home">
-        <div class="profile"><img src="./bob.png" alt="Photo de Bob" class="profile-picture"></div>
+        <div class="ball-left">
+            <img src="bubbles/Titre_grignoteur.png" alt="Titre grignoteur">
+            <img src="bubbles/Maintenance.png" alt="Maintenance de réseaux câblés">
+        </div>
         <div class="presentation">
+            <img src="./bob.png" alt="Photo de Bob" class="profile-picture">
             <h1>Bob O'ski</h1>
             <h3>Rongeur de câbles</h3>
         </div>
-        <div class="bubbles">
-            <div class="ball" id="ball1">Titre grignoteur</div>
-            <div class="ball" id="ball2">Maintenance de réseaux câblés</div>
-            <div class="ball" id="ball3">Dynamique</div>
-            <div class="ball" id="ball4">Réactif</div>
+        <div class="ball-right">
+            <img src="bubbles/Dynamique.png" alt="Dynamique">
+            <img src="bubbles/Reactif.png" alt="Réactif">
         </div>
     </section>
     <section id="experience" class ="experiences">
-        <h2> EXPERIENCES PROFESSIONNELLES</h2>
+        <h2>Expériences professionnelles</h2>
         <div class="experiencesBloc">
             <div class = cable> <img src="https://cdn.pixabay.com/photo/2017/09/01/23/35/usb-2705872_960_720.png" alt="image cable" width=" 500"/> </div>
             <div class = text>
@@ -93,98 +93,102 @@
         </div>
     </section>
     <section id="education" class="education">
-        <h2>FORMATIONS</h2>
+        <h2>Formation</h2>
             <div class="formations">
                     <ul class="formation">
-                        <li>&raquo; CPP niveau IV technicien de réseaux cablages et optiques | Année 2009.</li>
-                        <li>&raquo; Caces R489 catégorie 1, 2, 3. | Année 2008.</li>
-                        <li>&raquo; Titre professionnel grignoteur option cable| Année 2005.</li>
+                        <li>&raquo; CPP niveau IV <strong>technicien des réseaux câblés</strong> | Année 2009</li>
+                        <li>&raquo; <strong>Caces R489 catégorie 1, 2, 3</strong> | Année 2008</li>
+                        <li>&raquo; <strong>Titre professionnel grignoteur option câbles</strong>| Année 2005</li>
                     </ul>
                 <div class="img-diploma">
                     <img src="https://cdn.pixabay.com/photo/2016/05/13/20/02/diploma-1390785_960_720.png" width="300" height="200" alt="diplomas">
                 </div>
             </div>
     </section>
-
-    <section id="skills" class="skills">
-        <h2>COMPETENCES</h2>
-        <div class="element">
-            <figure class="element-skills">
-                <img src="skills-icons/astucieux.png" alt="Astucieux" title="Astucieux">
-                <figcaption>Astucieux</figcaption>
-            </figure>
-            <figure class="element-skills">
-                <img src="skills-icons/curious.png" alt="Curieux" title="Curieux">
-                <figcaption>Curieux</figcaption>
-            </figure>
-            <figure class="element-skills">
-                <img src="skills-icons/social.png" alt="Sociable" title="Sociable">
-                <figcaption>Sociable</figcaption>
-            </figure>
-            <figure class="element-skills">
-                <img src="skills-icons/calm.png" alt="Calme" title="Calme">
-                <figcaption>Calme</figcaption>
-            </figure>
-            <figure class="element-skills">
-                <img src="skills-icons/muscle.png" alt="Dynamique" title="Dynamique">
-                <figcaption>Dynamique</figcaption>
-            </figure>
-            <figure class="element-skills">
-                <img src="skills-icons/running.png" alt="Réactif" title="Réactif">
-                <figcaption>Réactif</figcaption>
-            </figure>
-            <figure class="element-skills">
-                <img src="skills-icons/creative.png" alt="Créatif" title="Créatif">
-                <figcaption>Créatif</figcaption>
-            </figure>
-            <figure class="element-skills">
-                <img src="skills-icons/proposal.png" alt="Force de proposition" title="Force de proposition">
-                <figcaption>Force de proposition</figcaption>
-            </figure>
-        </div>
+    <section class="flex-contenair">
+        <section id="skills" class="skills">
+            <h2>Compétences</h2>
+            <div class="element-perso">
+                <figure class="element-skills">
+                    <img src="skills-icons/astucieux.png" alt="Astucieux" title="Astucieux">
+                    <figcaption>Astucieux</figcaption>
+                </figure>
+                <figure class="element-skills">
+                    <img src="skills-icons/curious.png" alt="Curieux" title="Curieux">
+                    <figcaption>Curieux</figcaption>
+                </figure>
+                <figure class="element-skills">
+                    <img src="skills-icons/social.png" alt="Sociable" title="Sociable">
+                    <figcaption>Sociable</figcaption>
+                </figure>
+            </div>
+            <div class="element-pro">
+                <figure class="element-skills">
+                    <img src="skills-icons/muscle.png" alt="Dynamique" title="Dynamique">
+                    <figcaption>Dynamique</figcaption>
+                </figure>
+                <figure class="element-skills">
+                    <img src="skills-icons/running.png" alt="Réactif" title="Réactif">
+                    <figcaption>Réactif</figcaption>
+                </figure>
+                <figure class="element-skills">
+                    <img src="skills-icons/creative.png" alt="Créatif" title="Créatif">
+                    <figcaption>Créatif</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="interests" class="interests">
+            <h2> Centres d'intérêt </h2>
+            <div class="interestsRow">
+                <div class="hobbits">
+                    <figure class="interestsFigures">
+                        <img src="hamster-ball.png"
+                             alt="Sport"
+                             title="Sport">
+                        <figcaption class="interestsFigcaptionTitle">Sport</figcaption>
+                        <figcaption class="interestsFigcaptionDescription">Faire de la roue</figcaption>
+                    </figure>
+                    <figure class="interestsFigures">
+                        <img src="growth.png"
+                        alt="Jardinage"
+                        title="Jardinage">
+                        <figcaption class="interestsFigcaptionTitle">Jardinage</figcaption>
+                        <figcaption class="interestsFigcaptionDescription">Creuser des tunnels et des galeries</figcaption>
+                    </figure>
+                </div>
+                <div class="hobbits2">
+                <figure class="interestsFigures">
+                    <img src="gastronomie.png"
+                    alt="Gastronomie"
+                    title="Gastronomie">
+                    <figcaption class="interestsFigcaptionTitle">L'univers culinaire</figcaption>
+                    <figcaption class="interestsFigcaptionDescription">Grignoter quelques friandises</figcaption>
+                </figure>
+                <figure class="interestsFigures">
+                    <img src="hiking.png"
+                    alt="Randonnée"
+                    title="Randonnée">
+                    <figcaption class="interestsFigcaptionTitle">Marche et Randonnées</figcaption>
+                    <figcaption class="interestsFigcaptionDescription">Avec des petits recoins pour se cacher</figcaption>
+                </figure>
+                </div>
+            </div>
     </section>
-    <section id="interests" class="interests">
-        <h2> CENTRES D'INTERET </h2>
-        <div class="interestsRow">
-            <figure class="interestsFigures">
-                <img src="sport.png"
-                     alt="Sport"
-                     title="Sport">
-                <figcaption class="interestsFigcaptionTitle">Sport</figcaption>
-                <figcaption class="interestsFigcaptionDescription">Faire de la roue</figcaption>
-            </figure>
-            <figure class="interestsFigures">
-                <img src="jardinage.png"
-                alt="Jardinage"
-                title="Jardinage">
-                <figcaption class="interestsFigcaptionTitle">Jardinage</figcaption>
-                <figcaption class="interestsFigcaptionDescription">Creuser des tunnels et des galeries</figcaption>
-            </figure>
-            <figure class="interestsFigures">
-                <img src="gastronomie.png"
-                alt="Gastronomie"
-                title="Gastronomie">
-                <figcaption class="interestsFigcaptionTitle">L'univers culinaire</figcaption>
-                <figcaption class="interestsFigcaptionDescription">Grignoter quelques friandises</figcaption>
-            </figure>
-            <figure class="interestsFigures">
-                <img src="randonnée.png"
-                alt="Randonnée"
-                title="Randonnée">
-                <figcaption class="interestsFigcaptionTitle">Marche et Randonnées</figcaption>
-                <figcaption class="interestsFigcaptionDescription">Avec des petits recoins pour se cacher</figcaption>
-            </figure>
-        </div>
     </section>
 
     <section id="contact" class="contact">
         <div class="contactMe" >
             <h2> Contactez-Moi !</h2>
             <img src="https://i.pinimg.com/originals/f4/40/d1/f440d13b570123f9bb9aa3d0051fcb6f.jpg" alt="Photo de contact" class="pictureContact">
-        
-            <p> Telephone : 00 11 22 33 44 </p>
-            <p>Email :</p><a href="mailto:bob@hamster.com"> bob@hamster.com</a>
-        
+            <div class = "contactDiv">
+                <img src="telephone.png" alt="logo telephone">
+                <p> 00 11 22 33 44 </p>
+            </div>
+
+            <div class="contactDiv">
+                <img src="email.png" alt="email logo">
+                <a href="mailto:bob@hamster.com"> bob@hamster.com</a>
+            </div>
         </div>
         <div class="contactForm">
             
