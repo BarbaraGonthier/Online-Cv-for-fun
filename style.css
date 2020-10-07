@@ -196,36 +196,62 @@ h3 >a {
 }
 
 /*--      Education      --*/
-.education {
-    margin-bottom: calc(var(--spacing-2)*10);
-);
+.global {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
 }
-.education .formations {
+
+.formations-Année {
+    display: flex;
+    flex-direction: column;
+}
+.Année {
+    display: flex;
+
+}
+.diploma {
     display: flex;
     align-items: center;
-
 }
-.education .formations ul li {
-    margin: 15px;
-}
-.education > .formations {
+.school {
     display: flex;
-    justify-content: space-around;
-
+    align-items: center;
 }
-.education ul li {
-    list-style-type: none;
-}
-
-.img-diploma {
+.year {
     display: flex;
-    align-self: flex-end;
+    align-items: center;
+}
+.yearmiddle {
+    display: flex;
+
+}
+
+.certificate {
+    display: flex;
+    align-items: center;
+}
+.certificates {
+    background-color: rgba(238,92,56,0.8);
+    color: #F3EEEC;
+}
+
+.premierDip {
+    display: flex;
+    align-items: center;
+}
+.premierdiplome {
+    display: flex;
+}
+.education figure > figcaption {
+    padding-left: var(--spacing-2);
+}
+.education{
+    padding-bottom: calc(var(--spacing-6)*5);
 }
 
 @media screen and (max-width: 768px){
-    .img-diploma {
-        display: none;
-    }
+
 }
 
 /*--       Skills       --*/
