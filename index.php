@@ -68,36 +68,44 @@
         <div class="experiencesBloc">
             <div class = textLeft>
                 <div class=" textElements1">
-                    <h3>  DEGUSTATEUR DE GRAINES| 2008 |<a href="">SUNFLOWER'S & CO</a></h3>
+                    <h3>  Dégustateur de graines | année 2008 |<a href=""> SUNFLOWER'S & CO </a></h3>
                         <ul>
-                            <li>&raquo Dégustation de graines et autres friandises raffinées. </li>
-                            <li>&raquo; Formation accélérée "brevet papille gustative". </li>
+                            <li><img class = "seeds" src="graine.png" alt="graine" height="30px"/>
+                                Dégustation de graines et autres friandises raffinées </li>
+                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
+                                Formation accélérée "brevet papille gustative" </li>
                             <p class="mind"> "La clé c'est de savoir céder à la gourmandise !"</p>
                         </ul>
                 </div>
                 <div class="textElements1">
-                    <h3>  AVENTURIER EXPLORATEUR | 2009-2012 | <a href="">ESCAPE HAMSTER</a> </h3>
+                    <h3>  Aventurier explorateur | 2009-2012 | <a href=""> ESCAPE HAMSTER</a> </h3>
                         <ul>
-                            <li>&raquo; Trouver les failles de sécurité d'une cage. </li>
-                            <li>&raquo; Résolution d'algorithmes très complexes (parcours d'obstacles, tunnels, roue). </li>
-                            <p class ="mind"> Le labyrinthe en bois ? Trop facile ! </p>
+                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
+                                Trouver les failles de sécurité d'une cage </li>
+                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
+                                Résolution d'algorithmes très complexes (parcours d'obstacles, tunnels, roue) </li>
+                            <p class ="mind"> "Le labyrinthe en bois ? Trop facile !" </p>
                         </ul>
                 </div>
             </div>
             <div class="textRight">
                 <div class="textElements2">
-                    <h3>  CONSTRUCTEUR D'ABRIS | 2012-2020  | <a href="">HAMSTER HOME CORPORATION</a></h3>
+                    <h3>  Constructeur d'abris | 2012-2020 | <a href=""> HAMSTER HOMES CORP'</a></h3>
                         <ul>
-                            <li>&raquo;Utilisation de matériaux de qualités (foin, granulés et fibre de lin).</li>
-                            <li>&raquo;Installation d'équipements (maisonnette, roue, mangeoire).</li>
-                            <p class="mind"> "Hamster Home Corporation, des maisons qu'on oublie pas !"</p>
+                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
+                                 Utilisation de matériaux de qualités (foin, granulés et fibre de lin)</li>
+                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
+                                Installation d'équipements (maisonnette, roue, mangeoire)</li>
+                            <p class="mind"> "Hamster Homes Corp', des maisons qu'on oublie pas !"</p>
                         </ul>
                 </div>
                 <div class="textElements2">
-                    <h3> RONGEUR DE CÂBLES | Depuis 2020 |<a href="">LA PASSION DU CÂBLE</a></h3>
+                    <h3> Rongeur de câbles | DEPUIS 2020 |<a href=""> LA PASSION DU CÂBLE</a></h3>
                         <ul>
-                            <li>&raquo; Grignotage intensif !</li>
-                            <li>&raquo; Compétence d'assistant déméleur. </li>
+                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
+                                 Grignotage intensif !</li>
+                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
+                                 Compétence d'assistant déméleur </li>
                             <p class ="mind"> "Mon titre professionnel grignoteur option câble est un vrai plus !</p>
                         </ul>
                 </div>
@@ -218,7 +226,6 @@
                         >
                         <figcaption><?php echo $dataType['skill']; ?></figcaption>
                     </figure>
-
             <?php
             }
             ?>

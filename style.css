@@ -25,6 +25,7 @@ body {
     background-color: var(--background-color);
     font-family: 'Noto Sans JP', sans-serif;
     margin:0;
+    font-weight: bold;
 }
 
 h2 {
@@ -186,11 +187,12 @@ nav a {
 }
 /*--        Experience      --*/
 .textLeft {
-    background-color: rgba(238,92,56, 0.7);
+    background-color: rgba(238,92,56, 0.8);
     padding: var(--spacing-6);
+
 }
 .textRight {
-    border: solid rgba(238,92,56, 0.7);
+    border: solid rgba(238,92,56);
     padding: var(--spacing-6);
 }
 
@@ -202,43 +204,61 @@ nav a {
 .textElements1 > h3 > a {
     text-decoration: none;
     color : var(--background-color);
+    border: solid var(--background-color);
+    margin-left : var(--spacing-2);
+    padding: var(--spacing-2);
+
+}
+.textElements1 > h3 > a:hover {
+    color: var(--third-color) ;
+    background-color: var(--background-color);
 }
 
 .textElements2 > h3 > a {
     text-decoration: none;
     color: var(--third-color);
+    border: solid var(--third-color);
+    margin-left : var(--spacing-2);
+    padding: var(--spacing-2);
+
+}
+.textElements2 > h3 >a:hover {
+    color: var(--background-color) ;
+    background-color: var(--third-color);
 }
 
-.textElements1 > h3 {
+.textElements1 > h3, .textElements > h3 {
     color : var(--background-color);
 }
 
-.textElements2 > h3{
-    color : var(--third-color);
-}
-
-.experiencesBloc{
+.experiencesBloc {
     display:flex;
     justify-content: space-around;
-    margin-bottom: calc(var(--spacing) * 20);
+    margin-bottom: var(--spacing-6);
 }
-.textElements1 > ul {
-    list-style-type: none;
-}
-.textElements2 > ul {
+.textElements1 > ul, .textElements2 > ul {
     list-style-type: none;
 }
 
-.textRight >ul {
-    list-style-type: none;
+.seeds {
+    padding-right:var(--spacing-2);
 }
 
 .mind {
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-style: italic;
+    padding-bottom:var(--spacing-6);
 }
 @media screen and (max-width: 768px) {
     .experiencesBloc {
+        display: flex;
+        flex-direction: column;
+    }
+    .textElements2 > h3 > a{
+        display: flex;
+        flex-direction: column;
+    }
+    .textElements1 > h3 > a{
         display: flex;
         flex-direction: column;
     }
