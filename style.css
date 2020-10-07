@@ -458,7 +458,7 @@ nav a {
     flex-direction: column;
     justify-content: flex-end;
     text-align:center;
-    width: 200px;
+    width: 300px;
     align-items: center;
     margin-top: var(--spacing-6);
 }
