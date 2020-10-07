@@ -117,7 +117,7 @@
                 <div class="formations">
                     <figure class="diploma">
                         <img src="education-icons/mortier.png" alt="mortier" title="mortier">
-                        <figcaption>CPP niveau IV technicien des réseaux câblés</figcaption>
+                        <figcaption>Diplome d'aventurier explorateur</figcaption>
                     </figure>
                 </div>
                 <div class="Année">
@@ -127,14 +127,14 @@
                     </figure>
                     <figure class="school">
                         <img src="education-icons/School.png" alt="school" title="school">
-                        <figcaption>Ecole d'Ô'poil</figcaption>
+                        <figcaption>Ecole d'Indiana Jones</figcaption>
                     </figure>
                 </div>
             </div>
             <div class="certificates">
                 <figure class="certificate">
-                    <img src="education-icons/certificatewhite.png" alt="certificate" title="certificate">
-                    <figcaption>Caces R489 catégorie 1, 2, 3</figcaption>
+                    <img src="education-icons/mortierwhite.png" alt="mortierwhite" title="mortierwhite">
+                    <figcaption>Brevet dégustateur de graines</figcaption>
                 </figure>
                 <div class="yearmiddle">
                     <figure class="year">
@@ -143,7 +143,7 @@
                     </figure>
                     <figure class="school">
                         <img src="education-icons/schoolwhite.png" alt="school" title="school">
-                        <figcaption>Centre formation de Bob le bricoleur</figcaption>
+                        <figcaption>Centre formation de gerbelé</figcaption>
                     </figure>
                 </div>
             </div>
