@@ -198,13 +198,14 @@ h3 >a {
 /*--      Education      --*/
 .global {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-weight: 900;
 }
 
 .formations-Année {
     display: flex;
     flex-direction: column;
+    border: solid var(--third-color);
 }
 .Année {
     display: flex;
@@ -234,6 +235,9 @@ h3 >a {
 .certificates {
     background-color: rgba(238,92,56,0.8);
     color: #F3EEEC;
+}
+.diplome-school {
+    border: solid var(--third-color);
 }
 
 .premierDip {
