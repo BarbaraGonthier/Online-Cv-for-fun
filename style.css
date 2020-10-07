@@ -394,7 +394,6 @@ nav a {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 0; auto;
     }
 
     .skills .element-pro{
@@ -402,7 +401,6 @@ nav a {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 0; auto;
     }
 
     .skills .element-skills > img {
