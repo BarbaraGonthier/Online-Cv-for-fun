@@ -208,29 +208,66 @@
             <div class="interestImage">
                 <img
                     src="https://64.media.tumblr.com/565adba1c1494d2e1b1b31e3e115b1aa/tumblr_opk5w8lj7W1r5x837o4_500.gifv"
-                    alt="Activité grignotter un pancake"
-                    title="Activité grignotter un pancake"
+                    alt="Activité grignoter un pancake"
+                    title="Activité grignoter un pancake"
                 >
             </div>
-            <div class="interestsLogos">
+            <div class="interestsDescription">
                 <h2> Centres d'intérêt </h2>
-                <div class="interestsRow">
-                        <figure class="interestsFigures">
-                            <img src="hamster-ball.png"
-                                 alt="Sport"
-                                 title="Sport">
-                            <figcaption class="interestsFigcaptionTitle">Sport</figcaption>
-                            <figcaption class="interestsFigcaptionDescription">Faire de la roue</figcaption>
-                        </figure>
-                        <figure class="interestsFigures">
-                            <img src="growth.png"
-                            alt="Jardinage"
-                            title="Jardinage">
-                            <figcaption class="interestsFigcaptionTitle">Jardinage</figcaption>
-                            <figcaption class="interestsFigcaptionDescription">Creuser des tunnels et des galeries</figcaption>
-                        </figure>
-                </div>
-                <div class="interestsRow">
+                <div class="interestsLogos">
+                    <?php
+                    $interestsRowOne = [
+                        'sport' => [
+                                'image' => "hamster-ball.png",
+                                'alternativeText' => 'Sport',
+                                'title' => 'Sport',
+                                'interest' => 'Sport',
+                                'description' => 'Faire de la roue',
+                        ],
+                        'jardinage' =>[
+                                'image' => "growth.png",
+                                'alternativeText' => 'Jardinage',
+                                'title' => 'Jardinage',
+                                'interest' => 'Jardinage',
+                                'description' => 'Creuser des tunnels et des galeries',
+                        ],
+                        'gastronomie' =>[
+                            'image' => "gastronomie.png",
+                            'alternativeText' => 'Gastronomie',
+                            'title' => 'Gastronomie',
+                            'interest' => "L'univers culinaire",
+                            'description' => 'Grignoter quelques friandises',
+                        ],
+                        'randonnée' =>[
+                            'image' => "hiking.png",
+                            'alternativeText' => 'Marche et randonnée',
+                            'title' => 'Marche et randonnée',
+                            'interest' => 'Marche et randonnée',
+                            'description' => 'Avec des petits recoins pour se cacher',
+                        ],
+                    ];
+
+                    foreach ($interestsRowOne as $dataType){
+                    ?>
+                    <figure class="interestsFigures">
+                        <img src="<?php echo $dataType['image']?>"
+                             alt="<?php echo $dataType['alternativeText']?>"
+                             title="<?php echo $dataType['title']?>">
+                        <figcaption class="interestsFigcaptionTitle"> <?php echo $dataType['interest']?></figcaption>
+                        <figcaption class="interestsFigcaptionDescription"><?php echo $dataType['description']?></figcaption>
+                    </figure>
+                    <?php
+                    }
+                    ?>
+                    <!--
+                    <figure class="interestsFigures">
+                        <img src="growth.png"
+                        alt="Jardinage"
+                        title="Jardinage">
+                        <figcaption class="interestsFigcaptionTitle">Jardinage</figcaption>
+                        <figcaption class="interestsFigcaptionDescription">Creuser des tunnels et des galeries</figcaption>
+                    </figure>
+
                     <figure class="interestsFigures">
                         <img src="gastronomie.png"
                         alt="Gastronomie"
@@ -245,6 +282,7 @@
                         <figcaption class="interestsFigcaptionTitle">Marche et Randonnées</figcaption>
                         <figcaption class="interestsFigcaptionDescription">Avec des petits recoins pour se cacher</figcaption>
                     </figure>
+                                 -->
                 </div>
             </div>
     </section>

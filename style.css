@@ -429,22 +429,24 @@ nav a {
 }
 
 .interestImage{
-    width: 40%;
+    width: 50%;
     display: block;
     padding: 200px 200px;
 }
 
 .interestImage > img {
     border-radius: var(--border-radius);
+    margin-top: var(--spacing-6);
+}
+
+.interestsDescription {
+    width: 50%;
 }
 
 .interestsLogos{
-    width: 60%;
-}
-
-.interestsRow{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .interestsFigures{
@@ -452,9 +454,9 @@ nav a {
     flex-direction: column;
     justify-content: flex-end;
     text-align:center;
-    width: 350px;
+    width: 300px;
     align-items: center;
-    margin:16px 0;
+    margin-top: var(--spacing-6);
 }
 
 .interestsFigcaptionTitle{
