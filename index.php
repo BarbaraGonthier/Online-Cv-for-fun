@@ -165,7 +165,6 @@
                 </div>
         </div>
     </section>
-    <section class="flex-contenair">
         <section id="skills" class="skills">
             <h2>Mes atouts</h2>
             <div class="element-perso">
@@ -233,7 +232,6 @@
                 </figure>
                 </div>
             </div>
-    </section>
     </section>
     <section id="contact" class="contact">
         <div class="contactMe" >
