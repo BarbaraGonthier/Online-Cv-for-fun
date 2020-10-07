@@ -347,11 +347,6 @@ nav a {
 .skills .element-skills > figcaption {
     padding-top: var(--spacing-2);
 }
-.flex-contenair {
-    display: flex;
-    align-items: center;
-    margin-bottom: calc(var(--spacing-6)*5);
-}
 
 @media screen and (max-width: 768px){
     .skills .element-perso{
