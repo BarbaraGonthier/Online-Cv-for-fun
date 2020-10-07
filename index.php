@@ -166,35 +166,62 @@
         </div>
     </section>
         <section id="skills" class="skills">
-            <div class="skillsLogos">
+            <div class="skillsDescription">
                 <h2>Mes atouts</h2>
-                <div class="element-perso">
+                <div class="skillsLogos">
+                <?php
+                $skillsSection = [
+                    'astucieux' => [
+                        'image' => "skills-icons/astucieux.png",
+                        'alternativeText' => 'Astucieux',
+                        'title' => 'Astucieux',
+                        'skill' => 'Astucieux',
+                    ],
+                    'curieux' =>[
+                        'image' => "skills-icons/curious.png",
+                        'alternativeText' => 'Curieux',
+                        'title' => 'Curieux',
+                        'skill' => 'Curieux',
+                    ],
+                    'sociable' =>[
+                        'image' => "skills-icons/social.png",
+                        'alternativeText' => 'Sociable',
+                        'title' => 'Sociable',
+                        'skill' => 'Sociable',
+                    ],
+                    'dynamique' =>[
+                        'image' => "skills-icons/muscle.png",
+                        'alternativeText' => 'Dynamique',
+                        'title' => 'Dynamique',
+                        'skill' => 'Dynamique',
+                    ],
+                    'réactif' =>[
+                        'image' => "skills-icons/running.png",
+                        'alternativeText' => 'Réactif',
+                        'title' => 'Réactif',
+                        'skill' => 'Réactif',
+                    ],
+                    'créactif' =>[
+                        'image' => "skills-icons/creative.png",
+                        'alternativeText' => 'Créatif',
+                        'title' => 'Créatif',
+                        'skill' => 'Créatif',
+                    ],
+                ];
+
+                foreach ($skillsSection as $dataType){
+                ?>
                     <figure class="element-skills">
-                        <img src="skills-icons/astucieux.png" alt="Astucieux" title="Astucieux">
-                        <figcaption>Astucieux</figcaption>
+                        <img src="<?php echo $dataType['image']; ?>"
+                             alt="<?php echo $dataType['alternativeText']; ?>"
+                             title="<?php echo $dataType['title']; ?>"
+                        >
+                        <figcaption><?php echo $dataType['skill']; ?></figcaption>
                     </figure>
-                    <figure class="element-skills">
-                        <img src="skills-icons/curious.png" alt="Curieux" title="Curieux">
-                        <figcaption>Curieux</figcaption>
-                    </figure>
-                    <figure class="element-skills">
-                        <img src="skills-icons/social.png" alt="Sociable" title="Sociable">
-                        <figcaption>Sociable</figcaption>
-                    </figure>
-                </div>
-                <div class="element-pro">
-                    <figure class="element-skills">
-                        <img src="skills-icons/muscle.png" alt="Dynamique" title="Dynamique">
-                        <figcaption>Dynamique</figcaption>
-                    </figure>
-                    <figure class="element-skills">
-                        <img src="skills-icons/running.png" alt="Réactif" title="Réactif">
-                        <figcaption>Réactif</figcaption>
-                    </figure>
-                    <figure class="element-skills">
-                        <img src="skills-icons/creative.png" alt="Créatif" title="Créatif">
-                        <figcaption>Créatif</figcaption>
-                    </figure>
+
+            <?php
+            }
+            ?>
                 </div>
             </div>
             <div class="skillsImage">
@@ -216,20 +243,20 @@
                 <h2> Centres d'intérêt </h2>
                 <div class="interestsLogos">
                     <?php
-                    $interestsRowOne = [
+                    $interestsSection = [
                         'sport' => [
-                                'image' => "hamster-ball.png",
-                                'alternativeText' => 'Sport',
-                                'title' => 'Sport',
-                                'interest' => 'Sport',
-                                'description' => 'Faire de la roue',
+                            'image' => "hamster-ball.png",
+                            'alternativeText' => 'Sport',
+                            'title' => 'Sport',
+                            'interest' => 'Sport',
+                            'description' => 'Faire de la roue',
                         ],
                         'jardinage' =>[
-                                'image' => "growth.png",
-                                'alternativeText' => 'Jardinage',
-                                'title' => 'Jardinage',
-                                'interest' => 'Jardinage',
-                                'description' => 'Creuser des tunnels et des galeries',
+                            'image' => "growth.png",
+                            'alternativeText' => 'Jardinage',
+                            'title' => 'Jardinage',
+                            'interest' => 'Jardinage',
+                            'description' => 'Creuser des tunnels et des galeries',
                         ],
                         'gastronomie' =>[
                             'image' => "gastronomie.png",
@@ -247,7 +274,7 @@
                         ],
                     ];
 
-                    foreach ($interestsRowOne as $dataType){
+                    foreach ($interestsSection as $dataType){
                     ?>
                     <figure class="interestsFigures">
                         <img src="<?php echo $dataType['image']?>"
@@ -259,30 +286,6 @@
                     <?php
                     }
                     ?>
-                    <!--
-                    <figure class="interestsFigures">
-                        <img src="growth.png"
-                        alt="Jardinage"
-                        title="Jardinage">
-                        <figcaption class="interestsFigcaptionTitle">Jardinage</figcaption>
-                        <figcaption class="interestsFigcaptionDescription">Creuser des tunnels et des galeries</figcaption>
-                    </figure>
-
-                    <figure class="interestsFigures">
-                        <img src="gastronomie.png"
-                        alt="Gastronomie"
-                        title="Gastronomie">
-                        <figcaption class="interestsFigcaptionTitle">L'univers culinaire</figcaption>
-                        <figcaption class="interestsFigcaptionDescription">Grignoter quelques friandises</figcaption>
-                    </figure>
-                    <figure class="interestsFigures">
-                        <img src="hiking.png"
-                        alt="Randonnée"
-                        title="Randonnée">
-                        <figcaption class="interestsFigcaptionTitle">Marche et Randonnées</figcaption>
-                        <figcaption class="interestsFigcaptionDescription">Avec des petits recoins pour se cacher</figcaption>
-                    </figure>
-                                 -->
                 </div>
             </div>
     </section>
