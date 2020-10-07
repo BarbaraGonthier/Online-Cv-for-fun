@@ -308,7 +308,10 @@ nav a {
 }
 
 @media screen and (max-width: 768px){
-
+    .global {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /*--       Skills       --*/
