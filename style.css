@@ -328,27 +328,50 @@ nav a {
 }
 
 @media screen and (max-width: 768px){
+    .global {
+        display: flex;
+        flex-direction: column;
+    }
+    .global > div {
+        margin: var(--spacing-4);
 
+    }
 }
 
 /*--       Skills       --*/
 .skills {
-    width: 50%;
+    width: 100%;
+    display: flex;
+    margin-bottom: 150px;
 }
+
+.skillsLogo {
+    width: 60%;
+}
+
+.skillsImage {
+    display: block;
+    width: 40%;
+    padding: 150px 120px;
+}
+
+.skillsImage > img {
+    border-radius: var(--border-radius);
+}
+
 
 .skills .element-perso {
     text-align: center;
     display: flex;
     justify-content: center;
-    height: 250px;
+    padding: var(--spacing-2)
 }
-.skills .element-perso, .element-pro {
-    border-right: solid 5px var(--third-color);
-}
+
 .skills .element-pro {
     text-align: center;
     display: flex;
     justify-content: center;
+    padding: var(--spacing-2)
 }
 
 .skills .element-skills {
@@ -363,14 +386,29 @@ nav a {
 
 .skills .element-skills > figcaption {
     padding-top: var(--spacing-2);
-}
-.flex-contenair {
-    display: flex;
-    align-items: center;
-    margin-bottom: calc(var(--spacing-6)*5);
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px){
+    .skills{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .skillsImage {
+        width: 100%;
+        padding:20px;
+    }
+
+    .skillsImage > img{
+        width: 100%;
+    }
+
+    .element-skills{
+        padding: var(--spacing-2);
+    }
     .skills .element-perso{
         display: flex;
         flex-direction: column;
@@ -396,8 +434,9 @@ nav a {
 
 /*--       Interests       --*/
 .interests{
-   width: 50%;
-   flex-direction: column;
+    display: flex;
+    width: 100%;
+    margin-bottom: 150px;
 }
 
 .interests > h2 {
@@ -407,6 +446,20 @@ nav a {
 }
 .interests >img {
     width: 100px;
+}
+
+.interestImage{
+    width: 40%;
+    display: block;
+    padding: 200px 200px;
+}
+
+.interestImage > img {
+    border-radius: var(--border-radius);
+}
+
+.interestsLogos{
+    width: 60%;
 }
 
 .interestsRow{
@@ -433,19 +486,36 @@ nav a {
     font-style: italic;
     font-size: 14px;
 }
-.hobbits {
-    display: flex;
-    flex-direction: column;
-}
-.hobbits2 {
-    display: flex;
-    flex-direction: column;
-}
+
 @media screen and (max-width: 768px){
+    .interests {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
     .interestsRow {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .interestsFigures{
+        padding: var(--spacing-2);
+    }
+
+    .interestsFigures > img {
+        width: 70px;
+    }
+
+    .interestImage {
+        padding:20px;
+        width: 100%;
+    }
+
+    .interestImage > img{
+        width: 100%;
     }
 }
 
@@ -695,7 +765,7 @@ form h3{
 button{
 margin-left: 38%;
 margin-top: 56px;
-margin-bottom: 40x;;
+margin-bottom: 40x;
 width: 25%;
 height: 40px;
 background-color: var(--light);
