@@ -25,6 +25,7 @@ body {
     background-color: var(--background-color);
     font-family: 'Noto Sans JP', sans-serif;
     margin:0;
+    font-weight: bold;
 }
 
 h2 {
@@ -186,11 +187,12 @@ nav a {
 }
 /*--        Experience      --*/
 .textLeft {
-    background-color: rgba(238,92,56, 0.7);
+    background-color: rgba(238,92,56, 0.8);
     padding: var(--spacing-6);
+
 }
 .textRight {
-    border: solid rgba(238,92,56, 0.7);
+    border: solid rgba(238,92,56);
     padding: var(--spacing-6);
 }
 
@@ -202,43 +204,61 @@ nav a {
 .textElements1 > h3 > a {
     text-decoration: none;
     color : var(--background-color);
+    border: solid var(--background-color);
+    margin-left : var(--spacing-2);
+    padding: var(--spacing-2);
+
+}
+.textElements1 > h3 > a:hover {
+    color: var(--third-color) ;
+    background-color: var(--background-color);
 }
 
 .textElements2 > h3 > a {
     text-decoration: none;
     color: var(--third-color);
+    border: solid var(--third-color);
+    margin-left : var(--spacing-2);
+    padding: var(--spacing-2);
+
+}
+.textElements2 > h3 >a:hover {
+    color: var(--background-color) ;
+    background-color: var(--third-color);
 }
 
-.textElements1 > h3 {
+.textElements1 > h3, .textElements > h3 {
     color : var(--background-color);
 }
 
-.textElements2 > h3{
-    color : var(--third-color);
-}
-
-.experiencesBloc{
+.experiencesBloc {
     display:flex;
     justify-content: space-around;
-    margin-bottom: calc(var(--spacing) * 20);
+    margin-bottom: var(--spacing-6);
 }
-.textElements1 > ul {
-    list-style-type: none;
-}
-.textElements2 > ul {
+.textElements1 > ul, .textElements2 > ul {
     list-style-type: none;
 }
 
-.textRight >ul {
-    list-style-type: none;
+.seeds {
+    padding-right:var(--spacing-2);
 }
 
 .mind {
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-style: italic;
+    padding-bottom:var(--spacing-6);
 }
 @media screen and (max-width: 768px) {
     .experiencesBloc {
+        display: flex;
+        flex-direction: column;
+    }
+    .textElements2 > h3 > a{
+        display: flex;
+        flex-direction: column;
+    }
+    .textElements1 > h3 > a{
         display: flex;
         flex-direction: column;
     }
@@ -271,51 +291,73 @@ nav a {
 
 /*--       Skills       --*/
 .skills {
-    width: 50%;
+    width: 100%;
+    display: flex;
+    padding-top: 150px;
+    padding-bottom: 100px;
 }
 
-.skills .element-perso {
-    text-align: center;
+.skillsDescription {
     display: flex;
-    justify-content: center;
-    height: 250px;
-}
-.skills .element-perso, .element-pro {
-    border-right: solid 5px var(--third-color);
-}
-.skills .element-pro {
-    text-align: center;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
+    width: 60%;
 }
 
-.skills .element-skills {
-    width: 350px;
-    margin-right: 0;
-    margin-left: 0;
+.skillsLogos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.skillsImage {
+    width: 40%;
+    text-align: center;
+    padding-top: 14%;
+}
+
+.skillsImage > img {
+    border-radius: var(--border-radius);
+}
+
+.element-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align:center;
+    width: 200px;
+    align-items: center;
+    margin-top: var(--spacing-6);
 }
 
 .skills .element-skills > img {
-    width: 100px;
+    width: 90px;
 }
 
 .skills .element-skills > figcaption {
-    padding-top: var(--spacing-2);
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px){
-    .skills .element-perso{
+    .skills{
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        width: 100%;
     }
 
-    .skills .element-pro{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .skillsImage {
+        width: 100%;
+        padding:20px;
+    }
+
+    .skillsImage > img{
+        width: 100%;
+    }
+
+    .element-skills{
+        padding: var(--spacing-2);
     }
 
     .skills .element-skills > img {
@@ -329,8 +371,9 @@ nav a {
 
 /*--       Interests       --*/
 .interests{
-   width: 50%;
-   flex-direction: column;
+    display: flex;
+    width: 100%;
+    padding-top: 150px;
 }
 
 .interests > h2 {
@@ -338,13 +381,27 @@ nav a {
     text-align: center;
     font-family: var(--title-font-family);
 }
-.interests >img {
-    width: 100px;
+
+.interestImage{
+    width: 50%;
+    display: block;
+    padding: 200px 200px;
 }
 
-.interestsRow{
+.interestImage > img {
+    border-radius: var(--border-radius);
+    margin-top: var(--spacing-6);
+}
+
+.interestsDescription {
+    width: 50%;
+}
+
+.interestsLogos{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 80px;
 }
 
 .interestsFigures{
@@ -352,9 +409,13 @@ nav a {
     flex-direction: column;
     justify-content: flex-end;
     text-align:center;
-    width: 350px;
+    width: 300px;
     align-items: center;
-    margin:16px 0;
+    margin-top: var(--spacing-6);
+}
+
+.interestsFigures > img {
+    width: 100px;
 }
 
 .interestsFigcaptionTitle{
@@ -366,19 +427,41 @@ nav a {
     font-style: italic;
     font-size: 14px;
 }
-.hobbits {
-    display: flex;
-    flex-direction: column;
-}
-.hobbits2 {
-    display: flex;
-    flex-direction: column;
-}
+
 @media screen and (max-width: 768px){
-    .interestsRow {
+    .interests {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+    }
+    
+    .interestsDescription{
+        width: 100%;
+        padding-top: 96px;
+    }
+
+    .interestsDescription > h2 {
+        margin: var(--spacing-2);
+    }
+    .interestsLogos{
+        margin-top: 0;
+        padding: 0;
+    }
+    .interestsFigures{
+        width: 100%;
+    }
+    .interestsFigures > img {
+        width: 100px;
+    }
+
+    .interestImage {
+        padding:20px;
+        width: 100%;
+    }
+
+    .interestImage > img{
+        width: 100%;
     }
 }
 
@@ -628,7 +711,7 @@ form h3{
 button{
 margin-left: 38%;
 margin-top: 56px;
-margin-bottom: 40x;;
+margin-bottom: 40x;
 width: 25%;
 height: 40px;
 background-color: var(--light);
