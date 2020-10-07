@@ -166,70 +166,85 @@
         </div>
     </section>
         <section id="skills" class="skills">
-            <h2>Mes atouts</h2>
-            <div class="element-perso">
-                <figure class="element-skills">
-                    <img src="skills-icons/astucieux.png" alt="Astucieux" title="Astucieux">
-                    <figcaption>Astucieux</figcaption>
-                </figure>
-                <figure class="element-skills">
-                    <img src="skills-icons/curious.png" alt="Curieux" title="Curieux">
-                    <figcaption>Curieux</figcaption>
-                </figure>
-                <figure class="element-skills">
-                    <img src="skills-icons/social.png" alt="Sociable" title="Sociable">
-                    <figcaption>Sociable</figcaption>
-                </figure>
+            <div class="skillsLogos">
+                <h2>Mes atouts</h2>
+                <div class="element-perso">
+                    <figure class="element-skills">
+                        <img src="skills-icons/astucieux.png" alt="Astucieux" title="Astucieux">
+                        <figcaption>Astucieux</figcaption>
+                    </figure>
+                    <figure class="element-skills">
+                        <img src="skills-icons/curious.png" alt="Curieux" title="Curieux">
+                        <figcaption>Curieux</figcaption>
+                    </figure>
+                    <figure class="element-skills">
+                        <img src="skills-icons/social.png" alt="Sociable" title="Sociable">
+                        <figcaption>Sociable</figcaption>
+                    </figure>
+                </div>
+                <div class="element-pro">
+                    <figure class="element-skills">
+                        <img src="skills-icons/muscle.png" alt="Dynamique" title="Dynamique">
+                        <figcaption>Dynamique</figcaption>
+                    </figure>
+                    <figure class="element-skills">
+                        <img src="skills-icons/running.png" alt="Réactif" title="Réactif">
+                        <figcaption>Réactif</figcaption>
+                    </figure>
+                    <figure class="element-skills">
+                        <img src="skills-icons/creative.png" alt="Créatif" title="Créatif">
+                        <figcaption>Créatif</figcaption>
+                    </figure>
+                </div>
             </div>
-            <div class="element-pro">
-                <figure class="element-skills">
-                    <img src="skills-icons/muscle.png" alt="Dynamique" title="Dynamique">
-                    <figcaption>Dynamique</figcaption>
-                </figure>
-                <figure class="element-skills">
-                    <img src="skills-icons/running.png" alt="Réactif" title="Réactif">
-                    <figcaption>Réactif</figcaption>
-                </figure>
-                <figure class="element-skills">
-                    <img src="skills-icons/creative.png" alt="Créatif" title="Créatif">
-                    <figcaption>Créatif</figcaption>
-                </figure>
+            <div class="skillsImage">
+                <img src="https://64.media.tumblr.com/166a6324deb21f137192a254694a659a/tumblr_nnby9hDTMN1qbxi45o3_500.gifv"
+                     alt="Compétence dynamique"
+                     title="Compétence dynamique"
+                >
             </div>
         </section>
         <section id="interests" class="interests">
-            <h2> Centres d'intérêt </h2>
-            <div class="interestsRow">
-                <div class="hobbits">
-                    <figure class="interestsFigures">
-                        <img src="hamster-ball.png"
-                             alt="Sport"
-                             title="Sport">
-                        <figcaption class="interestsFigcaptionTitle">Sport</figcaption>
-                        <figcaption class="interestsFigcaptionDescription">Faire de la roue</figcaption>
-                    </figure>
-                    <figure class="interestsFigures">
-                        <img src="growth.png"
-                        alt="Jardinage"
-                        title="Jardinage">
-                        <figcaption class="interestsFigcaptionTitle">Jardinage</figcaption>
-                        <figcaption class="interestsFigcaptionDescription">Creuser des tunnels et des galeries</figcaption>
-                    </figure>
+            <div class="interestImage">
+                <img
+                    src="https://64.media.tumblr.com/565adba1c1494d2e1b1b31e3e115b1aa/tumblr_opk5w8lj7W1r5x837o4_500.gifv"
+                    alt="Activité grignotter un pancake"
+                    title="Activité grignotter un pancake"
+                >
+            </div>
+            <div class="interestsLogos">
+                <h2> Centres d'intérêt </h2>
+                <div class="interestsRow">
+                        <figure class="interestsFigures">
+                            <img src="hamster-ball.png"
+                                 alt="Sport"
+                                 title="Sport">
+                            <figcaption class="interestsFigcaptionTitle">Sport</figcaption>
+                            <figcaption class="interestsFigcaptionDescription">Faire de la roue</figcaption>
+                        </figure>
+                        <figure class="interestsFigures">
+                            <img src="growth.png"
+                            alt="Jardinage"
+                            title="Jardinage">
+                            <figcaption class="interestsFigcaptionTitle">Jardinage</figcaption>
+                            <figcaption class="interestsFigcaptionDescription">Creuser des tunnels et des galeries</figcaption>
+                        </figure>
                 </div>
-                <div class="hobbits2">
-                <figure class="interestsFigures">
-                    <img src="gastronomie.png"
-                    alt="Gastronomie"
-                    title="Gastronomie">
-                    <figcaption class="interestsFigcaptionTitle">L'univers culinaire</figcaption>
-                    <figcaption class="interestsFigcaptionDescription">Grignoter quelques friandises</figcaption>
-                </figure>
-                <figure class="interestsFigures">
-                    <img src="hiking.png"
-                    alt="Randonnée"
-                    title="Randonnée">
-                    <figcaption class="interestsFigcaptionTitle">Marche et Randonnées</figcaption>
-                    <figcaption class="interestsFigcaptionDescription">Avec des petits recoins pour se cacher</figcaption>
-                </figure>
+                <div class="interestsRow">
+                    <figure class="interestsFigures">
+                        <img src="gastronomie.png"
+                        alt="Gastronomie"
+                        title="Gastronomie">
+                        <figcaption class="interestsFigcaptionTitle">L'univers culinaire</figcaption>
+                        <figcaption class="interestsFigcaptionDescription">Grignoter quelques friandises</figcaption>
+                    </figure>
+                    <figure class="interestsFigures">
+                        <img src="hiking.png"
+                        alt="Randonnée"
+                        title="Randonnée">
+                        <figcaption class="interestsFigcaptionTitle">Marche et Randonnées</figcaption>
+                        <figcaption class="interestsFigcaptionDescription">Avec des petits recoins pour se cacher</figcaption>
+                    </figure>
                 </div>
             </div>
     </section>
