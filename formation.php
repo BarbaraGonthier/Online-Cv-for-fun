@@ -2,9 +2,9 @@
     <div class="global">
         <?php
         $diplomas=[
-            ['Diplome d\'aventurier explorateur', 2009, 'Ecole d\'Indiana Jones'],
-            ['Brevet dégustateur de graines', 2008, 'Centre de formation de gerblé'],
-            ['Titre professionnel grignoteur option câbles', 2005, 'Ecole 30 millions d\'amis'],
+            ['Diplome d\'aventurier explorateur', 2009, 'Ecole de Dora l\'Exploratrice'],
+            ['Brevet dégustateur de graines', 2008, 'Centre de formation de Gerblé'],
+            ['Titre professionnel grignoteur option câbles', 2005, 'Ecole Claude François'],
         ];
         $blackImg = ['mortier', 'calendar', 'school'];
         $whiteImg = ['mortierwhite', 'calendarwhite', 'schoolwhite'];
