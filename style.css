@@ -129,7 +129,7 @@ nav a {
     display:none;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:800px) {
     .desktop-menu {
         display: none;
     }
