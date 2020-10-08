@@ -1,3 +1,6 @@
+<?php
+include ('data.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,53 +67,46 @@
         </div>
     </section>
     <section id="experience" class ="sectionExperiences">
-        <h2>Expériences professionnelles</h2>
+<?php
+    foreach ($experiences as $experience => $job) {
+    ?>
         <div class="experiencesBloc">
-            <div class = textLeft>
-                <div class=" textElements1">
-                    <h3>  Dégustateur de graines | année 2008 |<a href=""> SUNFLOWER'S & CO </a></h3>
-                        <ul>
-                            <li><img class = "seeds" src="graine.png" alt="graine" height="30px"/>
-                                Dégustation de graines et autres friandises raffinées </li>
-                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
-                                Formation accélérée "brevet papille gustative" </li>
-                            <p class="mind"> "La clé c'est de savoir céder à la gourmandise !"</p>
-                        </ul>
+                <div class=" element1">
+                    <img src="education-icons/certificate.png" alt="job_image"/>
+                    <h3> <?=$job['job']?> <br/>
+                        <?=$job['date']?> <br/>
+                        <?=$job['company']?> </h3>
+                    <p classe="jobDescription"> <?=$job['description']?></p>
+                    <p class="sentence"><?=$job['sentence']?> </p>
                 </div>
-                <div class="textElements1">
-                    <h3>  Aventurier explorateur | 2009-2012 | <a href=""> ESCAPE HAMSTER</a> </h3>
-                        <ul>
-                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
-                                Trouver les failles de sécurité d'une cage </li>
-                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
-                                Résolution d'algorithmes très complexes (parcours d'obstacles, tunnels, roue) </li>
-                            <p class ="mind"> "Le labyrinthe en bois ? Trop facile !" </p>
-                        </ul>
+                <div class="element2">
+                    <img src="education-icons/certificate.png" alt="job_image"/>
+                    <h3> <?=$job['job']?> <br/>
+                        <?=$job['date']?> <br/>
+                        <?=$job['company']?> </h3>
+                    <p class="jobDescription"> Mes missions : Résoudre des algorithmes très complexes (parcours d'obstacles, tunnels, roue), avec parcours d'explorations très poussés afin de trouver les failles de sécurité d'une cage. Sans surprise, j'étais le meilleur !</p>
+                    <p class ="sentence"> Le labyrinthe en bois ? Trop facile ! </p>
                 </div>
-            </div>
-            <div class="textRight">
-                <div class="textElements2">
-                    <h3>  Constructeur d'abris | 2012-2020 | <a href=""> HAMSTER HOMES CORP'</a></h3>
-                        <ul>
-                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
-                                 Utilisation de matériaux de qualités (foin, granulés et fibre de lin)</li>
-                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
-                                Installation d'équipements (maisonnette, roue, mangeoire)</li>
-                            <p class="mind"> "Hamster Homes Corp', des maisons qu'on oublie pas !"</p>
-                        </ul>
+                <div class="element3">
+                    <img src="education-icons/certificate.png" alt="job_image"/>
+                    <h3> TESTEUR DE CAGES <br/>
+                        2012 - 2020 <br/>
+                        Box4Ever </h3>
+                    <p class="jobDescription"> Mes missions : Hamster Homes Corp a fait appel à mes services afin de tester qualité du matériel de couchage (foin, et fibre de lin), un hamster heureux est un hamster qui dort bien !</p>
+                    <p class="sentence"> "Hamster Homes Corp, des cages qu'on oublie pas !"
                 </div>
-                <div class="textElements2">
-                    <h3> Rongeur de câbles | DEPUIS 2020 |<a href=""> LA PASSION DU CÂBLE</a></h3>
-                        <ul>
-                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
-                                 Grignotage intensif !</li>
-                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
-                                 Compétence d'assistant déméleur </li>
-                            <p class ="mind"> "Mon titre professionnel grignoteur option câble est un vrai plus !</p>
-                        </ul>
+                <div class="element4">
+                    <img src="education-icons/certificate.png" alt="job_image"/>
+                    <h3> RONGEUR DE CÂBLES <br/>
+                         Depuis 2020 <br/>
+                         La passion du câble </h3>
+                    <p class ="jobDescription"> Mes missions : Grignoter tous les câbles disponibles du matin au soir, ici ma compétence d'assistant déméleur s'avère extrêmement utile dans les moments critiques !</p>
+                    <p class ="sentence"> "Mon titre professionnel grignoteur option câble a été un vrai plus !"</p>
                 </div>
-            </div>
         </div>
+        <?php
+        };
+        ?>
     </section>
 
 

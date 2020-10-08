@@ -26,6 +26,7 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
     margin:0;
     font-weight: bold;
+    font-size: 1.2em;
 }
 
 h2 {
@@ -186,79 +187,57 @@ nav a {
     }
 }
 /*--        Experience      --*/
-.textLeft {
+
+.sectionExperiences {
+    padding-top: var(--spacing-section);
+    margin-top: calc(-(var(--spacing-section)));
+}
+
+.element1, .element4 {
     background-color: rgba(238,92,56, 0.8);
     padding: var(--spacing-6);
+    margin: var(--spacing-6);
+    flex-basis: 40%;
+    text-align: center;
 
 }
-.textRight {
+.element2, .element3 {
     border: solid rgba(238,92,56);
     padding: var(--spacing-6);
+    margin: var(--spacing-6);
+    flex-basis: 40%;
+    text-align: center;
 }
 
-.sectionExperiences > h2 {
+.sectionExperiences  h2 {
     text-align: center;
     margin-bottom: var(--spacing-6);
 }
 
-.textElements1 > h3 > a {
-    text-decoration: none;
+.element1  h3, .element4  h3 {
     color : var(--background-color);
-    border: solid var(--background-color);
-    margin-left : var(--spacing-2);
-    padding: var(--spacing-2);
-
-}
-.textElements1 > h3 > a:hover {
-    color: var(--third-color) ;
-    background-color: var(--background-color);
-}
-
-.textElements2 > h3 > a {
-    text-decoration: none;
-    color: var(--third-color);
-    border: solid var(--third-color);
-    margin-left : var(--spacing-2);
-    padding: var(--spacing-2);
-
-}
-.textElements2 > h3 >a:hover {
-    color: var(--background-color) ;
-    background-color: var(--third-color);
-}
-
-.textElements1 > h3, .textElements > h3 {
-    color : var(--background-color);
+    text-align: center;
 }
 
 .experiencesBloc {
     display:flex;
     justify-content: space-around;
-    margin-bottom: var(--spacing-6);
-}
-.textElements1 > ul, .textElements2 > ul {
-    list-style-type: none;
+    flex-wrap: wrap;
+    padding-bottom: calc(var(--spacing-6)*5);
 }
 
-.seeds {
-    padding-right:var(--spacing-2);
+.jobDescription {
+    text-align: justify;
 }
 
-.mind {
-    font-size: 1.4em;
+.sentence {
     font-style: italic;
-    padding-bottom:var(--spacing-6);
+    color:#495040;
+    text-align: right;
 }
+
 @media screen and (max-width: 768px) {
     .experiencesBloc {
-        display: flex;
-        flex-direction: column;
-    }
-    .textElements2 > h3 > a{
-        display: flex;
-        flex-direction: column;
-    }
-    .textElements1 > h3 > a{
         display: flex;
         flex-direction: column;
     }
