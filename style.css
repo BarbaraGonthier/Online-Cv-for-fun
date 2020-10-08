@@ -265,78 +265,29 @@ nav a {
 }
 
 /*--      Education      --*/
-.education {
-    padding-bottom: calc(var(--spacing-6)*5);
-}
 
 .global {
     display: flex;
     justify-content: space-around;
-    font-weight: 900;
 }
-
-.formations-Année {
-    display: flex;
-    flex-direction: column;
-    border: solid var(--third-color);
-}
-.Année {
-    display: flex;
-
-}
-.diploma {
+.formation, .year, .localisation {
     display: flex;
     align-items: center;
 }
-.school {
+.localisation {
     display: flex;
-    align-items: center;
+    align-self: flex-start;
 }
-.year {
-    display: flex;
-    align-items: center;
+.global >:nth-of-type(1n) {
+    border: var(--third-color) solid;
 }
-.yearmiddle {
-    display: flex;
-
-}
-
-.certificate {
-    display: flex;
-    align-items: center;
-}
-.certificates {
-    background-color: rgba(238,92,56,0.8);
-    color: #F3EEEC;
-}
-.diplome-school {
-    border: solid var(--third-color);
+.global >:nth-of-type(2) {
+    background-color: var(--third-color);
+    color: var(--light);
 }
 
-.premierDip {
-    display: flex;
-    align-items: center;
-}
-.premierdiplome {
-    display: flex;
-}
-.education figure > figcaption {
-    padding-left: var(--spacing-2);
-}
-.education{
-    padding-bottom: calc(var(--spacing-6)*5);
-}
 
-@media screen and (max-width: 768px){
-    .global {
-        display: flex;
-        flex-direction: column;
-    }
-    .global > div {
-        margin: var(--spacing-4);
 
-    }
-}
 
 /*--       Skills       --*/
 .skills {

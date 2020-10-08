@@ -112,66 +112,8 @@
             </div>
         </div>
     </section>
-
-
-
-
-
     <section id="education" class="education">
-        <h2>Formation</h2>
-            
-        <div class="global">
-            <div class="formations-Année">
-                <div class="formations">
-                    <figure class="diploma">
-                        <img src="education-icons/mortier.png" alt="mortier" title="mortier">
-                        <figcaption>Diplome d'aventurier explorateur</figcaption>
-                    </figure>
-                </div>
-                <div class="Année">
-                    <figure class="year">
-                        <img src="education-icons/calendar.png" alt="calendar" title="calendar">
-                        <figcaption>2009</figcaption>
-                    </figure>
-                    <figure class="school">
-                        <img src="education-icons/School.png" alt="school" title="school">
-                        <figcaption>Ecole d'Indiana Jones</figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="certificates">
-                <figure class="certificate">
-                    <img src="education-icons/mortierwhite.png" alt="mortierwhite" title="mortierwhite">
-                    <figcaption>Brevet dégustateur de graines</figcaption>
-                </figure>
-                <div class="yearmiddle">
-                    <figure class="year">
-                        <img src="education-icons/calendarwhite.png" alt="calendar" title="calendar">
-                        <figcaption>2008</figcaption>
-                    </figure>
-                    <figure class="school">
-                        <img src="education-icons/schoolwhite.png" alt="school" title="school">
-                        <figcaption>Centre formation de gerbelé</figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="diplome-school">
-                    <figure class="premierDip">
-                        <img src="education-icons/mortier.png" alt="mortier" title="mortier">
-                        <figcaption>Titre professionnel grignoteur option câbles</figcaption>
-                    </figure>
-                <div class="premierdiplome">
-                    <figure class="year">
-                        <img src="education-icons/calendar.png" alt="calendar" title="calendar">
-                        <figcaption>2005</figcaption>
-                    </figure>
-                    <figure class="school">
-                        <img src="education-icons/School.png" alt="school" title="school">
-                        <figcaption>Ecole 30 millions d'amis</figcaption>
-                    </figure>
-                </div>
-                </div>
-        </div>
+      <?php  include './formation.php'; ?>
     </section>
     <section id="skills" class="skills">
         <div class="skillsDescription">
@@ -238,6 +180,7 @@
             >
         </div>
     </section>
+
     <section id="interests" class="interests">
         <div class="interestImage">
             <div class="imageContainer">
