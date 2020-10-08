@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV de Bob O'ski</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Akronim&&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&family=Aladin&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -44,23 +42,20 @@
     </header>
     <section id="home">
         <div class="ball-left">
-            <img src="bubbles/Titre_grignoteur.png" alt="Titre grignoteur">
-            <img src="bubbles/Maintenance.png" alt="Maintenance de réseaux câblés">
+            <img src="home-img/titre-bubble.png" alt="Titre grignoteur">
+            <img src="home-img/explorateur-bubble.png" alt="Explorateur">
         </div>
         <div class="presentation">
-            <img src="./bob.png" alt="Photo de Bob" class="profile-picture">
+            <img src="home-img/bob.png" alt="Photo de Bob" class="profile-picture">
             <h1>Bob O'ski</h1>
             <h3>Rongeur de câbles</h3>
         </div>
         <div class="ball-right">
-            <img src="bubbles/Dynamique.png" alt="Dynamique">
-            <img src="bubbles/Reactif.png" alt="Réactif">
+            <img src="home-img/dynamique-bubble.png" alt="Dynamique">
+            <img src="home-img/reactif-bubble.png" alt="Réactif">
         </div>
         <div class="ball-mobile">
-            <img src="bubbles/Titre_grignoteur.png" alt="Titre grignoteur">
-            <img src="bubbles/Maintenance.png" alt="Maintenance de réseaux câblés">
-            <img src="bubbles/Dynamique.png" alt="Dynamique">
-            <img src="bubbles/Reactif.png" alt="Réactif">
+            <img src="home-img/bubble-mobile.png" alt="Bubbles mise en avant">
         </div>
     </section>
     <section id="experience" class ="sectionExperiences">
