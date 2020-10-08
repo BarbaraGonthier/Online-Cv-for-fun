@@ -619,13 +619,14 @@ nav a {
     padding-top: var(--spacing-section);
     margin-top: calc(-(var(--spacing-section)));
     margin-bottom: var(--spacing-6);
-    height: calc(100vh - 98px);
+    height: 830px;
     background: url("home-img/background-home.png") no-repeat;
     background-size: cover;
 }
 
 .profile-picture {
-    padding-top: 60px;
+    padding-top: var(--spacing-2);
+    padding-bottom: var(--spacing-2);
     width: 630px;
 }
 
@@ -638,7 +639,7 @@ nav a {
 }
 
 .presentation h1 {
-    margin-top: var(--spacing-4);
+    margin-top: var(--spacing-2);
     margin-bottom: 0;
     font-size: 94px;
     font-family: var(--title-font-family);
@@ -647,7 +648,7 @@ nav a {
 }
 
 .presentation h3 {
-    margin-top: -5px;
+    margin-top: calc(-(var(--spacing-2)));
     color: var(--dark);
     font-family: var(--title-h2-font-family);
     font-weight: lighter;
@@ -659,7 +660,6 @@ nav a {
     flex-direction: column;
     align-items: flex-end;
     width: 28%;
-    padding-top: 20px;
     padding-bottom: 20px;
 }
 
@@ -678,7 +678,6 @@ nav a {
     flex-direction: column;
     align-items: flex-start;
     width: 28%;
-    padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 15px;
 }
@@ -704,8 +703,7 @@ nav a {
     }
 
     .profile-picture {
-        width: 275px;
-        padding-top: 30px;
+        width: 272px;
     }
 
     .presentation {
@@ -713,9 +711,9 @@ nav a {
     }
 
     .presentation h1 {
-        margin-top: 22px;
+        margin-top: calc(-(var(--spacing)));
         margin-bottom: 0;
-        font-size: 65px;
+        font-size: 64px;
     }
 
     .presentation h3 {
@@ -735,16 +733,12 @@ nav a {
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
+    #home {
+        height: 88vmax;
+    }
+
     .profile-picture {
         width: 475px;
-    }
-
-    .ball-left {
-        padding-top: 40px;
-    }
-
-    .ball-right {
-        padding-top: 40px;
     }
 
     .ball-left > img {
