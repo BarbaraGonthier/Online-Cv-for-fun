@@ -173,128 +173,130 @@
                 </div>
         </div>
     </section>
-        <section id="skills" class="skills">
-            <div class="skillsDescription">
-                <h2>Mes atouts</h2>
-                <div class="skillsLogos">
+    <section id="skills" class="skills">
+        <div class="skillsDescription">
+            <h2>Mes atouts</h2>
+            <div class="skillsLogos">
+            <?php
+            $skillsSection = [
+                'astucieux' => [
+                    'image' => "skills-icons/astucieux.png",
+                    'alternativeText' => 'Astucieux',
+                    'title' => 'Astucieux',
+                    'skill' => 'Astucieux',
+                ],
+                'curieux' =>[
+                    'image' => "skills-icons/curious.png",
+                    'alternativeText' => 'Curieux',
+                    'title' => 'Curieux',
+                    'skill' => 'Curieux',
+                ],
+                'sociable' =>[
+                    'image' => "skills-icons/social.png",
+                    'alternativeText' => 'Sociable',
+                    'title' => 'Sociable',
+                    'skill' => 'Sociable',
+                ],
+                'dynamique' =>[
+                    'image' => "skills-icons/muscle.png",
+                    'alternativeText' => 'Dynamique',
+                    'title' => 'Dynamique',
+                    'skill' => 'Dynamique',
+                ],
+                'réactif' =>[
+                    'image' => "skills-icons/running.png",
+                    'alternativeText' => 'Réactif',
+                    'title' => 'Réactif',
+                    'skill' => 'Réactif',
+                ],
+                'créactif' =>[
+                    'image' => "skills-icons/creative.png",
+                    'alternativeText' => 'Créatif',
+                    'title' => 'Créatif',
+                    'skill' => 'Créatif',
+                ],
+            ];
+
+            foreach ($skillsSection as $dataType){
+            ?>
+                <figure class="element-skills">
+                    <img src="<?php echo $dataType['image']; ?>"
+                         alt="<?php echo $dataType['alternativeText']; ?>"
+                         title="<?php echo $dataType['title']; ?>"
+                    >
+                    <figcaption><?php echo $dataType['skill']; ?></figcaption>
+                </figure>
+        <?php
+        }
+        ?>
+            </div>
+        </div>
+        <div class="skillsImage">
+            <img src="https://64.media.tumblr.com/166a6324deb21f137192a254694a659a/tumblr_nnby9hDTMN1qbxi45o3_500.gifv"
+                 alt="Compétence dynamique"
+                 title="Compétence dynamique"
+            >
+        </div>
+    </section>
+    <section id="interests" class="interests">
+        <div class="interestImage">
+            <div class="imageContainer">
+            <img
+                src="https://64.media.tumblr.com/565adba1c1494d2e1b1b31e3e115b1aa/tumblr_opk5w8lj7W1r5x837o4_500.gifv"
+                alt="Activité grignoter un pancake"
+                title="Activité grignoter un pancake"
+            >
+            </div>
+        </div>
+        <div class="interestsDescription">
+            <h2> Centres d'intérêt </h2>
+            <div class="interestsLogos">
                 <?php
-                $skillsSection = [
-                    'astucieux' => [
-                        'image' => "skills-icons/astucieux.png",
-                        'alternativeText' => 'Astucieux',
-                        'title' => 'Astucieux',
-                        'skill' => 'Astucieux',
+                $interestsSection = [
+                    'sport' => [
+                        'image' => "hamster-ball.png",
+                        'alternativeText' => 'Sport',
+                        'title' => 'Sport',
+                        'interest' => 'Sport',
+                        'description' => 'Faire de la roue',
                     ],
-                    'curieux' =>[
-                        'image' => "skills-icons/curious.png",
-                        'alternativeText' => 'Curieux',
-                        'title' => 'Curieux',
-                        'skill' => 'Curieux',
+                    'jardinage' =>[
+                        'image' => "growth.png",
+                        'alternativeText' => 'Jardinage',
+                        'title' => 'Jardinage',
+                        'interest' => 'Jardinage',
+                        'description' => 'Creuser des galeries',
                     ],
-                    'sociable' =>[
-                        'image' => "skills-icons/social.png",
-                        'alternativeText' => 'Sociable',
-                        'title' => 'Sociable',
-                        'skill' => 'Sociable',
+                    'gastronomie' =>[
+                        'image' => "gastronomie.png",
+                        'alternativeText' => 'Gastronomie',
+                        'title' => 'Gastronomie',
+                        'interest' => "L'univers culinaire",
+                        'description' => 'Grignoter quelques friandises',
                     ],
-                    'dynamique' =>[
-                        'image' => "skills-icons/muscle.png",
-                        'alternativeText' => 'Dynamique',
-                        'title' => 'Dynamique',
-                        'skill' => 'Dynamique',
-                    ],
-                    'réactif' =>[
-                        'image' => "skills-icons/running.png",
-                        'alternativeText' => 'Réactif',
-                        'title' => 'Réactif',
-                        'skill' => 'Réactif',
-                    ],
-                    'créactif' =>[
-                        'image' => "skills-icons/creative.png",
-                        'alternativeText' => 'Créatif',
-                        'title' => 'Créatif',
-                        'skill' => 'Créatif',
+                    'randonnée' =>[
+                        'image' => "hiking.png",
+                        'alternativeText' => 'Marche et randonnée',
+                        'title' => 'Marche et randonnée',
+                        'interest' => 'Marche et randonnée',
+                        'description' => 'Avec des petits recoins',
                     ],
                 ];
 
-                foreach ($skillsSection as $dataType){
+                foreach ($interestsSection as $dataType){
                 ?>
-                    <figure class="element-skills">
-                        <img src="<?php echo $dataType['image']; ?>"
-                             alt="<?php echo $dataType['alternativeText']; ?>"
-                             title="<?php echo $dataType['title']; ?>"
-                        >
-                        <figcaption><?php echo $dataType['skill']; ?></figcaption>
-                    </figure>
-            <?php
-            }
-            ?>
-                </div>
+                <figure class="interestsFigures">
+                    <img src="<?php echo $dataType['image']?>"
+                         alt="<?php echo $dataType['alternativeText']?>"
+                         title="<?php echo $dataType['title']?>">
+                    <figcaption class="interestsFigcaptionTitle"> <?php echo $dataType['interest']?></figcaption>
+                    <figcaption class="interestsFigcaptionDescription"><?php echo $dataType['description']?></figcaption>
+                </figure>
+                <?php
+                }
+                ?>
             </div>
-            <div class="skillsImage">
-                <img src="https://64.media.tumblr.com/166a6324deb21f137192a254694a659a/tumblr_nnby9hDTMN1qbxi45o3_500.gifv"
-                     alt="Compétence dynamique"
-                     title="Compétence dynamique"
-                >
-            </div>
-        </section>
-        <section id="interests" class="interests">
-            <div class="interestImage">
-                <img
-                    src="https://64.media.tumblr.com/565adba1c1494d2e1b1b31e3e115b1aa/tumblr_opk5w8lj7W1r5x837o4_500.gifv"
-                    alt="Activité grignoter un pancake"
-                    title="Activité grignoter un pancake"
-                >
-            </div>
-            <div class="interestsDescription">
-                <h2> Centres d'intérêt </h2>
-                <div class="interestsLogos">
-                    <?php
-                    $interestsSection = [
-                        'sport' => [
-                            'image' => "hamster-ball.png",
-                            'alternativeText' => 'Sport',
-                            'title' => 'Sport',
-                            'interest' => 'Sport',
-                            'description' => 'Faire de la roue',
-                        ],
-                        'jardinage' =>[
-                            'image' => "growth.png",
-                            'alternativeText' => 'Jardinage',
-                            'title' => 'Jardinage',
-                            'interest' => 'Jardinage',
-                            'description' => 'Creuser des tunnels et des galeries',
-                        ],
-                        'gastronomie' =>[
-                            'image' => "gastronomie.png",
-                            'alternativeText' => 'Gastronomie',
-                            'title' => 'Gastronomie',
-                            'interest' => "L'univers culinaire",
-                            'description' => 'Grignoter quelques friandises',
-                        ],
-                        'randonnée' =>[
-                            'image' => "hiking.png",
-                            'alternativeText' => 'Marche et randonnée',
-                            'title' => 'Marche et randonnée',
-                            'interest' => 'Marche et randonnée',
-                            'description' => 'Avec des petits recoins pour se cacher',
-                        ],
-                    ];
-
-                    foreach ($interestsSection as $dataType){
-                    ?>
-                    <figure class="interestsFigures">
-                        <img src="<?php echo $dataType['image']?>"
-                             alt="<?php echo $dataType['alternativeText']?>"
-                             title="<?php echo $dataType['title']?>">
-                        <figcaption class="interestsFigcaptionTitle"> <?php echo $dataType['interest']?></figcaption>
-                        <figcaption class="interestsFigcaptionDescription"><?php echo $dataType['description']?></figcaption>
-                    </figure>
-                    <?php
-                    }
-                    ?>
-                </div>
-            </div>
+        </div>
     </section>
     <section id="contact" class="contact">
         <div class="contactMe" >
