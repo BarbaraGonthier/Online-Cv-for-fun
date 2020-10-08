@@ -2,6 +2,7 @@
     --background-color: #F3EEEC;
     --secondary-background-color: #b9b7bd;
     --third-color: #ee5c38;
+    --third-color-transpasrent: #ee5c3895;
     --title-color: #868b8e;
     --light: rgb(253, 250, 253) ;
     --dark:rgb(14, 0, 15);
@@ -265,10 +266,19 @@ nav a {
 }
 
 /*--      Education      --*/
-
+.education {
+    height: 500px;
+    margin-top: 200px;
+}
 .global {
     display: flex;
     justify-content: space-around;
+    height: 100%;
+    padding-top: 50px;
+}
+.formations {
+    width: 30%;
+    height: 50%;
 }
 .formation, .year, .localisation {
     display: flex;
@@ -278,14 +288,28 @@ nav a {
     display: flex;
     align-self: flex-start;
 }
+.education figcaption {
+    padding-left: 20px;
+    font-size: x-large;
+}
 .global >:nth-of-type(1n) {
     border: var(--third-color) solid;
 }
 .global >:nth-of-type(2) {
-    background-color: var(--third-color);
+    background-color: var(--third-color-transpasrent);
     color: var(--light);
+    border: none;
+    align-items: center;
 }
-
+@media screen and (max-width: 767px) {
+.global {
+    display: flex;
+    flex-direction: column;
+}
+    .global > figure {
+        margin: 50px;
+    }
+}
 
 
 
