@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -246,33 +246,69 @@
                 <img src="email.png" alt="email logo">
                 <a href="mailto:bob@hamster.com"> bob@hamster.com</a>
             </div>
+
+            <div class="contactDiv">
+                <img src="map-location.png" alt="location logo">
+                <p> Cage à hamster n°3<br>
+                Sous l'escalier Nord<br>
+                Hamsterville</p>
+            </div>
         </div>
         <div class="contactForm">
-            
-            <form class="form">
-                <h3> Ou laissez-moi un message !</h3>
-                <div>
-                    <label for="votreNom"> Votre nom</label>
-                    <input type="text" name="votreNom" id="votreNom" placeholder="Roger Rabbit" required>
-                </div>
-                <div>
-                    <label for="email"> Votre Email</label>
-                    <input type="email" name="email" id="email" placeholder="hamster@suricate.com" required>
-                </div>
-                <div>
-                    <label for="telephone"> Votre Téléphone</label>
-                    <input type="tel" name="telephone" id="telephone" placeholder="06********" required>
-                </div>
-                <div>
-                    <label for="message">Votre Message</label>
-                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Votre message"></textarea>
-                </div>
-                <div>
-                    <button class=" formButton"> Envoyer</button>
-                </div>
-            </form>
+            <div class="formulaire">
+
+                <form class="form" action="" method="POST" >
+                    <h3> Ou laissez-moi un message !</h3>
+                    <div>
+                        <label for="userName"> Votre nom</label>
+                        <input type="text" name="userName" id="userName" placeholder="Roger Rabbit" required>
+                    </div>
+                    <div>
+                        <label for="email"> Votre Email</label>
+                        <input type="email" name="email" id="email" placeholder="hamster@suricate.com" required>
+                    </div>
+                    <div>
+                        <label for="telephone"> Votre Téléphone</label>
+                        <input type="tel" name="telephone" id="telephone" placeholder="06********" required>
+                    </div>
+                    <div>
+                        <label for="message">Votre Message</label>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Votre message"></textarea>
+                    </div>
+                    <div>
+                        <button class=" formButton"> Envoyer</button>
+                    </div>
+                </form>
+            </div>
+            <?php
+                if( $_SERVER["REQUEST_METHOD"] == "POST"){
+                    foreach ($_POST as $name => $input){
+                        $data[$name] = trim($input);
+                    }
+                    if (empty($data["userName"])){
+                        $errors[] = "Un nom est requis";
+                    }
+                    if(!filter_var($data["email"], FILTER_VALIDATE_EMAIL)){
+                        $errors[] = "Format d'email invalide";
+                    }
+                    if (empty($data["telephone"])){
+                        $errors[] = "Un numéro de téléphone est requis";
+                    } ?> <div class = "errors"> <?php
+
+                    if (!empty($errors)){ ?>
+                        <ul>
+                        <?php foreach ($errors as $error){ ?>
+                        <li><?= $error;  ?></li> <?php
+                        }?> </ul>
+                        </div>
         </div>
-      
+        <?php
+                }else { ?> <script>alert( "Merci je fais au plus vite pour te repondre !")</script>
+<?php
+            }
+        }
+
+        ?>
     </section>
     <footer>
         <div class="social-media">
