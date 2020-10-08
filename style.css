@@ -342,36 +342,53 @@ nav a {
     font-weight: bold;
 }
 
-@media screen and (max-width: 768px){
-    .skills{
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .skillsDescription{
+        width: 100%;
+    }
+    .skillsLogos {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
-        width: 100%;
+        height: 800px;
     }
 
-    .skillsImage {
-        width: 100%;
-        padding:20px;
-    }
-
-    .skillsImage > img{
-        width: 100%;
-    }
-
-    .element-skills{
-        padding: var(--spacing-2);
-    }
-
-    .skills .element-skills > img {
-        width: 70px;
-    }
-
-    .skills .element-skills > figcaption {
-        padding-top: var(--spacing);
+    .skillsImage > img {
+        width: 475px;
     }
 }
 
+@media screen and (max-width: 768px) {
+
+    .skills{
+        display: flex;
+        flex-direction: column;
+    }
+    .skillsDescription {
+        width: 100%;
+    }
+
+    .skillsLogos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 500px;
+        padding: 0;
+        margin-top: 0;
+    }
+    .element-skills{
+        width: 90px;
+        margin-top: 0;
+    }
+    .skillsImage{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .skillsImage > img {
+    }
+}
 /*--       Interests       --*/
 .interests{
     display: flex;
@@ -396,11 +413,6 @@ nav a {
 .interestImage > img {
     border-radius: var(--border-radius);
     height: 250px;
-}
-
-.imageContainer {
-    display: flex;
-    justify-content: center;
 }
 
 .interestsDescription {

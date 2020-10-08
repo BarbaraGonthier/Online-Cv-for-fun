@@ -183,13 +183,11 @@
 
     <section id="interests" class="interests">
         <div class="interestImage">
-            <div class="imageContainer">
             <img
                 src="https://64.media.tumblr.com/565adba1c1494d2e1b1b31e3e115b1aa/tumblr_opk5w8lj7W1r5x837o4_500.gifv"
                 alt="Activité grignoter un pancake"
                 title="Activité grignoter un pancake"
             >
-            </div>
         </div>
         <div class="interestsDescription">
             <h2> Centres d'intérêt </h2>
