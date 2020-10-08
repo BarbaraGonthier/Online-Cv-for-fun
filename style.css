@@ -322,6 +322,12 @@ nav a {
     padding-bottom: 100px;
 }
 
+.skill-h2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .skillsDescription {
     display: flex;
     flex-direction: column;
