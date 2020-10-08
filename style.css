@@ -16,6 +16,8 @@
     --spacing-2:calc(var(--spacing) * 2);
     --spacing-4:calc(var(--spacing) * 4);
     --spacing-6:calc(var(--spacing) * 6);
+
+    --spacing-section: 60px;
 }
 
 * {
@@ -129,7 +131,7 @@ nav a {
     display:none;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:800px) {
     .desktop-menu {
         display: none;
     }
@@ -318,8 +320,15 @@ nav a {
 }
 
 .section-skills{
-    padding-top: 150px;
+    padding-top: var(--spacing-section);
+    margin-top: calc(-(var(--spacing-section)));
     padding-bottom: 100px;
+}
+
+.skill-h2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .skillsDescription {
@@ -371,7 +380,6 @@ nav a {
     display: flex;
     justify-content: flex-end;
     padding-top: 50px;
-    font-size: 30px;
     font-family: var(--title-h2-font-family);
     font-style: italic;
     padding-right: 64px;
@@ -462,7 +470,8 @@ nav a {
     width: 100%;
 }
 .section-interest{
-    padding-top: 150px;
+    padding-top: var(--spacing-section);
+    margin-top: calc(-(var(--spacing-section)));
 }
 
 .interests > h2 {
@@ -521,7 +530,6 @@ nav a {
     display: flex;
     justify-content: flex-start;
     padding-top: 50px;
-    font-size: 30px;
     font-family: var(--title-h2-font-family);
     font-style: italic;
     padding-left: 64px;
@@ -789,17 +797,20 @@ footer{
     border-right: solid 5px var(--third-color);
 }
 .pictureContact{
-    width: 40%;
-    border-radius: 50%;
+    width: 50%;
+    border-radius: 8px;
     margin-bottom: 16px;
+
 }
 .pictureContact:hover{
     transform: scale(1.1);
+    transition-duration: 1s;
 }
 
 .contactDiv{
     display: flex;
     align-items: center;
+    margin: 10px;
    
 }
 .contactDiv img{
@@ -807,13 +818,18 @@ footer{
     margin: 16px;
 }
 
-
-.contact .contactForm{
+.contactForm{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 45%;   
+    width: 47%;
+    margin-top: 32px;
+}
+
+.contact .formulaire{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     
 }
 
@@ -833,10 +849,10 @@ form div{
 
 div input{
     
-    height: 40px;
+    padding: 8px;
     margin-top: 16px;
     margin-bottom: 32px;
-    border-radius: var(--border-radius);
+    border-radius: 8px;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -859,6 +875,7 @@ button{
 margin-left: 38%;
 margin-top: 56px;
 margin-bottom: 40px;
+
 width: 25%;
 height: 40px;
 background-color: var(--light);
@@ -876,7 +893,6 @@ button:hover{
 
     .contact{
         flex-direction: column;
-        
     }    
     .pictureContact{
         border-radius: 20%;
@@ -886,7 +902,7 @@ button:hover{
         border-right: none;
     }
 
-    .contact .contactForm{
+    .contact .form{
         width: 100vw;
     }
 
@@ -894,7 +910,8 @@ button:hover{
         border-radius: 50%;
         height: 20vw;
         border-color: var(--dark);
-       
+        box-shadow: none;
+        font-size: 100%;
     }
 }
 
