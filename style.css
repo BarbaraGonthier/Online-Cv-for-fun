@@ -377,7 +377,6 @@ nav a {
     display: flex;
     justify-content: flex-end;
     padding-top: 50px;
-    font-size: 30px;
     font-family: var(--title-h2-font-family);
     font-style: italic;
     padding-right: 64px;
@@ -527,7 +526,6 @@ nav a {
     display: flex;
     justify-content: flex-start;
     padding-top: 50px;
-    font-size: 30px;
     font-family: var(--title-h2-font-family);
     font-style: italic;
     padding-left: 64px;
