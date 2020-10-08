@@ -608,8 +608,9 @@ nav a {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    padding-top: var(--spacing-section);
+    margin-top: calc(-(var(--spacing-section)));
     margin-bottom: var(--spacing-6);
-    padding: var(--spacing);
     height: calc(100vh - 98px);
     background: url("home-img/background-home.png") no-repeat;
     background-size: cover;
