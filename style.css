@@ -16,6 +16,8 @@
     --spacing-2:calc(var(--spacing) * 2);
     --spacing-4:calc(var(--spacing) * 4);
     --spacing-6:calc(var(--spacing) * 6);
+
+    --spacing-section: 60px;
 }
 
 * {
@@ -318,7 +320,8 @@ nav a {
 }
 
 .section-skills{
-    padding-top: 150px;
+    padding-top: var(--spacing-section);
+    margin-top: calc(-(var(--spacing-section)));
     padding-bottom: 100px;
 }
 
@@ -467,7 +470,8 @@ nav a {
     width: 100%;
 }
 .section-interest{
-    padding-top: 150px;
+    padding-top: var(--spacing-section);
+    margin-top: calc(-(var(--spacing-section)));
 }
 
 .interests > h2 {
