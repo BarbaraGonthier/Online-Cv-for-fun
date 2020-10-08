@@ -15,7 +15,7 @@
                     <a href="#home" title="Accueil">Accueil</a>
                     <a href="#experience" title="Expérience">Expérience</a>
                     <a href="#education" title="Formation">Formation</a>
-                    <a href="#skills" title="Compétences">Compétences</a>
+                    <a href="#skills" title="Compétences">Atouts</a>
                     <a href="#interests" title="Centres d'intérêts">Centres d'intérêts</a>
                     <a href="#contact" title="Contact">Contact</a>
                     <a href="#home" class="close-burger" title="Fermer le menu">X</a> 
@@ -110,128 +110,138 @@
     <section id="education" class="education">
       <?php  include './formation.php'; ?>
     </section>
-    <section id="skills" class="skills">
-        <div class="skillsDescription">
-            <h2>Mes atouts</h2>
-            <div class="skillsLogos">
-            <?php
-            $skillsSection = [
-                'astucieux' => [
-                    'image' => "skills-icons/astucieux.png",
-                    'alternativeText' => 'Astucieux',
-                    'title' => 'Astucieux',
-                    'skill' => 'Astucieux',
-                ],
-                'curieux' =>[
-                    'image' => "skills-icons/curious.png",
-                    'alternativeText' => 'Curieux',
-                    'title' => 'Curieux',
-                    'skill' => 'Curieux',
-                ],
-                'sociable' =>[
-                    'image' => "skills-icons/social.png",
-                    'alternativeText' => 'Sociable',
-                    'title' => 'Sociable',
-                    'skill' => 'Sociable',
-                ],
-                'dynamique' =>[
-                    'image' => "skills-icons/muscle.png",
-                    'alternativeText' => 'Dynamique',
-                    'title' => 'Dynamique',
-                    'skill' => 'Dynamique',
-                ],
-                'réactif' =>[
-                    'image' => "skills-icons/running.png",
-                    'alternativeText' => 'Réactif',
-                    'title' => 'Réactif',
-                    'skill' => 'Réactif',
-                ],
-                'créactif' =>[
-                    'image' => "skills-icons/creative.png",
-                    'alternativeText' => 'Créatif',
-                    'title' => 'Créatif',
-                    'skill' => 'Créatif',
-                ],
-            ];
-
-            foreach ($skillsSection as $dataType){
-            ?>
-                <figure class="element-skills">
-                    <img src="<?php echo $dataType['image']; ?>"
-                         alt="<?php echo $dataType['alternativeText']; ?>"
-                         title="<?php echo $dataType['title']; ?>"
-                    >
-                    <figcaption><?php echo $dataType['skill']; ?></figcaption>
-                </figure>
-        <?php
-        }
-        ?>
-            </div>
-        </div>
-        <div class="skillsImage">
-            <img src="https://64.media.tumblr.com/166a6324deb21f137192a254694a659a/tumblr_nnby9hDTMN1qbxi45o3_500.gifv"
-                 alt="Compétence dynamique"
-                 title="Compétence dynamique"
-            >
-        </div>
-    </section>
-
-    <section id="interests" class="interests">
-        <div class="interestImage">
-            <img
-                src="https://64.media.tumblr.com/565adba1c1494d2e1b1b31e3e115b1aa/tumblr_opk5w8lj7W1r5x837o4_500.gifv"
-                alt="Activité grignoter un pancake"
-                title="Activité grignoter un pancake"
-            >
-        </div>
-        <div class="interestsDescription">
-            <h2> Centres d'intérêt </h2>
-            <div class="interestsLogos">
+    <section id="skills" class="section-skills">
+        <h2>Mes atouts</h2>
+        <div class="skills">
+            <div class="skillsDescription">
+                <div class="skillsLogos">
                 <?php
-                $interestsSection = [
-                    'sport' => [
-                        'image' => "hamster-ball.png",
-                        'alternativeText' => 'Sport',
-                        'title' => 'Sport',
-                        'interest' => 'Sport',
-                        'description' => 'Faire de la roue',
+                $skillsSection = [
+                    'astucieux' => [
+                        'image' => "skills-icons/astucieux.png",
+                        'alternativeText' => 'Astucieux',
+                        'title' => 'Astucieux',
+                        'skill' => 'Astucieux',
                     ],
-                    'jardinage' =>[
-                        'image' => "growth.png",
-                        'alternativeText' => 'Jardinage',
-                        'title' => 'Jardinage',
-                        'interest' => 'Jardinage',
-                        'description' => 'Creuser des galeries',
+                    'curieux' =>[
+                        'image' => "skills-icons/curious.png",
+                        'alternativeText' => 'Curieux',
+                        'title' => 'Curieux',
+                        'skill' => 'Curieux',
                     ],
-                    'gastronomie' =>[
-                        'image' => "gastronomie.png",
-                        'alternativeText' => 'Gastronomie',
-                        'title' => 'Gastronomie',
-                        'interest' => "L'univers culinaire",
-                        'description' => 'Grignoter quelques friandises',
+                    'sociable' =>[
+                        'image' => "skills-icons/social.png",
+                        'alternativeText' => 'Sociable',
+                        'title' => 'Sociable',
+                        'skill' => 'Sociable',
                     ],
-                    'randonnée' =>[
-                        'image' => "hiking.png",
-                        'alternativeText' => 'Marche et randonnée',
-                        'title' => 'Marche et randonnée',
-                        'interest' => 'Marche et randonnée',
-                        'description' => 'Avec des petits recoins',
+                    'dynamique' =>[
+                        'image' => "skills-icons/muscle.png",
+                        'alternativeText' => 'Dynamique',
+                        'title' => 'Dynamique',
+                        'skill' => 'Dynamique',
+                    ],
+                    'réactif' =>[
+                        'image' => "skills-icons/running.png",
+                        'alternativeText' => 'Réactif',
+                        'title' => 'Réactif',
+                        'skill' => 'Réactif',
+                    ],
+                    'créactif' =>[
+                        'image' => "skills-icons/creative.png",
+                        'alternativeText' => 'Créatif',
+                        'title' => 'Créatif',
+                        'skill' => 'Créatif',
                     ],
                 ];
 
-                foreach ($interestsSection as $dataType){
+                foreach ($skillsSection as $dataType){
                 ?>
-                <figure class="interestsFigures">
-                    <img src="<?php echo $dataType['image']?>"
-                         alt="<?php echo $dataType['alternativeText']?>"
-                         title="<?php echo $dataType['title']?>">
-                    <figcaption class="interestsFigcaptionTitle"> <?php echo $dataType['interest']?></figcaption>
-                    <figcaption class="interestsFigcaptionDescription"><?php echo $dataType['description']?></figcaption>
-                </figure>
-                <?php
-                }
-                ?>
+                    <figure class="element-skills">
+                        <img src="<?php echo $dataType['image']; ?>"
+                             alt="<?php echo $dataType['alternativeText']; ?>"
+                             title="<?php echo $dataType['title']; ?>"
+                        >
+                        <figcaption><?php echo $dataType['skill']; ?></figcaption>
+                    </figure>
+            <?php
+            }
+            ?>
+                </div>
             </div>
+            <div class="skillsImage">
+                <img src="http://lepassetempsderose.l.e.pic.centerblog.net/0_7820a_8b211f24_XXXL.gif"
+                     alt="Compétence sociable"
+                     title="Compétence sociable"
+                >
+            </div>
+        </div>
+        <div class="skillsCatchLine">
+        <p> "Mon moment préféré : la réunion d'équipe avec avec le management !"</p>
+        </div>
+    </section>
+
+    <section id="interests" class="section-interest">
+        <h2> Centres d'intérêt </h2>
+        <div class="interests">
+            <div class="interestImage">
+                <img
+                    src="https://64.media.tumblr.com/565adba1c1494d2e1b1b31e3e115b1aa/tumblr_opk5w8lj7W1r5x837o4_500.gifv"
+                    alt="Activité grignoter un pancake"
+                    title="Activité grignoter un pancake"
+                >
+            </div>
+            <div class="interestsDescription">
+                <div class="interestsLogos">
+                    <?php
+                    $interestsSection = [
+                        'sport' => [
+                            'image' => "hamster-ball.png",
+                            'alternativeText' => 'Sport',
+                            'title' => 'Sport',
+                            'interest' => 'Sport',
+                            'description' => 'Faire de la roue',
+                        ],
+                        'jardinage' =>[
+                            'image' => "growth.png",
+                            'alternativeText' => 'Jardinage',
+                            'title' => 'Jardinage',
+                            'interest' => 'Jardinage',
+                            'description' => 'Creuser des galeries',
+                        ],
+                        'gastronomie' =>[
+                            'image' => "gastronomie.png",
+                            'alternativeText' => 'Gastronomie',
+                            'title' => 'Gastronomie',
+                            'interest' => "L'univers culinaire",
+                            'description' => 'Grignoter quelques friandises',
+                        ],
+                        'randonnée' =>[
+                            'image' => "hiking.png",
+                            'alternativeText' => 'Marche et randonnée',
+                            'title' => 'Marche et randonnée',
+                            'interest' => 'Marche et randonnée',
+                            'description' => 'Avec des petits recoins',
+                        ],
+                    ];
+
+                    foreach ($interestsSection as $dataType){
+                    ?>
+                    <figure class="interestsFigures">
+                        <img src="<?php echo $dataType['image']?>"
+                             alt="<?php echo $dataType['alternativeText']?>"
+                             title="<?php echo $dataType['title']?>">
+                        <figcaption class="interestsFigcaptionTitle"> <?php echo $dataType['interest']?></figcaption>
+                        <figcaption class="interestsFigcaptionDescription"><?php echo $dataType['description']?></figcaption>
+                    </figure>
+                    <?php
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+        <div class="interestscatchLine">
+            <p> "Cuisiner, un vrai moment de détente et de plaisir !"</p>
         </div>
     </section>
     <section id="contact" class="contact">

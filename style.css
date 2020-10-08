@@ -315,6 +315,9 @@ nav a {
 .skills {
     width: 100%;
     display: flex;
+}
+
+.section-skills{
     padding-top: 150px;
     padding-bottom: 100px;
 }
@@ -364,7 +367,20 @@ nav a {
     font-weight: bold;
 }
 
+.skillsCatchLine{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+    font-size: 30px;
+    font-family: var(--title-h2-font-family);
+    font-style: italic;
+    padding-right: 64px;
+}
+
 @media screen and (min-width:768px) and (max-width:1280px) {
+    .skillsCatchLine {
+        display: none;
+    }
     .skills{
         display: flex;
         flex-direction: column;
@@ -398,6 +414,14 @@ nav a {
 }
 
 @media screen and (max-width: 767px) {
+    .section-skills{
+        padding-bottom: 0;
+        padding-top: 80px;
+    }
+
+    .skillsCatchLine {
+        display: none;
+    }
 
     .skills{
         display: flex;
@@ -420,6 +444,11 @@ nav a {
         width: 90px;
         margin-top: 0;
     }
+
+    .element-skills > img{
+        width: 70px;
+    }
+
     .skillsImage{
         width: 100%;
         margin-top: 40px;
@@ -431,6 +460,8 @@ nav a {
 .interests{
     display: flex;
     width: 100%;
+}
+.section-interest{
     padding-top: 150px;
 }
 
@@ -460,7 +491,6 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 80px;
 }
 
 .interestsFigures{
@@ -487,7 +517,21 @@ nav a {
     font-size: 14px;
 }
 
+.interestscatchLine{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 50px;
+    font-size: 30px;
+    font-family: var(--title-h2-font-family);
+    font-style: italic;
+    padding-left: 64px;
+}
+
 @media screen and (min-width:768px) and (max-width:1281px) {
+    .interestscatchLine{
+        display: none;
+    }
+
     .interestImage{
         display: none;
     }
@@ -511,6 +555,13 @@ nav a {
 }
 
 @media screen and (max-width: 767px){
+    .interestscatchLine{
+        display: none;
+    }
+    .section-interest{
+        padding-top: 80px;
+    }
+
     .interests {
         display: flex;
         flex-direction: column;
@@ -523,21 +574,23 @@ nav a {
 
     .interestsDescription{
         width: 100%;
-        padding-top: 96px;
     }
 
     .interestsDescription > h2 {
         margin: var(--spacing-2);
     }
     .interestsLogos{
-        margin-top: 0;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 32px;
         padding: 0;
     }
     .interestsFigures{
-        width: 100%;
+        width: 160px;
+        margin: 0;
     }
     .interestsFigures > img {
-        width: 100px;
+        width: 90px;
     }
 
     .interestImage {
