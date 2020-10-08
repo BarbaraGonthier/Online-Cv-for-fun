@@ -65,170 +65,176 @@
         <div class="experiencesBloc">
             <div class = textLeft>
                 <div class=" textElements1">
-                    <h3>  DEGUSTATEUR DE GRAINES| 2008 |<a href="">SUNFLOWER'S & CO</a></h3>
+                    <h3>  Dégustateur de graines | année 2008 |<a href=""> SUNFLOWER'S & CO </a></h3>
                         <ul>
-                            <li>&raquo Dégustation de graines et autres friandises raffinées. </li>
-                            <li>&raquo; Formation accélérée "brevet papille gustative". </li>
+                            <li><img class = "seeds" src="graine.png" alt="graine" height="30px"/>
+                                Dégustation de graines et autres friandises raffinées </li>
+                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
+                                Formation accélérée "brevet papille gustative" </li>
                             <p class="mind"> "La clé c'est de savoir céder à la gourmandise !"</p>
                         </ul>
                 </div>
                 <div class="textElements1">
-                    <h3>  AVENTURIER EXPLORATEUR | 2009-2012 | <a href="">ESCAPE HAMSTER</a> </h3>
+                    <h3>  Aventurier explorateur | 2009-2012 | <a href=""> ESCAPE HAMSTER</a> </h3>
                         <ul>
-                            <li>&raquo; Trouver les failles de sécurité d'une cage. </li>
-                            <li>&raquo; Résolution d'algorithmes très complexes (parcours d'obstacles, tunnels, roue). </li>
-                            <p class ="mind"> Le labyrinthe en bois ? Trop facile ! </p>
+                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
+                                Trouver les failles de sécurité d'une cage </li>
+                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
+                                Résolution d'algorithmes très complexes (parcours d'obstacles, tunnels, roue) </li>
+                            <p class ="mind"> "Le labyrinthe en bois ? Trop facile !" </p>
                         </ul>
                 </div>
             </div>
             <div class="textRight">
                 <div class="textElements2">
-                    <h3>  CONSTRUCTEUR D'ABRIS | 2012-2020  | <a href="">HAMSTER HOME CORPORATION</a></h3>
+                    <h3>  Constructeur d'abris | 2012-2020 | <a href=""> HAMSTER HOMES CORP'</a></h3>
                         <ul>
-                            <li>&raquo;Utilisation de matériaux de qualités (foin, granulés et fibre de lin).</li>
-                            <li>&raquo;Installation d'équipements (maisonnette, roue, mangeoire).</li>
-                            <p class="mind"> "Hamster Home Corporation, des maisons qu'on oublie pas !"</p>
+                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
+                                 Utilisation de matériaux de qualités (foin, granulés et fibre de lin)</li>
+                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
+                                Installation d'équipements (maisonnette, roue, mangeoire)</li>
+                            <p class="mind"> "Hamster Homes Corp', des maisons qu'on oublie pas !"</p>
                         </ul>
                 </div>
                 <div class="textElements2">
-                    <h3> RONGEUR DE CÂBLES | Depuis 2020 |<a href="">LA PASSION DU CÂBLE</a></h3>
+                    <h3> Rongeur de câbles | DEPUIS 2020 |<a href=""> LA PASSION DU CÂBLE</a></h3>
                         <ul>
-                            <li>&raquo; Grignotage intensif !</li>
-                            <li>&raquo; Compétence d'assistant déméleur. </li>
+                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
+                                 Grignotage intensif !</li>
+                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
+                                 Compétence d'assistant déméleur </li>
                             <p class ="mind"> "Mon titre professionnel grignoteur option câble est un vrai plus !</p>
                         </ul>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
     <section id="education" class="education">
-        <h2>Formation</h2>
-            
-        <div class="global">
-            <div class="formations-Année">
-                <div class="formations">
-                    <figure class="diploma">
-                        <img src="education-icons/mortier.png" alt="mortier" title="mortier">
-                        <figcaption>CPP niveau IV technicien des réseaux câblés</figcaption>
-                    </figure>
-                </div>
-                <div class="Année">
-                    <figure class="year">
-                        <img src="education-icons/calendar.png" alt="calendar" title="calendar">
-                        <figcaption>2009</figcaption>
-                    </figure>
-                    <figure class="school">
-                        <img src="education-icons/School.png" alt="school" title="school">
-                        <figcaption>Ecole d'Ô'poil</figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="certificates">
-                <figure class="certificate">
-                    <img src="education-icons/certificatewhite.png" alt="certificate" title="certificate">
-                    <figcaption>Caces R489 catégorie 1, 2, 3</figcaption>
+      <?php  include './formation.php'; ?>
+    </section>
+    <section id="skills" class="skills">
+        <div class="skillsDescription">
+            <h2>Mes atouts</h2>
+            <div class="skillsLogos">
+            <?php
+            $skillsSection = [
+                'astucieux' => [
+                    'image' => "skills-icons/astucieux.png",
+                    'alternativeText' => 'Astucieux',
+                    'title' => 'Astucieux',
+                    'skill' => 'Astucieux',
+                ],
+                'curieux' =>[
+                    'image' => "skills-icons/curious.png",
+                    'alternativeText' => 'Curieux',
+                    'title' => 'Curieux',
+                    'skill' => 'Curieux',
+                ],
+                'sociable' =>[
+                    'image' => "skills-icons/social.png",
+                    'alternativeText' => 'Sociable',
+                    'title' => 'Sociable',
+                    'skill' => 'Sociable',
+                ],
+                'dynamique' =>[
+                    'image' => "skills-icons/muscle.png",
+                    'alternativeText' => 'Dynamique',
+                    'title' => 'Dynamique',
+                    'skill' => 'Dynamique',
+                ],
+                'réactif' =>[
+                    'image' => "skills-icons/running.png",
+                    'alternativeText' => 'Réactif',
+                    'title' => 'Réactif',
+                    'skill' => 'Réactif',
+                ],
+                'créactif' =>[
+                    'image' => "skills-icons/creative.png",
+                    'alternativeText' => 'Créatif',
+                    'title' => 'Créatif',
+                    'skill' => 'Créatif',
+                ],
+            ];
+
+            foreach ($skillsSection as $dataType){
+            ?>
+                <figure class="element-skills">
+                    <img src="<?php echo $dataType['image']; ?>"
+                         alt="<?php echo $dataType['alternativeText']; ?>"
+                         title="<?php echo $dataType['title']; ?>"
+                    >
+                    <figcaption><?php echo $dataType['skill']; ?></figcaption>
                 </figure>
-                <div class="yearmiddle">
-                    <figure class="year">
-                        <img src="education-icons/calendarwhite.png" alt="calendar" title="calendar">
-                        <figcaption>2008</figcaption>
-                    </figure>
-                    <figure class="school">
-                        <img src="education-icons/schoolwhite.png" alt="school" title="school">
-                        <figcaption>Centre formation de Bob le bricoleur</figcaption>
-                    </figure>
-                </div>
+        <?php
+        }
+        ?>
             </div>
-            <div class="diplome-school">
-                    <figure class="premierDip">
-                        <img src="education-icons/mortier.png" alt="mortier" title="mortier">
-                        <figcaption>Titre professionnel grignoteur option câbles</figcaption>
-                    </figure>
-                <div class="premierdiplome">
-                    <figure class="year">
-                        <img src="education-icons/calendar.png" alt="calendar" title="calendar">
-                        <figcaption>2005</figcaption>
-                    </figure>
-                    <figure class="school">
-                        <img src="education-icons/School.png" alt="school" title="school">
-                        <figcaption>Ecole 30 millions d'amis</figcaption>
-                    </figure>
-                </div>
-                </div>
+        </div>
+        <div class="skillsImage">
+            <img src="https://64.media.tumblr.com/166a6324deb21f137192a254694a659a/tumblr_nnby9hDTMN1qbxi45o3_500.gifv"
+                 alt="Compétence dynamique"
+                 title="Compétence dynamique"
+            >
         </div>
     </section>
-        <section id="skills" class="skills">
-            <h2>Mes atouts</h2>
-            <div class="element-perso">
-                <figure class="element-skills">
-                    <img src="skills-icons/astucieux.png" alt="Astucieux" title="Astucieux">
-                    <figcaption>Astucieux</figcaption>
-                </figure>
-                <figure class="element-skills">
-                    <img src="skills-icons/curious.png" alt="Curieux" title="Curieux">
-                    <figcaption>Curieux</figcaption>
-                </figure>
-                <figure class="element-skills">
-                    <img src="skills-icons/social.png" alt="Sociable" title="Sociable">
-                    <figcaption>Sociable</figcaption>
-                </figure>
-            </div>
-            <div class="element-pro">
-                <figure class="element-skills">
-                    <img src="skills-icons/muscle.png" alt="Dynamique" title="Dynamique">
-                    <figcaption>Dynamique</figcaption>
-                </figure>
-                <figure class="element-skills">
-                    <img src="skills-icons/running.png" alt="Réactif" title="Réactif">
-                    <figcaption>Réactif</figcaption>
-                </figure>
-                <figure class="element-skills">
-                    <img src="skills-icons/creative.png" alt="Créatif" title="Créatif">
-                    <figcaption>Créatif</figcaption>
-                </figure>
-            </div>
-        </section>
-        <section id="interests" class="interests">
+
+    <section id="interests" class="interests">
+        <div class="interestImage">
+            <img
+                src="https://64.media.tumblr.com/565adba1c1494d2e1b1b31e3e115b1aa/tumblr_opk5w8lj7W1r5x837o4_500.gifv"
+                alt="Activité grignoter un pancake"
+                title="Activité grignoter un pancake"
+            >
+        </div>
+        <div class="interestsDescription">
             <h2> Centres d'intérêt </h2>
-            <div class="interestsRow">
-                <div class="hobbits">
-                    <figure class="interestsFigures">
-                        <img src="hamster-ball.png"
-                             alt="Sport"
-                             title="Sport">
-                        <figcaption class="interestsFigcaptionTitle">Sport</figcaption>
-                        <figcaption class="interestsFigcaptionDescription">Faire de la roue</figcaption>
-                    </figure>
-                    <figure class="interestsFigures">
-                        <img src="growth.png"
-                        alt="Jardinage"
-                        title="Jardinage">
-                        <figcaption class="interestsFigcaptionTitle">Jardinage</figcaption>
-                        <figcaption class="interestsFigcaptionDescription">Creuser des tunnels et des galeries</figcaption>
-                    </figure>
-                </div>
-                <div class="hobbits2">
+            <div class="interestsLogos">
+                <?php
+                $interestsSection = [
+                    'sport' => [
+                        'image' => "hamster-ball.png",
+                        'alternativeText' => 'Sport',
+                        'title' => 'Sport',
+                        'interest' => 'Sport',
+                        'description' => 'Faire de la roue',
+                    ],
+                    'jardinage' =>[
+                        'image' => "growth.png",
+                        'alternativeText' => 'Jardinage',
+                        'title' => 'Jardinage',
+                        'interest' => 'Jardinage',
+                        'description' => 'Creuser des galeries',
+                    ],
+                    'gastronomie' =>[
+                        'image' => "gastronomie.png",
+                        'alternativeText' => 'Gastronomie',
+                        'title' => 'Gastronomie',
+                        'interest' => "L'univers culinaire",
+                        'description' => 'Grignoter quelques friandises',
+                    ],
+                    'randonnée' =>[
+                        'image' => "hiking.png",
+                        'alternativeText' => 'Marche et randonnée',
+                        'title' => 'Marche et randonnée',
+                        'interest' => 'Marche et randonnée',
+                        'description' => 'Avec des petits recoins',
+                    ],
+                ];
+
+                foreach ($interestsSection as $dataType){
+                ?>
                 <figure class="interestsFigures">
-                    <img src="gastronomie.png"
-                    alt="Gastronomie"
-                    title="Gastronomie">
-                    <figcaption class="interestsFigcaptionTitle">L'univers culinaire</figcaption>
-                    <figcaption class="interestsFigcaptionDescription">Grignoter quelques friandises</figcaption>
+                    <img src="<?php echo $dataType['image']?>"
+                         alt="<?php echo $dataType['alternativeText']?>"
+                         title="<?php echo $dataType['title']?>">
+                    <figcaption class="interestsFigcaptionTitle"> <?php echo $dataType['interest']?></figcaption>
+                    <figcaption class="interestsFigcaptionDescription"><?php echo $dataType['description']?></figcaption>
                 </figure>
-                <figure class="interestsFigures">
-                    <img src="hiking.png"
-                    alt="Randonnée"
-                    title="Randonnée">
-                    <figcaption class="interestsFigcaptionTitle">Marche et Randonnées</figcaption>
-                    <figcaption class="interestsFigcaptionDescription">Avec des petits recoins pour se cacher</figcaption>
-                </figure>
-                </div>
+                <?php
+                }
+                ?>
             </div>
+        </div>
     </section>
     <section id="contact" class="contact">
         <div class="contactMe" >
