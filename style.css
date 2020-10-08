@@ -564,9 +564,10 @@ nav a {
 }
 
 .presentation h3 {
-    margin-top: -10px;
-    font-size: 28px;
+    margin-top: -5px;
     color: var(--dark);
+    font-family: var(--title-h2-font-family);
+    font-weight: lighter;
 }
 
 .ball-left {
@@ -581,6 +582,11 @@ nav a {
 
 .ball-left > img {
     width: 270px;
+    transition: all 1s ease;
+}
+
+.ball-left > img:hover {
+    transform:scale(1.20);
 }
 
 .ball-right {
@@ -596,6 +602,11 @@ nav a {
 
 .ball-right > img {
     width: 270px;
+    transition: all 1s ease;
+}
+
+.ball-right > img:hover {
+    transform:scale(1.20);
 }
 
 .ball-mobile {
