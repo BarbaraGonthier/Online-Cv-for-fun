@@ -31,6 +31,7 @@ body {
     margin:0;
     color: var(--dark);
     font-weight: bold;
+    font-size: 1.2em;
 }
 
 h2 {
@@ -44,6 +45,8 @@ h2 {
 h3{
     text-align: center;
     font-size: 32px;
+    font-family: var(--title-h2-font-family);
+    color: var(--third-color);
 }
 
 @media screen and (max-width:767px) {
@@ -190,78 +193,94 @@ nav a {
     }
 }
 /*--        Experience      --*/
-.textLeft {
-    background-color: rgba(238,92,56, 0.8);
-    padding: var(--spacing-6);
-}
-.textRight {
-    border: solid rgb(238,92,56);
-    padding: var(--spacing-6);
-}
 
-.sectionExperiences > h2 {
-    text-align: center;
-    margin-bottom: var(--spacing-6);
+.sectionExperiences{
+    padding-top: var(--spacing-section);
+    margin-top: calc(-(var(--spacing-section)));
+    display: flex;
 }
-
-.textElements1 > h3 > a {
-    text-decoration: none;
-    color : var(--background-color);
-    border: solid var(--background-color);
-    margin-left : var(--spacing-2);
-    padding: var(--spacing-2);
-
-}
-.textElements1 > h3 > a:hover {
-    color: var(--third-color) ;
-    background-color: var(--background-color);
-}
-
-.textElements2 > h3 > a {
-    text-decoration: none;
-    color: var(--third-color);
-    border: solid var(--third-color);
-    margin-left : var(--spacing-2);
-    padding: var(--spacing-2);
-
-}
-.textElements2 > h3 >a:hover {
-    color: var(--background-color) ;
-    background-color: var(--third-color);
-}
-
-.textElements1 > h3, .textElements > h3 {
-    color : var(--background-color);
-}
-
 .experiencesBloc {
-    display:flex;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: var(--spacing-6);
+    padding-bottom: var(--spacing-6);
 }
-.textElements1 > ul, .textElements2 > ul {
-    list-style-type: none;
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 40%;
+}
+.experiencesBloc>:nth-of-type(1){
+    background-color: rgba(238,92,56);
+    padding: var(--spacing-4);
+    margin: var(--spacing-4);
 }
 
-.seeds {
-    padding-right:var(--spacing-2);
+.experiencesBloc:nth-of-type(1)  h3 {
+    color : var(--background-color);
+    text-align: center;
 }
 
-.mind {
-    font-size: 1.4em;
+.experiencesBloc>:nth-of-type(2){
+    background-image: url('home-img/background-mobile.png');
+    padding: var(--spacing-4);
+    margin: var(--spacing-4);
+}
+
+.experiencesBloc>:nth-of-type(3){
+    background-image: url('home-img/background-mobile.png');
+    padding: var(--spacing-4);
+    margin: var(--spacing-4);
+}
+
+.experiencesBloc>:nth-of-type(4){
+    background-color: rgba(238,92,56);
+    padding: var(--spacing-4);
+    margin: var(--spacing-4);
+}
+
+.experienceBloc:nth-of-type(2) h3 {
+    color : var(--third-color);
+    text-align : center;
+}
+
+.experiencesBloc:nth-of-type(1)  h3 {
+    color : var(--background-color);
+    text-align: center;
+}
+
+.subtitle {
+    color : var(--background-color);
+    text-align: center;
+    padding-bottom: var(--spacing-6);
+}
+
+.jobDescription {
+    text-align: justify;
+}
+
+.sentence {
     font-style: italic;
-    padding-bottom:var(--spacing-6);
+    color:#495040;
+    text-align: right;
+    padding-bottom: var(--spacing-6);
+
 }
+
+.seeAll a {
+    text-align: right;
+    text-decoration: none;
+    color: var(--dark);
+    border : solid, var(--light);
+    background-color: var(--light);
+    padding:var(--spacing-2);
+    border-radius:10px;
+    margin: var(--spacing-2);
+}
+
 @media screen and (max-width: 768px) {
     .experiencesBloc {
-        display: flex;
-        flex-direction: column;
-    }
-    .textElements2 > h3 > a{
-        display: flex;
-        flex-direction: column;
-    }
-    .textElements1 > h3 > a{
         display: flex;
         flex-direction: column;
     }
@@ -767,10 +786,15 @@ footer{
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
-    
+    padding-top: var(--spacing-section);
+    margin-top: calc(-(var(--spacing-section)));
     
 }
-
+.infoContact{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
 .contactMe{
     padding: 16px;
      width: 48%;
@@ -792,15 +816,20 @@ footer{
 
 .contactDiv{
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin: 10px;
    
 }
 .contactDiv img{
-    width: 50px;
+    width: 60px;
     margin: 16px;
 }
-
+#emailBob{
+    color: var(--third-color);
+    text-decoration: none;
+    margin-top: 15px;
+}
 .contactForm{
     display: flex;
     flex-direction: column;
@@ -830,13 +859,14 @@ form div{
     margin: 16px;
 }
 
-div input{
+div input, textarea{
     
     padding: 8px;
     margin-top: 16px;
     margin-bottom: 32px;
     border-radius: 8px;
     font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
 }
 
 
@@ -872,6 +902,8 @@ color: var(--third-color);
 button:hover{
     transform: scale(1.2);
 }
+
+
 @media screen and (max-width :768px){
 
     .contact{
@@ -895,6 +927,10 @@ button:hover{
         border-color: var(--dark);
         box-shadow: none;
         font-size: 100%;
+    }
+
+    .infoContact{
+        flex-direction: column;
     }
 }
 
