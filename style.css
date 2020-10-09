@@ -655,14 +655,23 @@ nav a {
         .interestsFigures {
             width: 160px;
             margin: 0;
+            padding: 32px
         }
 
         .interestsFigures > img {
             width: 90px;
         }
 
+        .interestsFigcaptionTitle{
+            font-size:12px;
+        }
+
+        .interestsFigcaptionDescription{
+            font-size: 12px;
+        }
+
         .interestImage {
-            padding: 20px;
+            padding:40px;
             width: 100%;
         }
 
@@ -728,23 +737,10 @@ nav a {
         width: 270px;
         transition: all 1s ease;
     }
-    .interestsFigures{
-        width: 160px;
-        margin: 0;
-        padding: 32px;
-    }
 
     .ball-left > img:hover {
         transform: scale(1.20);
     }
-    .interestsFigcaptionTitle{
-        font-size:12px;
-    }
-
-    .interestsFigcaptionDescription{
-        font-size: 12px;
-    }
-
 
     .ball-right {
         display: flex;
@@ -754,11 +750,6 @@ nav a {
         width: 28%;
         padding-bottom: 20px;
         padding-left: 15px;
-    }
-    .interestImage {
-        padding:40px;
-        width: 100%;
-
     }
 
     .ball-right > img {
