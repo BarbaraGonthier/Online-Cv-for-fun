@@ -796,18 +796,20 @@ footer{
 .contact{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 50px;
-    padding-top: var(--spacing-section);
+
     margin-top: calc(-(var(--spacing-section)));
-    
+    background:  url('home-img/background-home.png') no-repeat;
 }
 .infoContact{
     width: 70%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 30px;
 }
 .contactMe{
     padding: 16px;
+    padding-top: 40px;
+    padding-bottom: 50px;
      width: 48%;
     display: flex;
     flex-direction: column;
@@ -937,7 +939,7 @@ button:hover{
         height: 20vw;
         border-color: var(--dark);
         box-shadow: none;
-        font-size: 100%;
+        font-size: 80%;
     }
 
     .infoContact{
