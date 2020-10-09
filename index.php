@@ -1,3 +1,6 @@
+<?php
+include ('data.php');
+?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -59,52 +62,24 @@
         </div>
     </section>
     <section id="experience" class ="sectionExperiences">
-        <h2>Expériences professionnelles</h2>
         <div class="experiencesBloc">
-            <div class = textLeft>
-                <div class=" textElements1">
-                    <h3>  Dégustateur de graines | année 2008 |<a href=""> SUNFLOWER'S & CO </a></h3>
-                        <ul>
-                            <li><img class = "seeds" src="graine.png" alt="graine" height="30px"/>
-                                Dégustation de graines et autres friandises raffinées </li>
-                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
-                                Formation accélérée "brevet papille gustative" </li>
-                            <p class="mind"> "La clé c'est de savoir céder à la gourmandise !"</p>
-                        </ul>
-                </div>
-                <div class="textElements1">
-                    <h3>  Aventurier explorateur | 2009-2012 | <a href=""> ESCAPE HAMSTER</a> </h3>
-                        <ul>
-                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
-                                Trouver les failles de sécurité d'une cage </li>
-                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
-                                Résolution d'algorithmes très complexes (parcours d'obstacles, tunnels, roue) </li>
-                            <p class ="mind"> "Le labyrinthe en bois ? Trop facile !" </p>
-                        </ul>
+        <?php
+            foreach ($experiences as $experience => $job) {
+        ?>
+            <div class="experience">
+                <img src="<?=$job['image']?>" alt="job_image"/>
+                <h3> <?=$job['job']?> </h3>
+                <div class="subtitle"> <?=$job['date']?> | <?=$job['company']?> </div>
+                <div class="experienceBottom">
+                    <p class="jobDescription"> <?=$job['description']?></p>
+                    <p class="sentence"><?=$job['sentence']?> </p>
+                    <p class="seeAll"> <a href="">Tout voir</a> </p>
                 </div>
             </div>
-            <div class="textRight">
-                <div class="textElements2">
-                    <h3>  Constructeur d'abris | 2012-2020 | <a href=""> HAMSTER HOMES CORP'</a></h3>
-                        <ul>
-                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
-                                 Utilisation de matériaux de qualités (foin, granulés et fibre de lin)</li>
-                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
-                                Installation d'équipements (maisonnette, roue, mangeoire)</li>
-                            <p class="mind"> "Hamster Homes Corp', des maisons qu'on oublie pas !"</p>
-                        </ul>
-                </div>
-                <div class="textElements2">
-                    <h3> Rongeur de câbles | DEPUIS 2020 |<a href=""> LA PASSION DU CÂBLE</a></h3>
-                        <ul>
-                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
-                                 Grignotage intensif !</li>
-                            <li><img class="seeds" src="graine.png" alt="graine" height="30px"/>
-                                 Compétence d'assistant déméleur </li>
-                            <p class ="mind"> "Mon titre professionnel grignoteur option câble est un vrai plus !</p>
-                        </ul>
-                </div>
-            </div>
+
+        <?php
+            }
+        ?>
         </div>
     </section>
     <section id="education" class="education">
@@ -117,40 +92,28 @@
                 <div class="skillsLogos">
                 <?php
                 $skillsSection = [
-                    'astucieux' => [
+                    [
                         'image' => "skills-icons/astucieux.png",
-                        'alternativeText' => 'Astucieux',
-                        'title' => 'Astucieux',
                         'skill' => 'Astucieux',
                     ],
-                    'curieux' =>[
+                    [
                         'image' => "skills-icons/curious.png",
-                        'alternativeText' => 'Curieux',
-                        'title' => 'Curieux',
                         'skill' => 'Curieux',
                     ],
-                    'sociable' =>[
+                    [
                         'image' => "skills-icons/social.png",
-                        'alternativeText' => 'Sociable',
-                        'title' => 'Sociable',
                         'skill' => 'Sociable',
                     ],
-                    'dynamique' =>[
+                    [
                         'image' => "skills-icons/muscle.png",
-                        'alternativeText' => 'Dynamique',
-                        'title' => 'Dynamique',
                         'skill' => 'Dynamique',
                     ],
-                    'réactif' =>[
+                    [
                         'image' => "skills-icons/running.png",
-                        'alternativeText' => 'Réactif',
-                        'title' => 'Réactif',
                         'skill' => 'Réactif',
                     ],
-                    'créactif' =>[
+                    [
                         'image' => "skills-icons/creative.png",
-                        'alternativeText' => 'Créatif',
-                        'title' => 'Créatif',
                         'skill' => 'Créatif',
                     ],
                 ];
@@ -159,8 +122,8 @@
                 ?>
                     <figure class="element-skills">
                         <img src="<?php echo $dataType['image']; ?>"
-                             alt="<?php echo $dataType['alternativeText']; ?>"
-                             title="<?php echo $dataType['title']; ?>"
+                             alt="<?php echo $dataType['skill']; ?>"
+                             title="<?php echo $dataType['skill']; ?>"
                         >
                         <figcaption><?php echo $dataType['skill']; ?></figcaption>
                     </figure>
@@ -195,31 +158,23 @@
                 <div class="interestsLogos">
                     <?php
                     $interestsSection = [
-                        'sport' => [
+                         [
                             'image' => "hamster-ball.png",
-                            'alternativeText' => 'Sport',
-                            'title' => 'Sport',
                             'interest' => 'Sport',
                             'description' => 'Faire de la roue',
                         ],
-                        'jardinage' =>[
+                        [
                             'image' => "growth.png",
-                            'alternativeText' => 'Jardinage',
-                            'title' => 'Jardinage',
                             'interest' => 'Jardinage',
                             'description' => 'Creuser des galeries',
                         ],
-                        'gastronomie' =>[
+                        [
                             'image' => "gastronomie.png",
-                            'alternativeText' => 'Gastronomie',
-                            'title' => 'Gastronomie',
                             'interest' => "L'univers culinaire",
                             'description' => 'Grignoter quelques friandises',
                         ],
-                        'randonnée' =>[
+                        [
                             'image' => "hiking.png",
-                            'alternativeText' => 'Marche et randonnée',
-                            'title' => 'Marche et randonnée',
                             'interest' => 'Marche et randonnée',
                             'description' => 'Avec des petits recoins',
                         ],
@@ -229,8 +184,8 @@
                     ?>
                     <figure class="interestsFigures">
                         <img src="<?php echo $dataType['image']?>"
-                             alt="<?php echo $dataType['alternativeText']?>"
-                             title="<?php echo $dataType['title']?>">
+                             alt="<?php echo $dataType['interest']?>"
+                             title="<?php echo $dataType['interest']?>">
                         <figcaption class="interestsFigcaptionTitle"> <?php echo $dataType['interest']?></figcaption>
                         <figcaption class="interestsFigcaptionDescription"><?php echo $dataType['description']?></figcaption>
                     </figure>
