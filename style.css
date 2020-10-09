@@ -143,6 +143,7 @@ nav a {
         display:flex;
         padding: var(--spacing);
         width: 60px;
+        position: fixed;
     }
 
     .download-cv{
@@ -609,13 +610,21 @@ nav a {
     .interestsFigures{
         width: 160px;
         margin: 0;
+        padding: 32px;
     }
     .interestsFigures > img {
         width: 90px;
     }
+    .interestsFigcaptionTitle{
+        font-size:12px;
+    }
+
+    .interestsFigcaptionDescription{
+        font-size: 12px;
+    }
 
     .interestImage {
-        padding:20px;
+        padding:40px;
         width: 100%;
     }
 
