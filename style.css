@@ -882,13 +882,13 @@ nav a {
             font-size: 12px;
         }
 
-    .presentation h3 {
-        margin-top: 0;
-        margin-bottom: 1px;
-        padding-bottom: 0;
-        font-size: 26px;
+        .presentation h3 {
+            margin-top: 0;
+            margin-bottom: 1px;
+            padding-bottom: 0;
+            font-size: 26px;
+        }
     }
-
     /*--                      Contact       --*/
     .contact {
         display: flex;
@@ -1050,5 +1050,5 @@ nav a {
             flex-direction: column;
         }
     }
-    }
+
 
