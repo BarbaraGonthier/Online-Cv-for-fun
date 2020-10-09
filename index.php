@@ -1,6 +1,3 @@
-<?php
-include ('data.php');
-?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -61,25 +58,28 @@ include ('data.php');
             <img src="home-img/bubble-mobile.png" alt="Bubbles mise en avant">
         </div>
     </section>
-    <section id="experience" class ="sectionExperiences">
-        <div class="experiencesBloc">
-        <?php
+    <section id="experience">
+        <h2> Experiences Professionnelles </h2>
+        <div class="sectionExperiences">
+            <div class="experiencesBloc">
+            <?php
+            include('data.php');
             foreach ($experiences as $experience => $job) {
-        ?>
-            <div class="experience">
-                <img src="<?=$job['image']?>" alt="job_image"/>
-                <h3> <?=$job['job']?> </h3>
-                <div class="subtitle"> <?=$job['date']?> | <?=$job['company']?> </div>
-                <div class="experienceBottom">
-                    <p class="jobDescription"> <?=$job['description']?></p>
-                    <p class="sentence"><?=$job['sentence']?> </p>
-                    <p class="seeAll"> <a href="">Tout voir</a> </p>
+            ?>
+                <div class="experience">
+                    <img src="<?=$job['image']?>" alt="job_image"/>
+                    <h3> <?=$job['job']?> </h3>
+                    <div class="subtitle"> <?=$job['date']?> | <?=$job['company']?> </div>
+                    <div class="experienceBottom">
+                        <p class="jobDescription"> <?=$job['description']?></p>
+                        <p class="sentence"><?=$job['sentence']?> </p>
+                        <p class="seeAll"> <a href="">Tout voir</a> </p>
+                    </div>
                 </div>
-            </div>
-
         <?php
             }
         ?>
+            </div>
         </div>
     </section>
     <section id="education" class="education">
