@@ -3,9 +3,9 @@
 <div class="global">
     <?php
     $diplomas=[
-        ['Diplome d\'aventurier explorateur', 2009, 'Ecole d\'Indiana Jones'],
-        ['Brevet dégustateur de graines', 2008, 'Centre de formation de gerblé'],
-        ['Titre professionnel grignoteur option câbles', 2005, 'Ecole 30 millions d\'amis'],
+        ['DIPLOME D\'AVENTURIER EXPLORATEUR', 2009, 'Ecole Dora L\'Eploratrice'],
+        ['BREVET GOÛTEUR DE GRAINES', 2008, 'Centre de formation de Gerblé'],
+        ['TITRE GRIGNOTEUR OPTION CÂBLES', 2005, 'Ecole de Claude François'],
     ];
     $images = ['mortier', 'calendar', 'school'];
     foreach($diplomas as $diploma) {
@@ -18,7 +18,7 @@
 
             <figure class="figure">
                 <img src="education-icons/<?= $images[$i]?>.png" alt="<?= $images[$i]?>" title="<?= $images[$i]?>">
-                <figcaption><?= $diploma[$i]?></figcaption>
+                <figcaption><h4><?= $diploma[$i]?></h4></figcaption>
             </figure>
 
 
