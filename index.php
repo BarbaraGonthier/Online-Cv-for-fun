@@ -73,7 +73,6 @@
                     <div class="experienceBottom">
                         <p class="jobDescription"> <?=$job['description']?></p>
                         <p class="sentence"><?=$job['sentence']?> </p>
-                        <p class="seeAll"> <a href="">Tout voir</a> </p>
                     </div>
                 </div>
         <?php

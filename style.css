@@ -216,7 +216,7 @@ nav a {
     flex-basis: 40%;
 }
 .experiencesBloc>:nth-of-type(1){
-    background-color: rgba(238,92,56);
+    background-color: var(--third-color);
     padding: var(--spacing-4);
     margin: var(--spacing-4);
 }
@@ -239,7 +239,7 @@ nav a {
 }
 
 .experiencesBloc>:nth-of-type(4){
-    background-color: rgb(238,92,56);
+    background-color: var(--third-color);
     padding: var(--spacing-4);
     margin: var(--spacing-4);
 }
@@ -272,22 +272,17 @@ nav a {
 
 }
 
-.seeAll a {
-    text-align: right;
-    text-decoration: none;
-    color: var(--dark);
-    border : solid, var(--light);
-    background-color: var(--light);
-    padding:var(--spacing-2);
-    border-radius:10px;
-    margin: var(--spacing-2);
-}
-
 @media screen and (max-width: 768px) {
     .experiencesBloc {
         display: flex;
         flex-direction: column;
+    }
+    .experiencesBloc :nth-of-type(3) {
         background-image: none;
+        background-color: var(--third-color);
+    }
+    .experiencesBloc :nth-of-type(4) {
+        background-image: url('home-img/background-mobile.png');
     }
 }
 
