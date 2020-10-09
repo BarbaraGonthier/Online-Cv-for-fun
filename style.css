@@ -291,17 +291,13 @@ nav a {
 
 /*--      Education      --*/
 .education {
-    height: 500px;
-    margin-top: 200px;
+    height: 700px;
+    padding-top: 60px;
 }
 .global{
     display: flex;
     justify-content: space-around;
     padding-bottom: calc(var(--spacing-section)*4);
-    padding-top: calc(var(--spacing-section)*2);
-    margin-top: calc(-(var(--spacing-section)));
-
-
 }
 .global>:nth-of-type(2){
     background-color: var(--third-color);
@@ -331,6 +327,9 @@ nav a {
     padding-left: var(--spacing-2);
 }
 @media screen AND (max-width: 768px) {
+    .education{
+        height:1620px;
+    }
     .global {
         display: flex;
         flex-direction: column;
@@ -340,6 +339,7 @@ nav a {
     .formations {
         width: 100vw;
         margin-bottom: var(--spacing-6);
+        border: solid;
     }
 
     .global > :nth-of-type(2) {
