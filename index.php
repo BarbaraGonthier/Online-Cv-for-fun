@@ -117,40 +117,28 @@
                 <div class="skillsLogos">
                 <?php
                 $skillsSection = [
-                    'astucieux' => [
+                    [
                         'image' => "skills-icons/astucieux.png",
-                        'alternativeText' => 'Astucieux',
-                        'title' => 'Astucieux',
                         'skill' => 'Astucieux',
                     ],
-                    'curieux' =>[
+                    [
                         'image' => "skills-icons/curious.png",
-                        'alternativeText' => 'Curieux',
-                        'title' => 'Curieux',
                         'skill' => 'Curieux',
                     ],
-                    'sociable' =>[
+                    [
                         'image' => "skills-icons/social.png",
-                        'alternativeText' => 'Sociable',
-                        'title' => 'Sociable',
                         'skill' => 'Sociable',
                     ],
-                    'dynamique' =>[
+                    [
                         'image' => "skills-icons/muscle.png",
-                        'alternativeText' => 'Dynamique',
-                        'title' => 'Dynamique',
                         'skill' => 'Dynamique',
                     ],
-                    'réactif' =>[
+                    [
                         'image' => "skills-icons/running.png",
-                        'alternativeText' => 'Réactif',
-                        'title' => 'Réactif',
                         'skill' => 'Réactif',
                     ],
-                    'créactif' =>[
+                    [
                         'image' => "skills-icons/creative.png",
-                        'alternativeText' => 'Créatif',
-                        'title' => 'Créatif',
                         'skill' => 'Créatif',
                     ],
                 ];
@@ -159,8 +147,8 @@
                 ?>
                     <figure class="element-skills">
                         <img src="<?php echo $dataType['image']; ?>"
-                             alt="<?php echo $dataType['alternativeText']; ?>"
-                             title="<?php echo $dataType['title']; ?>"
+                             alt="<?php echo $dataType['skill']; ?>"
+                             title="<?php echo $dataType['skill']; ?>"
                         >
                         <figcaption><?php echo $dataType['skill']; ?></figcaption>
                     </figure>
@@ -195,31 +183,23 @@
                 <div class="interestsLogos">
                     <?php
                     $interestsSection = [
-                        'sport' => [
+                         [
                             'image' => "hamster-ball.png",
-                            'alternativeText' => 'Sport',
-                            'title' => 'Sport',
                             'interest' => 'Sport',
                             'description' => 'Faire de la roue',
                         ],
-                        'jardinage' =>[
+                        [
                             'image' => "growth.png",
-                            'alternativeText' => 'Jardinage',
-                            'title' => 'Jardinage',
                             'interest' => 'Jardinage',
                             'description' => 'Creuser des galeries',
                         ],
-                        'gastronomie' =>[
+                        [
                             'image' => "gastronomie.png",
-                            'alternativeText' => 'Gastronomie',
-                            'title' => 'Gastronomie',
                             'interest' => "L'univers culinaire",
                             'description' => 'Grignoter quelques friandises',
                         ],
-                        'randonnée' =>[
+                        [
                             'image' => "hiking.png",
-                            'alternativeText' => 'Marche et randonnée',
-                            'title' => 'Marche et randonnée',
                             'interest' => 'Marche et randonnée',
                             'description' => 'Avec des petits recoins',
                         ],
@@ -229,8 +209,8 @@
                     ?>
                     <figure class="interestsFigures">
                         <img src="<?php echo $dataType['image']?>"
-                             alt="<?php echo $dataType['alternativeText']?>"
-                             title="<?php echo $dataType['title']?>">
+                             alt="<?php echo $dataType['interest']?>"
+                             title="<?php echo $dataType['interest']?>">
                         <figcaption class="interestsFigcaptionTitle"> <?php echo $dataType['interest']?></figcaption>
                         <figcaption class="interestsFigcaptionDescription"><?php echo $dataType['description']?></figcaption>
                     </figure>
