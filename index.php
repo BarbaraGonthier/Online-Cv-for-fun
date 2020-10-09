@@ -9,36 +9,7 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="menu-items">
-                <div class="desktop-menu" id="menu">
-                    <a href="#home" title="Accueil">Accueil</a>
-                    <a href="#experience" title="Expérience">Expérience</a>
-                    <a href="#education" title="Formation">Formation</a>
-                    <a href="#skills" title="Compétences">Atouts</a>
-                    <a href="#interests" title="Centres d'intérêts">Centres d'intérêts</a>
-                    <a href="#contact" title="Contact">Contact</a>
-                    <a href="#home" class="close-burger" title="Fermer le menu">X</a> 
-                </div>
-                <a href="#menu" class="burger" title="Ouvrir le menu">
-                    <div></div>
-                    <div></div>
-                    <div></div>   
-                </a>
-            </div>
-            <div class="download-cv">
-                <a href="CV-Bob-Roborovski.pdf"
-                target="_blank"
-                download="CV-Bob-Roborovski.pdf"
-                title="Télécharger le CV en pdf">Télécharger le CV en pdf</a>
-            </div>
-            <div class="download-cv-mobile">
-                <a href="CV-Bob-Roborovski.pdf"
-                target="_blank"
-                download="CV-Bob-Roborovski.pdf"
-                title="Télécharger le CV en pdf">Pdf</a>
-            </div>
-        </nav>
+        <?php include 'header.php' ?>
     </header>
     <section id="home">
         <div class="ball-left">
@@ -91,40 +62,28 @@
                 <div class="skillsLogos">
                 <?php
                 $skillsSection = [
-                    'astucieux' => [
+                    [
                         'image' => "skills-icons/astucieux.png",
-                        'alternativeText' => 'Astucieux',
-                        'title' => 'Astucieux',
                         'skill' => 'Astucieux',
                     ],
-                    'curieux' =>[
+                    [
                         'image' => "skills-icons/curious.png",
-                        'alternativeText' => 'Curieux',
-                        'title' => 'Curieux',
                         'skill' => 'Curieux',
                     ],
-                    'sociable' =>[
+                    [
                         'image' => "skills-icons/social.png",
-                        'alternativeText' => 'Sociable',
-                        'title' => 'Sociable',
                         'skill' => 'Sociable',
                     ],
-                    'dynamique' =>[
+                    [
                         'image' => "skills-icons/muscle.png",
-                        'alternativeText' => 'Dynamique',
-                        'title' => 'Dynamique',
                         'skill' => 'Dynamique',
                     ],
-                    'réactif' =>[
+                    [
                         'image' => "skills-icons/running.png",
-                        'alternativeText' => 'Réactif',
-                        'title' => 'Réactif',
                         'skill' => 'Réactif',
                     ],
-                    'créactif' =>[
+                    [
                         'image' => "skills-icons/creative.png",
-                        'alternativeText' => 'Créatif',
-                        'title' => 'Créatif',
                         'skill' => 'Créatif',
                     ],
                 ];
@@ -133,8 +92,8 @@
                 ?>
                     <figure class="element-skills">
                         <img src="<?php echo $dataType['image']; ?>"
-                             alt="<?php echo $dataType['alternativeText']; ?>"
-                             title="<?php echo $dataType['title']; ?>"
+                             alt="<?php echo $dataType['skill']; ?>"
+                             title="<?php echo $dataType['skill']; ?>"
                         >
                         <figcaption><?php echo $dataType['skill']; ?></figcaption>
                     </figure>
@@ -169,31 +128,23 @@
                 <div class="interestsLogos">
                     <?php
                     $interestsSection = [
-                        'sport' => [
+                         [
                             'image' => "hamster-ball.png",
-                            'alternativeText' => 'Sport',
-                            'title' => 'Sport',
                             'interest' => 'Sport',
                             'description' => 'Faire de la roue',
                         ],
-                        'jardinage' =>[
+                        [
                             'image' => "growth.png",
-                            'alternativeText' => 'Jardinage',
-                            'title' => 'Jardinage',
                             'interest' => 'Jardinage',
                             'description' => 'Creuser des galeries',
                         ],
-                        'gastronomie' =>[
+                        [
                             'image' => "gastronomie.png",
-                            'alternativeText' => 'Gastronomie',
-                            'title' => 'Gastronomie',
                             'interest' => "L'univers culinaire",
                             'description' => 'Grignoter quelques friandises',
                         ],
-                        'randonnée' =>[
+                        [
                             'image' => "hiking.png",
-                            'alternativeText' => 'Marche et randonnée',
-                            'title' => 'Marche et randonnée',
                             'interest' => 'Marche et randonnée',
                             'description' => 'Avec des petits recoins',
                         ],
@@ -203,8 +154,8 @@
                     ?>
                     <figure class="interestsFigures">
                         <img src="<?php echo $dataType['image']?>"
-                             alt="<?php echo $dataType['alternativeText']?>"
-                             title="<?php echo $dataType['title']?>">
+                             alt="<?php echo $dataType['interest']?>"
+                             title="<?php echo $dataType['interest']?>">
                         <figcaption class="interestsFigcaptionTitle"> <?php echo $dataType['interest']?></figcaption>
                         <figcaption class="interestsFigcaptionDescription"><?php echo $dataType['description']?></figcaption>
                     </figure>
@@ -222,21 +173,23 @@
         <div class="contactMe" >
             <h2> Contactez-Moi !</h2>
             <img src="https://i.pinimg.com/originals/f4/40/d1/f440d13b570123f9bb9aa3d0051fcb6f.jpg" alt="Photo de contact" class="pictureContact">
-            <div class = "contactDiv">
-                <img src="telephone.png" alt="logo telephone">
-                <p> 00 11 22 33 44 </p>
-            </div>
+            <div class="infoContact">
+                <div class = "contactDiv">
+                    <img src="telephone.png" alt="logo telephone">
+                    <p> 00 11 22 33 44 </p>
+                </div>
 
-            <div class="contactDiv">
-                <img src="email.png" alt="email logo">
-                <a href="mailto:bob@hamster.com"> bob@hamster.com</a>
-            </div>
+                <div class="contactDiv">
+                    <img src="email.png" alt="email logo">
+                    <a id ="emailBob" href="mailto:bob@hamster.com"> bob@hamster.com</a>
+                </div>
 
-            <div class="contactDiv">
-                <img src="map-location.png" alt="location logo">
-                <p> Cage à hamster n°3<br>
-                Sous l'escalier Nord<br>
-                Hamsterville</p>
+                <div class="contactDiv">
+                    <img src="map-location.png" alt="location logo">
+                    <p> Cage à hamster n°3<br>
+                    Sous l'escalier Nord<br>
+                    Hamsterville</p>
+                </div>
             </div>
         </div>
         <div class="contactForm">
@@ -296,24 +249,7 @@
         ?>
     </section>
     <footer>
-        <div class="social-media">
-            
-                <a href="https://fr.wikipedia.org/wiki/Hamster_de_Roborovski" 
-                title="A propos de moi"
-                target="_blank">
-                A propos de moi
-                </a>
-                <a href="https://www.linkedin.com/" 
-                title="Profil Linkedin"
-                target="_blank">
-                Linkedin
-                </a>
-                <a href="https://twitter.com/?lang=fr" 
-                title="Twitter account"
-                target="_blank">
-                Suivez-moi sur twitter
-                </a>
-        </div>
+        <?php include 'footer.php' ?>
     </footer>            
  
 </body>
