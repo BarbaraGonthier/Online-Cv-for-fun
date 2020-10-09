@@ -248,21 +248,23 @@
         <div class="contactMe" >
             <h2> Contactez-Moi !</h2>
             <img src="https://i.pinimg.com/originals/f4/40/d1/f440d13b570123f9bb9aa3d0051fcb6f.jpg" alt="Photo de contact" class="pictureContact">
-            <div class = "contactDiv">
-                <img src="telephone.png" alt="logo telephone">
-                <p> 00 11 22 33 44 </p>
-            </div>
+            <div class="infoContact">
+                <div class = "contactDiv">
+                    <img src="telephone.png" alt="logo telephone">
+                    <p> 00 11 22 33 44 </p>
+                </div>
 
-            <div class="contactDiv">
-                <img src="email.png" alt="email logo">
-                <a href="mailto:bob@hamster.com"> bob@hamster.com</a>
-            </div>
+                <div class="contactDiv">
+                    <img src="email.png" alt="email logo">
+                    <a id ="emailBob" href="mailto:bob@hamster.com"> bob@hamster.com</a>
+                </div>
 
-            <div class="contactDiv">
-                <img src="map-location.png" alt="location logo">
-                <p> Cage à hamster n°3<br>
-                Sous l'escalier Nord<br>
-                Hamsterville</p>
+                <div class="contactDiv">
+                    <img src="map-location.png" alt="location logo">
+                    <p> Cage à hamster n°3<br>
+                    Sous l'escalier Nord<br>
+                    Hamsterville</p>
+                </div>
             </div>
         </div>
         <div class="contactForm">
