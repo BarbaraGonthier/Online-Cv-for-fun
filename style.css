@@ -915,13 +915,18 @@ button:hover{
 
     .contact{
         flex-direction: column;
+        background-size: cover;
     }    
     .pictureContact{
         border-radius: 20%;
     }
+    .pictureContact:hover {
+        transform: none;
+    }
     .contactMe{
         width: 100vw;
         border-right: none;
+        padding-bottom: 0;
     }
 
     .contact .form{
