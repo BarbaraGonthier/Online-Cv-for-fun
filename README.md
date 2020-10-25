@@ -1,5 +1,7 @@
 # Project1---CV-Responsive
 
+This project is the first one run at Wild Code School september 2020 to train coding, using git, and working as a team.
+
 Police : https://fonts.google.com/specimen/Noto+Sans+JP
 
 Couleurs :
